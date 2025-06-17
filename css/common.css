@@ -39,33 +39,34 @@
 /* - - - - - - - - - 아랑 - - - - - - - - - */
 /* link(button) */
 .tab_btns{
-  color: #222222;
-  border: 1px solid #222222;
+  color: var(--main-text);
+  border: 1px solid var(--main-text);
   border-radius:35px;
   padding: 12px 20px;
-  line-height: 24px;
+  line-height: var(--lh);
   display: inline-block;
 }
-/*
+
 .tab_btns .active{
-  color: #5409DA;
-  border: 1px solid #5409DA;
+  color: rgba(84,9, 218, .3);
+  border: 1px solid  rgba(84,9, 218, .3);
+  shadow: var(--small-shadow);
+  font-size: bold;
 }
-*/
+
 .sign_btn{
-  color: #222222;
-  background: #F5F5FA;
-  border: 1px solid #F5F5FA;
+  color: var(--main-text);
+  background: var(--white);
+  border: 1px solid var(--white);
   border-radius: 35px;
   padding: 6px 20px;
-  line-height: 24px;
+  line-height: var(--lh);
   display: inline-block;
 }
-/*
+
 .sign_btn .active{
-  color: #F5F5FA;
-  background: #5409DA;
-  border: 1px solid #5409DA;
-  shadow: 0 4 10px rgb(0 0 0 .12);
+  color: var(--white);
+  background: var(--primary);
+  border: 1px solid var(--primary);
+  shadow: var(--small-shadow);
 }
-*/
