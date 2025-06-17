@@ -9,7 +9,35 @@
 
 
 /* - - - - - - - - - 아랑 - - - - - - - - - */
-/* link */
-
-
-
+/* link(button) */
+.tab_btns{
+  color: #222222;
+  border: 1px solid #222222;
+  border-radius:35px;
+  padding: 12px 20px;
+  line-height: 24px;
+  display: inline-block;
+}
+/*
+.tab_btns .active{
+  color: #5409DA;
+  border: 1px solid #5409DA;
+}
+*/
+.sign_btn{
+  color: #222222;
+  background: #F5F5FA;
+  border: 1px solid #F5F5FA;
+  border-radius: 35px;
+  padding: 6px 20px;
+  line-height: 24px;
+  display: inline-block;
+}
+/*
+.sign_btn .active{
+  color: #F5F5FA;
+  background: #5409DA;
+  border: 1px solid #5409DA;
+  shadow: 0 4 10px rgb(0 0 0 .12);
+}
+*/
