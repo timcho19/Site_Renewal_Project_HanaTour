@@ -58,7 +58,7 @@ body{
 .tab_btns .active{
   color: rgba(84,9, 218, .3);
   border: 1px solid  rgba(84,9, 218, .3);
-  shadow: var(--small-shadow);
+  box-shadow: var(--small-shadow);
   font-size: bold;
 }
 
@@ -76,5 +76,58 @@ body{
   color: var(--white);
   background: var(--primary);
   border: 1px solid var(--primary);
-  shadow: var(--small-shadow);
+  box-shadow: var(--small-shadow);
+}
+
+.qna_btn{
+  color: var(--white);
+  background: rgba(102, 102, 102, .6);
+  border: 1px solid rgba(102, 102, 102, .6);
+  border-radius: 35px;
+  padding: 10px 24px;
+  line-height: var(--lh);
+}
+
+.qna_btn .active{
+  box-shadow: var(--small-shadow);
+}
+
+
+/* badge */
+.review{
+  color: var(--primary);
+  background: rgba(205, 253, 255);
+  border: 1px solid var(--sub); 
+  line-height: var(--lh);
+  font-size: 13px;
+}
+
+.bsale{
+  color: var(--white);
+  background: var(--error);
+  border: 1px solid var(--error); 
+  line-height: var(--lh);
+  font-size: 13px;
+}
+.coupon{
+  color: var(--error);
+  background: rgba(252, 248, 235, 1);
+  border: 1px solid rgba(255, 227, 134, 1); 
+  line-height: var(--lh);
+  font-size: 13px;
+}
+
+.tsale{
+  color: var(--white);
+  background: rgba(252, 248, 235, 1);
+  border: 1px solid rgba(132, 78, 226, 1); 
+  line-height: var(--lh);
+  font-size: 13px;
+}
+.ftrip{
+  color: var(--white);
+  background: rgba(61, 202, 124, 1);
+  border: 1px solid rgba(3, 199, 90, 1); 
+  line-height: var(--lh);
+  font-size: 13px;
 }
