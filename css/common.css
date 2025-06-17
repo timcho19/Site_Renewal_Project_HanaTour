@@ -6,6 +6,26 @@
 /* - - - - - - - - - 진욱 - - - - - - - - - */
 /* typography */
 
+:root {
+    --font: 'Inter', sans-serif;
+    --font-w-bold:700;
+    --font-w-regular:400;
+    --pricolor:#5409DA;
+    --subcolor:#06D0DA;
+    --headcolor:#101014;
+    --main-text-color:#222222;
+    --sub-text-color:#666666;
+    --whitecolor:#F5F5FA;
+    --line-height:24px;
+}
+
+body{
+    font-family: var(--font);
+    color:var(--main-text-color);
+    line-height: var(--line-height);
+}
+
+ 
 
 
 /* - - - - - - - - - 아랑 - - - - - - - - - */
