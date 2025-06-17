@@ -24,6 +24,11 @@ body{
     color:var(--main-text-color);
     line-height: var(--line-height);
 }
+.headernav{
+    font-size: 18px;
+    color: var(--whitecolor);
+    font-weight:var(--font-w-regular) ;
+}
 
  
 
