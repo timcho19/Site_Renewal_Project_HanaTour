@@ -1,4 +1,4 @@
-/* - - - - - - - - - 원석 - - - - - - - - - */
+
 
 /*variants*/
 :root{
@@ -19,6 +19,14 @@
   
 }
 
+body {
+  font-family: 'Inter', 'Pretendard', sans-serif;
+  font-size: 16px;
+  color: #222;
+  line-height: var(--lh);
+}
+
+/* - - - - - - - - - 원석 - - - - - - - - - */
 /* color */
 
 
