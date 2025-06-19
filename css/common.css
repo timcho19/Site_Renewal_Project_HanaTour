@@ -54,6 +54,9 @@ body{
 
 /* - - - - - - - - - 아랑 - - - - - - - - - */
 /* link(button) */
+button{
+  box-sizing: border-box;
+}
 .tab_btns{
   color: var(--main-text);
   border: 1px solid var(--main-text);
@@ -80,7 +83,7 @@ body{
   display: inline-block;
 }
 
-.sign_btn .active{
+.sign_btn.active{
   color: var(--white);
   background: var(--primary);
   border: 1px solid var(--primary);
@@ -90,10 +93,11 @@ body{
 .qna_btn{
   color: var(--white);
   background: rgba(102, 102, 102, .6);
-  border: 1px solid rgba(102, 102, 102, .6);
+  /* border: 1px solid rgba(102, 102, 102, .6); */
   border-radius: 35px;
   padding: 10px 24px;
   line-height: var(--lh);
+  font-weight: 600;
 }
 
 .qna_btn .active{
@@ -108,6 +112,8 @@ body{
   border: 1px solid var(--sub); 
   line-height: var(--lh);
   font-size: 13px;
+  border-radius: 15px;
+  padding: 0 10px;
 }
 
 .bsale{
@@ -116,6 +122,8 @@ body{
   border: 1px solid var(--error); 
   line-height: var(--lh);
   font-size: 13px;
+  border-radius: 15px;
+  padding: 0 10px;
 }
 .coupon{
   color: var(--error);
@@ -123,14 +131,19 @@ body{
   border: 1px solid rgba(255, 227, 134, 1); 
   line-height: var(--lh);
   font-size: 13px;
+  border-radius: 15px;
+  padding: 0 10px;
 }
 
 .tsale{
   color: var(--white);
-  background: rgba(252, 248, 235, 1);
-  border: 1px solid rgba(132, 78, 226, 1); 
+  background: rgba(132, 78, 226, 1);
+
   line-height: var(--lh);
   font-size: 13px;
+  border-radius: 15px;
+  padding: 0 10px;
+
 }
 .ftrip{
   color: var(--white);
@@ -138,6 +151,9 @@ body{
   border: 1px solid rgba(3, 199, 90, 1); 
   line-height: var(--lh);
   font-size: 13px;
+  border-radius: 15px;
+  padding: 0 10px;
+
 }
 
 
