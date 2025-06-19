@@ -1,0 +1,14 @@
+.kakao{
+  width: 400px;
+  color: var(--black);
+  background-color: #FAE100;
+  text-decoration: none;
+  display: inline-block;
+}
+.naver{
+  width: 400px;
+  color: var(--black);
+  background-color: #03C75A;
+  text-decoration: none;
+  display: inline-block;
+}
