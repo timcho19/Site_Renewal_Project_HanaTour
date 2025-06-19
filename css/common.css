@@ -58,7 +58,7 @@ body{
   color: var(--main-text);
   border: 1px solid var(--main-text);
   border-radius:35px;
-  padding: 12px 20px;
+  padding: 10px 20px;
   line-height: var(--lh);
   display: inline-block;
 }
