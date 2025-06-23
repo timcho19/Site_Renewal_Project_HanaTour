@@ -259,6 +259,17 @@ header.sub_header nav a{
   color: var(--main-text);
 }
 
+header.sub_header{
+  background: none;
+  box-shadow: var(--small-shadow);
+}
+
+header .sub-menus li a{
+  color: var(--black);
+}
+
+
+
 .event_mainbanner{
   width:100%;
   height: 300px;
