@@ -1,2 +1,13 @@
 @import url('reset.css');
 @import url('common.css');
+
+
+/* 아랑 */
+.card-content{
+  border-radius: 15px;
+  box-shadow: var(--small-shadow);
+  position: relative;
+}
+
+.short_play{
+}
