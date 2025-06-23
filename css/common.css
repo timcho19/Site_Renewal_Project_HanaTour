@@ -365,11 +365,22 @@ header nav ul{
 header nav .side-menus{
   gap:24px;
 }
-header nav h1{
+header nav h1 a{
   display: block;
   width:123px;
   height: 24px;
   color: #fff;
+  text-indent: -9999em;
+  overflow: hidden;
+}
+ .main_header nav h1 a{
+  
+  background:url(../image/logo_white.png) no-repeat;
+  
+}
+.sub_header nav h1 a{
+  background:url(../image/logo_color.png) no-repeat;
+
 }
 
 header nav a {
