@@ -212,7 +212,7 @@ button{
   box-shadow: var(--small-shadow);
 }
 
-.qna_btn{
+.contact .qna_btn{
   color: var(--white);
   background: rgba(102, 102, 102, .6);
   /* border: 1px solid rgba(102, 102, 102, .6); */
@@ -328,6 +328,26 @@ header {
   z-index: 2;
   
 }
+
+header {
+  width: 100%;
+  background: rgba(0,0,0,0.15);
+  box-sizing: border-box;
+  position: relative;
+  z-index: 2;
+  
+  
+}
+header.sub_header {
+  width: 100%;
+  background: var(--white);
+  box-sizing: border-box;
+  position: relative;
+  z-index: 2;
+  color: var(--main-text);
+  
+}
+
 header nav{
 
   display: flex;
@@ -357,6 +377,32 @@ header nav a {
   color: #fff;
   text-decoration: none;
 }
+header.sub_header nav a{
+  color: var(--main-text);
+}
+
+header.sub_header{
+  background: none;
+  box-shadow: var(--small-shadow);
+}
+
+header .sub-menus li a{
+  color: var(--black);
+}
+
+
+
+.event_mainbanner{
+  width:100%;
+  height: 300px;
+  background: #fadded;
+ 
+}
+
+.event_tab{
+ padding: 120px 0;;
+}
+
 
 
 .main-title-area {
@@ -384,7 +430,7 @@ header nav a {
   margin-bottom: 32px;
   text-shadow: 0 2px 12px rgba(0,0,0,0.35);
 }
-
+/*푸터*/
 .footer {
   background: #fff;
   color: var(--main-text);
@@ -466,7 +512,7 @@ header nav a {
 
 
 .contact button {
-  padding: 8px 16px;
+  padding: 24px 0 16px;
   background: var(--white);
   border: 1px solid var(--primary);
   color: var(--primary);
@@ -563,3 +609,18 @@ header nav a {
 
 
 
+.shorts {
+  
+  position:relative;
+  height:0;
+  padding-bottom:58%;
+  width: 33%;
+}
+
+.shorts iframe {
+  position:absolute;
+  top:0;
+  left:0;
+  width: 100%;
+  height:100%;
+}
