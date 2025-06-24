@@ -5,7 +5,6 @@
   --bigContainer:1320px;
 
   --lh:24px;
-
   --black: rgba(16, 16, 20, 1);
   --white: rgba(245, 245, 250, 1);
   --main-text: rgba(34, 34, 34, 1);
@@ -40,7 +39,7 @@ body {
 }
 
 .big-pd{
-  padding: calc(var(--1h) * 6) 0;
+  padding: calc(var(--lh) * 6) 0;
 }
 
 
