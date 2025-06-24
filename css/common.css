@@ -38,10 +38,9 @@ body {
   margin: 0 auto;
 }
 
-.big-pd{
-  padding: calc(var(--lh) * 6) 0;
+.big-pd-bottom{
+  padding-bottom: calc(var(--lh) * 6);
 }
-
 
 /* - - - - - - - - - 진욱 - - - - - - - - - */
 /* typography */
