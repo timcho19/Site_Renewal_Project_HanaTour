@@ -39,6 +39,9 @@ body {
   margin: 0 auto;
 }
 
+.big-pd{
+  padding: calc(var(--1h) * 6) 0;
+}
 
 
 /* - - - - - - - - - 진욱 - - - - - - - - - */
