@@ -18,7 +18,9 @@
   --large-shadow:0px 8px 35px rgba(0,0,0,0.16);
   
 }
-
+li{
+  list-style: none;
+}
 body {
   font-family: 'Inter', 'Pretendard', sans-serif;
   font-size: 16px;

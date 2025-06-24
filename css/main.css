@@ -43,6 +43,87 @@
 }
 
 
+/*투어리스트 섹션*/
+
+.travel-container {
+  width: 1320px;
+  margin: 40px auto;
+  font-family: 'Noto Sans KR', sans-serif;
+}
+
+.travel-banner {
+  border-radius: 16px;
+  overflow: hidden;
+  margin-bottom: 40px;
+}
+.travel-banner img{
+  width: 100%;
+}
+
+
+.travel-title {
+  font-size: 40px;
+  line-height: 40px;
+  font-weight: bold;
+  margin-bottom: 60px;
+}
+
+
+.travel-cards {
+  display: flex;
+  justify-content: space-between;
+}
+
+.travel-card {
+  background: #fff;
+  border-radius: 16px;
+  box-shadow:var(--small-shadow);
+  width: 300px;
+  overflow: hidden;
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: column;
+  transition: box-shadow 0.2s;
+}
+
+.travel-card:hover {
+  box-shadow: 0 4px 16px rgba(0,0,0,0.12);
+}
+
+.travel-card img {
+  width: 100%;
+  object-fit: cover;
+}
+
+.card-content {
+  padding: 16px 10px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.card-content h3 {
+  font-weight: bold;
+  margin-bottom: 12px;
+}
+
+.card-content ul {
+
+  color: #333;
+}
+
+.card-content ul li {
+  margin-bottom: 4px;
+}
+
+.card-tags {
+  margin-top: 10px;
+  font-size: 14px;
+  word-break: keep-all;
+  color: var(--sub-text);
+}
+
 
 
 
