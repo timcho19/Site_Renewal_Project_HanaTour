@@ -40,6 +40,7 @@
   font-weight: 400;
   margin-bottom: 32px;
   text-shadow: 0 2px 12px rgba(0,0,0,0.35);
+  line-height: 30px;
 }
 
 
@@ -47,7 +48,8 @@
 
 .travel-container {
   width: 1320px;
-  margin: 40px auto;
+  margin: 0 auto;
+  padding-top: calc(var(--lh) * 6);
 }
 
 .travel-banner {
