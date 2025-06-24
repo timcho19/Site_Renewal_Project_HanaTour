@@ -5,7 +5,6 @@
   --bigContainer:1320px;
 
   --lh:24px;
-
   --black: rgba(16, 16, 20, 1);
   --white: rgba(245, 245, 250, 1);
   --main-text: rgba(34, 34, 34, 1);
@@ -18,7 +17,9 @@
   --large-shadow:0px 8px 35px rgba(0,0,0,0.16);
   
 }
-
+li{
+  list-style: none;
+}
 body {
   font-family: 'Inter', 'Pretendard', sans-serif;
   font-size: 16px;
@@ -37,6 +38,9 @@ body {
   margin: 0 auto;
 }
 
+.big-pd{
+  padding: calc(var(--lh) * 6) 0;
+}
 
 
 /* - - - - - - - - - 진욱 - - - - - - - - - */
@@ -310,16 +314,7 @@ body {
   overflow-x: hidden;
 }
 
-.main_section {
-  position: relative;
-  width: 100vw;
-  height: 100vh;
-  min-height: 700px;
-  background: url('../image/main_slide1.png') center center / cover no-repeat;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-}
+
 header {
   width: 100%;
   background: rgba(0,0,0,0.15);
@@ -329,15 +324,7 @@ header {
   
 }
 
-header {
-  width: 100%;
-  background: rgba(0,0,0,0.15);
-  box-sizing: border-box;
-  position: relative;
-  z-index: 2;
-  
-  
-}
+
 header.sub_header {
   width: 100%;
   background: var(--white);
@@ -416,31 +403,6 @@ header .sub-menus li a{
 
 
 
-.main-title-area {
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  justify-content: end;
-  align-items: flex-start;
-  padding-left: 80px;
-  z-index: 1;
-  position: relative;
-}
-.main-title {
-  color: #fff;
-  font-size: 3.2rem;
-  font-weight: 800;
-  line-height: 1.2;
-  margin-bottom: 16px;
-  text-shadow: 0 4px 24px rgba(0,0,0,0.45);
-}
-.main-desc {
-  color: #fff;
-  font-size: 1.4rem;
-  font-weight: 400;
-  margin-bottom: 32px;
-  text-shadow: 0 2px 12px rgba(0,0,0,0.35);
-}
 /*푸터*/
 .footer {
   background: #fff;

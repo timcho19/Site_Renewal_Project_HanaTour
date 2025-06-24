@@ -2,6 +2,152 @@
 @import url('common.css');
 
 
+/*WS*/
+
+.main_section {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  min-height: 700px;
+  background: url('../image/main_slide1.png') center center / cover no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+
+.main-title-area {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  align-items: flex-start;
+  padding-left: 80px;
+  z-index: 1;
+  position: relative;
+}
+.main-title {
+  color: #fff;
+  font-size: 3.2rem;
+  font-weight: 800;
+  line-height: 1.2;
+  margin-bottom: 16px;
+  text-shadow: 0 4px 24px rgba(0,0,0,0.45);
+}
+.main-desc {
+  color: #fff;
+  font-size: 1.4rem;
+  font-weight: 400;
+  margin-bottom: 32px;
+  text-shadow: 0 2px 12px rgba(0,0,0,0.35);
+}
+
+
+/*투어리스트 섹션*/
+
+.travel-container {
+  width: 1320px;
+  margin: 40px auto;
+}
+
+.travel-banner {
+  border-radius: 16px;
+  overflow: hidden;
+  margin-bottom: 40px;
+}
+.travel-banner img{
+  width: 100%;
+}
+
+
+.travel-title {
+  font-size: 40px;
+  line-height: 40px;
+  font-weight: bold;
+  margin-bottom: 60px;
+}
+
+
+.travel-cards {
+  display: flex;
+  transition: transform 0.5s;
+  gap:24px;
+  
+}
+
+
+.travel-card {
+  background: #fff;
+  border-radius: 16px;
+  box-shadow:var(--small-shadow);
+  overflow: hidden;
+  flex-shrink: 0;
+  width:312px;
+  display: flex;
+  flex-direction: column;
+  transition: box-shadow 0.2s;
+}
+
+.travel-card:hover {
+  box-shadow: 0 4px 16px rgba(0,0,0,0.12);
+}
+
+.travel-card img {
+  width: 100%;
+  object-fit: cover;
+}
+
+.card-content {
+  padding: 16px 10px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.card-content h3 {
+  font-weight: bold;
+  margin-bottom: 12px;
+}
+
+.card-content ul {
+
+  color: #333;
+}
+
+.card-content ul li {
+  margin-bottom: 4px;
+}
+
+.card-tags {
+  margin-top: 10px;
+  font-size: 14px;
+  word-break: keep-all;
+  color: var(--sub-text);
+}
+
+
+/* 상품 슬라이드
+*/
+
+.travel-slider-container {
+  position: relative;
+  width: 1320px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+
+
+
+
+
+
+
+
+/* //WS */
+
+
 /* 아랑 */
 .card-content{
   border-radius: 15px;
@@ -12,6 +158,66 @@
 .shorts-content{
   display: flex;
   justify-content: space-between;
+}
+.shorts-content p{
+  border-radius: 15px;
+  overflow: hidden;
+}
+
+.slider-wrapper{
+  position: relative;
+}
+
+.contents_prev_btn,
+.contents_next_btn{
+ position: absolute;
+ top: 50%;
+ transform: translateY(-50%);
+}
+
+.contents_prev_btn{
+  left: -5%;
+}
+.contents_next_btn{
+  right: -5%;
+}
+
+.best-travel-title {
+  font-size: 40px;
+  line-height: 40px;
+  font-weight: bold;
+  margin-bottom: 60px;
+  text-align: center;
+}
+.monthly-travel .card{
+  width: 312px;
+  box-shadow: var(--small-shadow);
+}
+
+.card-title{
+  font-size: 20px;
+  font-weight: bold;
+  line-height: var(--lh);
+}
+.weather-info{
+  display: flex;
+  gap: var(--lh);
+}
+.weather-info img{
+  width: 48px;
+  height: 48px;
+}
+
+.weather-cards{
+  width: 6240px;
+  display: flex;
+  gap: var(--lh);
+  margin-bottom: calc(var(--lh) * 2);
+}
+.slides_btns{
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 
