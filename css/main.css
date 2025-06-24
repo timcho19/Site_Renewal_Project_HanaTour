@@ -13,3 +13,21 @@
   display: flex;
   justify-content: space-between;
 }
+
+.slider-wrapper{
+  position: relative;
+}
+
+.contents_prev_btn,
+.contents_next_btn{
+ position: absolute;
+ top: 50%;
+ transform: translateY(-50%);
+}
+
+.contents_prev_btn{
+  left: -5%;
+}
+.contents_next_btn{
+  right: -5%;
+}
