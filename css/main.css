@@ -159,8 +159,10 @@
   display: flex;
   justify-content: space-between;
 }
-
-
+.shorts-content p{
+  border-radius: 15px;
+  overflow: hidden;
+}
 
 .slider-wrapper{
   position: relative;
@@ -178,4 +180,112 @@
 }
 .contents_next_btn{
   right: -5%;
+}
+
+.best-travel-title {
+  font-size: 40px;
+  line-height: 40px;
+  font-weight: bold;
+  margin-bottom: 60px;
+  text-align: center;
+}
+.monthly-travel .card{
+  width: 312px;
+  box-shadow: var(--small-shadow);
+}
+
+.card-title{
+  font-size: 20px;
+  font-weight: bold;
+  line-height: var(--lh);
+}
+.weather-info{
+  display: flex;
+  gap: var(--lh);
+}
+.weather-info img{
+  width: 48px;
+  height: 48px;
+}
+
+.weather-cards{
+  width: 6240px;
+  display: flex;
+  gap: var(--lh);
+  margin-bottom: calc(var(--lh) * 2);
+}
+.slides_btns{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 진욱 */
+.youtube {
+  position: relative;
+  margin-top: -70px;
+  padding-top: 70px;
+  z-index: 1;
+}
+
+.youtube::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 80%;
+  background: linear-gradient(#08D1D9 0%, #B5F1F4 50%, #FFFFFF 100%);
+  z-index: -1;
+  pointer-events: none;
+}
+.section_title{
+  text-align: center;
+}
+
+.section_title h2 {
+  font-size: 40px;
+  font-weight:700;
+  color: var(--main-text);
+  margin-bottom: 40px;
+}
+.section_title p{
+  font-size: 20px;
+  line-height:24px;
+  font-weight: 700;
+  margin-bottom: 58px;
+}
+
+.stories{
+  display: flex;
+  gap:90px
+}
+.story_wrapper{
+  position: relative;
+}
+.controls{
+  position: absolute;
+  right: calc(50% - 540px);
+  
+}
+.prev_btn{
+  width: 52px;
+  height: 52px;
+}
+.next_btn{
+  width: 52px;
+  margin-left: 20px;
 }
