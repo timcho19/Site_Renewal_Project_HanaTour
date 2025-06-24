@@ -230,9 +230,6 @@
 
 
 
-
-
-
 /* 진욱 */
 .youtube {
   position: relative;
@@ -275,6 +272,8 @@
 }
 .story_wrapper{
   position: relative;
+  width:3720px;
+  height: 617px;
 }
 .controls{
   position: absolute;
@@ -288,4 +287,22 @@
 .next_btn{
   width: 52px;
   margin-left: 20px;
+}
+.story {
+  
+  width:1142px;
+  /* 16:9 비율 (9/16 = 0.5625) */
+  
+}
+.story > div{
+  position: relative;
+  padding-bottom: 56.25%;
+  overflow: hidden;
+}
+.story iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
 }
