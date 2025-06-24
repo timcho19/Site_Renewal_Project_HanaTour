@@ -13,3 +13,73 @@
   display: flex;
   justify-content: space-between;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 진욱 */
+.youtube {
+  position: relative;
+  margin-top: -70px;
+  padding-top: 70px;
+  z-index: 1;
+}
+
+.youtube::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 80%;
+  background: linear-gradient(#08D1D9 0%, #B5F1F4 50%, #FFFFFF 100%);
+  z-index: -1;
+  pointer-events: none;
+}
+.section_title{
+  text-align: center;
+}
+
+.section_title h2 {
+  font-size: 40px;
+  font-weight:700;
+  color: var(--main-text);
+  margin-bottom: 40px;
+}
+.section_title p{
+  font-size: 20px;
+  line-height:24px;
+  font-weight: 700;
+  margin-bottom: 58px;
+}
+
+.stories{
+  display: flex;
+  gap:90px
+}
+.story_wrapper{
+  position: relative;
+}
+.controls{
+  position: absolute;
+  right: calc(50% - 540px);
+  
+}
+.prev_btn{
+  width: 52px;
+  height: 52px;
+}
+.next_btn{
+  width: 52px;
+  margin-left: 20px;
+}
