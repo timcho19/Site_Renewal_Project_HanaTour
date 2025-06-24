@@ -9,5 +9,7 @@
   position: relative;
 }
 
-.short_play{
+.shorts-content{
+  display: flex;
+  justify-content: space-between;
 }

@@ -621,11 +621,10 @@ header .sub-menus li a{
 
 
 .shorts {
-  
   position:relative;
   height:0;
-  padding-bottom:58%;
-  width: 33%;
+  padding-bottom:40%;
+  width: 22%;
 }
 
 .shorts iframe {
