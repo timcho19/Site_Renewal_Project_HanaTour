@@ -48,7 +48,6 @@
 .travel-container {
   width: 1320px;
   margin: 40px auto;
-  font-family: 'Noto Sans KR', sans-serif;
 }
 
 .travel-banner {
@@ -71,16 +70,19 @@
 
 .travel-cards {
   display: flex;
-  justify-content: space-between;
+  transition: transform 0.5s;
+  gap:24px;
+  
 }
+
 
 .travel-card {
   background: #fff;
   border-radius: 16px;
   box-shadow:var(--small-shadow);
-  width: 300px;
   overflow: hidden;
   flex-shrink: 0;
+  width:312px;
   display: flex;
   flex-direction: column;
   transition: box-shadow 0.2s;
@@ -123,6 +125,22 @@
   word-break: keep-all;
   color: var(--sub-text);
 }
+
+
+/* 상품 슬라이드
+*/
+
+.travel-slider-container {
+  position: relative;
+  width: 1320px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+
+
+
+
 
 
 
