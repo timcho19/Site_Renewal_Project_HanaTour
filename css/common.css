@@ -45,11 +45,36 @@ body {
 /* - - - - - - - - - 진욱 - - - - - - - - - */
 /* typography */
 
-
 body{
-    font-family:'Inter', sans-serif;
-    color:var(--main-text);
+  font-family:'Inter', sans-serif;
+  color:var(--main-text);
 }
+
+.main-title {
+  color: #fff;
+  font-size: 3.2rem;
+  font-weight: 800;
+  line-height: 1.2;
+  margin-bottom: 16px;
+  text-shadow: 0 4px 24px rgba(0,0,0,0.45);
+}
+
+.main-desc {
+  color: #fff;
+  font-size: 1.4rem;
+  font-weight: 400;
+  margin-bottom: 32px;
+  text-shadow: 0 2px 12px rgba(0,0,0,0.35);
+  line-height: 30px;
+}
+
+.contents-title {
+  color: var(--black);
+  line-height: 40px;
+  font-weight: bold;
+  margin-bottom: 60px;
+}
+
 /* qna */
 
 /* 히어로 섹션 */
