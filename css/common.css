@@ -214,7 +214,9 @@ button{
   border: 1px solid var(--primary);
   box-shadow: var(--small-shadow);
 }
-
+.contact div{
+  margin-top: var(--lh);
+}
 .contact .qna_btn{
   color: var(--white);
   background: rgba(102, 102, 102, .6);
@@ -461,7 +463,7 @@ header .sub-menus li a{
   font-size: 18px;
   font-weight: 700;
   color: var(--main-text);
-  margin-bottom: 16px;
+  margin-bottom: var(--lh);
 }
 
 .contact h5 {
