@@ -1,14 +1,18 @@
-
 /* 레이아웃 */
 .login-container,
 .accordion {
   max-width: 400px;
   margin: 0 auto;
 }
-
-.logo {
+.sub_header{
+  margin-bottom: calc(var(--lh) * 5);
+}
+.logo{
   text-align: center;
-  margin-bottom: 40px;
+  margin-bottom: calc(var(--lh) * 3);
+}
+.logo img{
+  width: 70%;
 }
 
 /* 플랫폼 버튼 공통 */
@@ -17,10 +21,10 @@
 .naver {
   width: 100%;
   font-weight: bold;
-  box-shadow: none !important; /* !important 있는 부분 다시 수정하기!!!!!! */
   padding: 16px 20px;
   border: none;
   margin-bottom: 10px;
+  box-shadow: none;
 }
 
 /* 개별 플랫폼 색상 */
@@ -47,12 +51,12 @@
   border: 1px solid #ccc;
   border-radius: 6px;
   background: none;
+  outline: none;
+  box-shadow: none;
 }
 
 .form-floating-custom input:focus {
   border-color: #712cf9;
-  outline: none;
-  box-shadow: none !important;
 }
 
 .form-floating-custom label {
@@ -73,8 +77,8 @@
 
 /* 아코디언 */
 .accordion-item {
-  border: none !important;
-  box-shadow: none !important;
+  border: none;
+  box-shadow: none;
 }
 
 .accordion-button {
@@ -83,78 +87,79 @@
   color: black;
   border: 1px solid #ccc;
   border-radius: 0.375rem;
-  box-shadow: none !important;
+  box-shadow: none;
+  background-color: white;
+  outline: none;
 }
 
 .accordion-button:active {
   background-color: #712cf9;
   border-color: #712cf9;
+  color: white;
 }
 
 .accordion-button:hover {
-  background: #712cf9 !important;
-  border-color: #712cf9 !important;
+  background-color: #712cf9;
+  border-color: #712cf9;
   color: white;
 }
 
 .accordion-button:focus {
   border-color: #ccc;
   border-radius: 0.375rem;
-  box-shadow: none !important;
-  outline: none;
+  box-shadow: none;
 }
-
 
 .accordion-button:not(.collapsed) {
   background-color: #fff;
   border-color: #ccc;
-  border-radius: 0.375rem !important;
+  border-radius: 0.375rem;
   color: black;
 }
 
-.accordion-button:not(.collapsed):hover{
-  background: #712cf9 !important;
-  border-color: #712cf9 !important;
+.accordion-button:not(.collapsed):hover {
+  background-color: #712cf9;
+  border-color: #712cf9;
   color: white;
 }
 
 /* 아코디언 내용 */
 .accordion-body {
-  padding: 0 !important;
+  padding: 0;
   width: 100%;
 }
 
 /* 회원가입 버튼 */
-.signupSuccess{
+.signupSuccess {
   font-weight: bold;
   color: black;
   border: 1px solid #ccc;
   border-radius: 0.375rem;
-  box-shadow: none !important;
+  background-color: white;
+  box-shadow: none;
 }
-.signupSuccess:hover{
-  background :#712cf9;
+
+.signupSuccess:hover {
+  background-color: #712cf9;
   color: white;
-  border: 1px solid #712cf9
+  border-color: #712cf9;
 }
 
-
-/* 로그인 */
-.login_btn{
+/* 로그인 버튼 */
+.login_btn {
   font-weight: bold;
   color: black;
   border: 1px solid #ccc;
   border-radius: 0.375rem;
-  box-shadow: none !important;
+  background-color: white;
+  box-shadow: none;
 }
 
-.login_btn:hover{
-  background :#712cf9;
+.login_btn:hover {
+  background-color: #712cf9;
   color: white;
-  border: 1px solid #712cf9
+  border-color: #712cf9;
 }
-
-
 
 /* 회원/비회원 조회 링크 */
 .findInfo {
@@ -166,8 +171,6 @@
   color: black;
 }
 
-.findInfo a:nth-child(1):hover,
-.findInfo a:nth-child(2):hover,
-.findInfo a:nth-child(3):hover {
+.findInfo a:hover {
   text-decoration: underline;
 }

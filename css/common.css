@@ -331,9 +331,11 @@ header.sub_header {
   position: relative;
   z-index: 2;
   color: var(--main-text);
-  
 }
-
+header img{
+  width: 18px;
+  height: 18px;
+}
 header nav{
 
   display: flex;
@@ -341,12 +343,11 @@ header nav{
   align-items: center;
   padding: 12px 48px;
   /* background-color: red; */
-  
 }
 header nav ul{
   display: flex;
   align-items: center;
-  gap:48px;
+  gap: var(--lh);
 }
 header nav .side-menus{
   gap:24px;
