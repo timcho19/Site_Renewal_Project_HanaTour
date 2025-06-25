@@ -352,13 +352,13 @@ header {
 }
 
 
-header.sub_header {
+header.sub_header{
   width: 100%;
-  background: var(--white);
   box-sizing: border-box;
   position: relative;
   z-index: 2;
   color: var(--main-text);
+  box-shadow: var(--small-shadow);
 }
 header img{
   width: 18px;
@@ -398,18 +398,14 @@ header nav h1 a{
 
 }
 
+
+
 header nav a {
-  font-size: 18px;
   color: #fff;
   text-decoration: none;
 }
 header.sub_header nav a{
   color: var(--main-text);
-}
-
-header.sub_header{
-  background: var(--white);
-  box-shadow: var(--small-shadow);
 }
 
 header .sub-menus li a{

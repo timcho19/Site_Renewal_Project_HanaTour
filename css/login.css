@@ -12,28 +12,32 @@
   margin-bottom: calc(var(--lh) * 3);
 }
 .logo img{
-  width: 70%;
+  width: 65%;
 }
 
-/* 플랫폼 버튼 공통 */
-.btn-custom,
-.kakao,
-.naver {
+/* 버튼 */
+.kakao_btn,
+.naver_btn,
+.login_btn,
+.signup_btn{
+  width: 400px;
+  height: 56px;
   width: 100%;
   font-weight: bold;
   padding: 16px 20px;
   border: none;
+  border-radius: 6px;
   margin-bottom: 10px;
   box-shadow: none;
 }
 
 /* 개별 플랫폼 색상 */
-.kakao {
+.kakao_btn {
   color: var(--black);
   background-color: #FAE100;
 }
 
-.naver {
+.naver_btn {
   color: #fff;
   background-color: #03C75A;
 }
@@ -46,6 +50,7 @@
 
 .form-floating-custom input {
   width: 100%;
+  height: 56px;
   padding: 1rem 0.75rem 0.25rem;
   font-size: 1rem;
   border: 1px solid #ccc;
@@ -130,7 +135,13 @@
 }
 
 .accordion-body p{
-  margin: var(--lh) 0;
+  margin-top: var(--lh);
+  margin-bottom: 12px;
+}
+
+.mt-4 p{
+  margin-top: var(--lh);
+  margin-bottom: 12px;
 }
 
 /* 회원가입 버튼 */
@@ -153,8 +164,9 @@
   margin-top: var(--lh);
 }
 
-/* 로그인 버튼 */
-.login_btn {
+/* 로그인/회원가입 버튼 */
+.login_btn,
+.signup_btn {
   font-weight: bold;
   color: black;
   border: 1px solid #ccc;
@@ -167,6 +179,14 @@
   background-color: #712cf9;
   color: white;
   border-color: #712cf9;
+  transition: .3s;
+}
+
+.signup_btn:hover {
+  background-color: #712cf9;
+  color: white;
+  border-color: #712cf9;
+  transition: .3s;
 }
 
 /* 회원/비회원 조회 링크 */
@@ -183,3 +203,6 @@
   text-decoration: underline;
 }
 
+footer{
+  margin-top: calc(var(--lh) * 5);
+}
