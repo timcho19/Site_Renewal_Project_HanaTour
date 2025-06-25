@@ -55,7 +55,7 @@
 .travel-banner {
   border-radius: 16px;
   overflow: hidden;
-  margin-bottom: 40px;
+  margin-bottom: calc(var(--lh) * 3);
 }
 .travel-banner img{
   width: 100%;
@@ -120,6 +120,9 @@
 .card-content ul li {
   margin-bottom: 4px;
 }
+.card-content div{
+  margin-top: var(--lh);
+}
 
 .card-tags {
   margin-top: 10px;
@@ -182,6 +185,13 @@
 }
 .contents_next_btn{
   right: -5%;
+}
+
+.tab{
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: var(--lh);
+  gap: 12px;
 }
 
 .best-travel-title {
