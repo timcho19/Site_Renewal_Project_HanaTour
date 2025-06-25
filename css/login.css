@@ -129,6 +129,10 @@
   width: 100%;
 }
 
+.accordion-body p{
+  margin: var(--lh) 0;
+}
+
 /* 회원가입 버튼 */
 .signupSuccess {
   font-weight: bold;
@@ -143,6 +147,10 @@
   background-color: #712cf9;
   color: white;
   border-color: #712cf9;
+}
+
+.mt-4 p{
+  margin-top: var(--lh);
 }
 
 /* 로그인 버튼 */
@@ -174,3 +182,4 @@
 .findInfo a:hover {
   text-decoration: underline;
 }
+
