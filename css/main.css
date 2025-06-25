@@ -279,7 +279,7 @@
 }
 .controls{
   position: absolute;
-  right: calc(50% - 540px);
+  right: calc(50%);
   
 }
 .prev_btn{
@@ -307,4 +307,20 @@
   left: 0;
   width: 100%;
   height: 100%;
+}
+.story h3{
+  font-size: 28px;
+  font-weight: 700;
+  line-height: var(--lh);
+  color: var(--main-text);
+  margin-top:36px ;
+  margin-left: 30px;
+}
+.story p{
+  font-size: 20px;
+  font-weight: 700;
+  color: var(--sub-text);
+  line-height: var(--lh);
+  margin-left: 30px;
+  margin-top: 13px;
 }
