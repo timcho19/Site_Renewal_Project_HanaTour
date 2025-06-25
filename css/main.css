@@ -88,7 +88,6 @@
 }
 
 .card-content ul {
-
   color: #333;
 }
 
@@ -107,6 +106,14 @@
 }
 
 
+.contents_prev_btn,
+.contents_next_btn{
+ position: absolute;
+ top: 50%;
+ transform: translateY(-50%);
+}
+
+
 /* 상품 슬라이드
 */
 
@@ -116,9 +123,6 @@
   margin: 0 auto;
   overflow: hidden;
 }
-
-
-
 
 
 
@@ -159,10 +163,12 @@
 }
 
 .contents_prev_btn{
-  left: -5%;
+  color: var(--sub-text);
+  left: -6%;
 }
 .contents_next_btn{
-  right: -5%;
+  color: var(--sub-text);
+  right: -6%;
 }
 
 .tab{
