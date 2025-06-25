@@ -208,19 +208,20 @@ button{
   box-sizing: border-box;
 }
 .tab_btns{
-  color: var(--main-text);
-  border: 1px solid var(--main-text);
+  color: var(--sub-text);
+  border: 1px solid var(--sub-text);
   border-radius:35px;
   padding: 10px 20px;
   line-height: var(--lh);
   display: inline-block;
 }
 
-.tab_btns .active{
-  color: rgba(84,9, 218, .3);
-  border: 1px solid  rgba(84,9, 218, .3);
+.tab_btns.active{
+  color: var(--primary);
+  border: 1px solid  rgba(84,9, 218, .1);
+  background-color: rgba(84,9, 218, .3);
   box-shadow: var(--small-shadow);
-  font-size: bold;
+  font-weight: bold;
 }
 
 .sign_btn{
