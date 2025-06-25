@@ -22,14 +22,4 @@ $('.all_menu_btn').on('click', function(e) {
   }
   
 
-
-});
-
-// 바깥 클릭시 닫기 (선택)
-$(document).on('click', function(e) {
-  if ($('.all_menu_dropdown').hasClass('active')) {
-    if (!$(e.target).closest('.all_menu_dropdown, .all_menu_btn').length) {
-      $('.all_menu_dropdown').removeClass('active');
-    }
-  }
 });

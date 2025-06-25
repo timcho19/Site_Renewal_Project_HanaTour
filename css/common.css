@@ -425,6 +425,7 @@ header .sub-menus li a{
   box-shadow: 0 2px 16px rgba(0,0,0,0.08);
   z-index: 100;
   border-bottom: 1px solid #e0e0e0;
+  padding: 72px 0;
 }
 
 .all_menu_dropdown.active {
@@ -436,6 +437,14 @@ header .sub-menus li a{
   justify-content: space-between;
 }
 
+.all_menu_dropdown .dropdown_icons li a{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap:12px;
+
+}
 
 
 
