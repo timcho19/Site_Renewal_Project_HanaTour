@@ -598,3 +598,44 @@ header .sub-menus li a{
   width: 100%;
   height:100%;
 }
+
+
+.side_bar{
+  position: fixed;
+  z-index: 9999;
+  bottom: 50px;
+  right: 50px;
+  display: flex;
+  flex-direction: column;
+  gap:12px;
+}
+.side_bar button{
+  width:38px;
+  height: 38px;
+}
+
+.side_bar button svg circle{
+  transition:fill 0.3s ease; ;
+}
+.side_bar button:hover svg circle {
+ fill:var(--primary);
+}
+
+
+.side_bar .history,
+.side_bar .likes,
+.side_bar .tell {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.4s, transform 0.4s;
+ 
+}
+
+.side_bar.hide-menu .history,
+.side_bar.hide-menu .likes,
+.side_bar.hide-menu .tell {
+  opacity: 1;
+  transform: translateY(0);
+ 
+}
+
