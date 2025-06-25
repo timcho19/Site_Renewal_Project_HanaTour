@@ -88,7 +88,6 @@
 }
 
 .card-content ul {
-
   color: #333;
 }
 
@@ -107,6 +106,14 @@
 }
 
 
+.contents_prev_btn,
+.contents_next_btn{
+ position: absolute;
+ top: 50%;
+ transform: translateY(-50%);
+}
+
+
 /* 상품 슬라이드
 */
 
@@ -116,9 +123,6 @@
   margin: 0 auto;
   overflow: hidden;
 }
-
-
-
 
 
 
@@ -159,10 +163,12 @@
 }
 
 .contents_prev_btn{
-  left: -5%;
+  color: var(--sub-text);
+  left: -6%;
 }
 .contents_next_btn{
-  right: -5%;
+  color: var(--sub-text);
+  right: -6%;
 }
 
 .tab{
@@ -171,6 +177,7 @@
   margin-bottom: var(--lh);
   gap: 12px;
 }
+
 
 .best-travel-title {
   font-size: 40px;
@@ -250,8 +257,6 @@
 /* 진욱 */
 .youtube {
   position: relative;
-  margin-top: -70px;
-  padding-top: 70px;
   z-index: 1;
 }
 
@@ -262,19 +267,22 @@
   left: 0;
   width: 100%;
   height: 80%;
-  background: linear-gradient(#08D1D9 0%, #B5F1F4 50%, #FFFFFF 100%);
+  background: linear-gradient(
+    rgba(8, 209, 217, 0.3) 0%,
+    rgba(255, 255, 255, 0.8) 100%
+  );
   z-index: -1;
   pointer-events: none;
 }
 .section_title{
   text-align: center;
+  padding: 58px 0;
 }
 
 .section_title p:last-child{
   font-size: 20px;
   line-height:24px;
   font-weight: 700;
-  margin-bottom: 58px;
 }
 
 .stories{
