@@ -26,22 +26,6 @@
   z-index: 1;
   position: relative;
 }
-.main-title {
-  color: #fff;
-  font-size: 3.2rem;
-  font-weight: 800;
-  line-height: 1.2;
-  margin-bottom: 16px;
-  text-shadow: 0 4px 24px rgba(0,0,0,0.45);
-}
-.main-desc {
-  color: #fff;
-  font-size: 1.4rem;
-  font-weight: 400;
-  margin-bottom: 32px;
-  text-shadow: 0 2px 12px rgba(0,0,0,0.35);
-  line-height: 30px;
-}
 
 
 /*투어리스트 섹션*/
@@ -53,22 +37,13 @@
 }
 
 .travel-banner {
-  border-radius: 16px;
+  border-radius: 15px;
   overflow: hidden;
   margin-bottom: calc(var(--lh) * 3);
 }
 .travel-banner img{
   width: 100%;
 }
-
-
-.travel-title {
-  font-size: 40px;
-  line-height: 40px;
-  font-weight: bold;
-  margin-bottom: 60px;
-}
-
 
 .travel-cards {
   display: flex;
@@ -168,6 +143,9 @@
   border-radius: 15px;
   overflow: hidden;
 }
+.shorts{
+  
+}
 
 .slider-wrapper{
   position: relative;
@@ -224,16 +202,43 @@
   width: 6240px;
   display: flex;
   gap: var(--lh);
-  margin-bottom: calc(var(--lh) * 2);
+  margin-bottom: calc(var(--lh) * 2); 
+}
+.weather-cards .card{
+  border-radius: 15px;
+  overflow: hidden;
+  border: none;
 }
 .slides_btns{
   display: flex;
   justify-content: center;
   align-items: center;
 }
+.slides_btns button{
+  color: #cfcfcf;
+}
+/* - - - - slides 재생/정지 버튼 - - - - */
 
-
-
+.play_icon {
+  transition: filter 0.2s ease, color 0.2s ease;
+}
+.play_btn:hover {
+  color: var(--primary); 
+  opacity: 0.8;
+}
+.play_btn:hover .play_icon {
+  filter: drop-shadow(var(--small-shadow));
+}
+.stop_icon {
+  transition: filter 0.2s ease, color 0.2s ease;
+}
+.stop_btn:hover {
+  color: var(--primary); 
+  opacity: 0.8;
+}
+.stop_btn:hover .stop_icon {
+  filter: drop-shadow(var(--small-shadow));
+}
 
 
 
@@ -265,13 +270,7 @@
   text-align: center;
 }
 
-.section_title h2 {
-  font-size: 40px;
-  font-weight:700;
-  color: var(--main-text);
-  margin-bottom: 40px;
-}
-.section_title p{
+.section_title p:last-child{
   font-size: 20px;
   line-height:24px;
   font-weight: 700;
