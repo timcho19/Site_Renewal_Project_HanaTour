@@ -318,7 +318,7 @@ body {
 
 header {
   width: 100%;
-  background: rgba(0,0,0,0.15);
+  /* background: rgba(0,0,0,0.15); */
   box-sizing: border-box;
   position: relative;
   z-index: 2;
@@ -382,13 +382,37 @@ header.sub_header nav a{
 }
 
 header.sub_header{
-  background: none;
+  background: var(--white);
   box-shadow: var(--small-shadow);
 }
 
 header .sub-menus li a{
   color: var(--black);
 }
+
+.all_menu_dropdown {
+  display: none;
+  position: absolute;
+  top: 62px; /* 헤더 바로 아래 */
+  left: 0;
+  width: 100%;
+  background: #f5f5f7;
+  box-shadow: 0 2px 16px rgba(0,0,0,0.08);
+  z-index: 100;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.all_menu_dropdown.active {
+  display: block;
+}
+
+.all_menu_dropdown .dropdown_icons{
+  display: flex;
+  justify-content: space-between;
+}
+
+
+
 
 
 
