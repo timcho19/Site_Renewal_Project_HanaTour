@@ -79,21 +79,24 @@ body{
   line-height: 30px;
 }
 
-/* Main title */
+/* title */
 .h1{
   color: var(--black);
   line-height: 40px;
   font-weight: bold;
   margin-bottom: 60px;
 }
-/* Youtube sub-title */
+
+
 .h3{
+  color: var(--black);
   line-height: calc(var(--lh) * 2);
   font-weight: bold;
   margin-top: var(--lh);
 }
-/* Card title */
+
 .h5 {
+  color: var(--black);
   font-weight: bold;
   line-height: var(--lh);
   margin-bottom: 12px;
@@ -262,9 +265,16 @@ button{
   border: 1px solid var(--primary);
   box-shadow: var(--small-shadow);
 }
-.contact div{
-  margin-top: var(--lh);
+
+.contact_num{
+  display: flex;
+  flex-direction: column;
 }
+.contact_num .h3{
+  margin: 0;  
+}
+
+
 .contact .qna_btn{
   color: var(--white);
   background: rgba(102, 102, 102, .6);
@@ -277,6 +287,11 @@ button{
 
 .qna_btn .active{
   box-shadow: var(--small-shadow);
+}
+
+.contact .h5{
+  line-height: calc(var(--lh) * 2);
+  margin-bottom: var(--lh);
 }
 
 
@@ -498,10 +513,10 @@ footer {
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-  gap: 24px;
+  gap: 36px;
   border-bottom: 0.1px solid #cfcfcf;
-  padding: 24px 0;
-  margin-bottom: 72px;
+  padding: var(--lh) 0;
+  margin-bottom: calc(var(--lh) * 2);
 }
 
 .footer_nav a {
@@ -531,9 +546,6 @@ footer {
 
 .contact {
   padding: 24px;
-  background: #f8f9fa;
-  border-radius: 12px;
-  border: 1px solid #e9ecef;
   flex: 1;
 }
 
@@ -551,53 +563,51 @@ footer {
   margin-bottom: 12px;
 }
 
-.contact p {
-  margin-bottom: 8px;
+.contact p{
   color: var(--sub-text);
   line-height: 24px;
 }
 
-.contact p strong {
-  font-size: 20px;
-  font-weight: 700;
-  color: var(--primary);
+.contact div:last-child{
+  display: flex;
+  gap: 12px;
 }
-
 
 .contact button {
-  padding: 24px 0 16px;
-  background: var(--white);
-  border: 1px solid var(--primary);
-  color: var(--primary);
-  border-radius: 20px;
-  font-size: 13px;
-  font-weight: 700;
-  transition: 0.3s ease;
+  margin-top: var(--lh);
 }
 
-.contact button:hover {
-  background: var(--primary);
+.contact button:hover{
   color: var(--white);
-}
-
-.contact a {
-  color: var(--primary);
-  font-weight: 700;
-}
-
-.contact a:hover {
-  text-decoration: underline;
+  background-color: var(--primary);
+  transition: .3s;
 }
 
 
-
+.sns {
+  display: flex;
+  justify-content: flex-end;
+  gap: 12px;
+  padding-bottom: 12px;
+  border-bottom: 0.1px solid #cfcfcf;
+}
+.sns li:hover {
+  transform: translateY(-2px);
+}
+.sns li  {
+  display: flex;
+  transition:  0.3s ease;
+}
+.sns img {
+  width: 30px;   
+}
 
 .footer_info {
   display: flex;
   justify-content: space-between;
   align-items: center;
   gap: 40px;
-  margin-bottom: 48px;
+  padding-top: var(--lh);
 }
 .footer_info .company_info{
   flex: 1;
@@ -621,32 +631,13 @@ footer {
 
 
 
-.sns {
-  display: flex;
-  gap: 12px;
-  
-}
 .footer_emblem{
   display: flex;
   gap: 24px;
- 
-  margin-top: 72px;
+  margin-top: calc(var(--lh) * 2);
   margin-bottom: 24px;
-
+  width: 80%;
 }
-.sns li  {
-  display: flex;
-  transition:  0.3s ease;
-}
-.sns img {
-  width: 30px;   
-}
-
-.sns li:hover {
-  transform: translateY(-2px);
-}
-
-
 
 
 .footer_copy {
