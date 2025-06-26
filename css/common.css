@@ -45,6 +45,17 @@ body {
 /* - - - - - - - - - 진욱 - - - - - - - - - */
 /* typography */
 
+/* 
+typography는 Bootstrap 위계를 따름
+
+<p class="h1">h1. Bootstrap heading</p>
+<p class="h2">h2. Bootstrap heading</p>
+<p class="h3">h3. Bootstrap heading</p>
+<p class="h4">h4. Bootstrap heading</p>
+<p class="h5">h5. Bootstrap heading</p>
+<p class="h6">h6. Bootstrap heading</p>
+*/
+
 body{
   font-family:'Inter', sans-serif;
   color:var(--main-text);
@@ -68,12 +79,27 @@ body{
   line-height: 30px;
 }
 
-.contents-title {
+/* Main title */
+.h1{
   color: var(--black);
   line-height: 40px;
   font-weight: bold;
   margin-bottom: 60px;
 }
+/* Youtube sub-title */
+.h3{
+  line-height: calc(var(--lh) * 2);
+  font-weight: bold;
+  margin-top: var(--lh);
+}
+/* Card title */
+.h5 {
+  font-weight: bold;
+  line-height: var(--lh);
+  margin-bottom: 12px;
+}
+
+/*- - - - - - - - - - - - - - - - - - - - - - - - - - - - - -*/
 
 /* qna */
 
@@ -155,10 +181,6 @@ body{
   transform: translateY(-8px);
   box-shadow: var(--large-shadow);
 }
-
-
-
-
 
 
 /* 질문 유형별 확인 섹션 스타일링 */
@@ -461,12 +483,13 @@ header .sub-menus li a{
 
 
 /*푸터*/
-.footer {
+footer {
   background: #fff;
   color: var(--main-text);
   font-size: 14px;
   line-height: 24px;
-  border-top: 0.5px solid var(--sub-text);
+  border-top: 0.1px solid #cfcfcf;
+  margin-top: calc(var(--lh) * 6);
 }
 
 
@@ -476,7 +499,7 @@ header .sub-menus li a{
   align-items: center;
   flex-wrap: wrap;
   gap: 24px;
-  border-bottom: 0.5px solid var(--sub-text);
+  border-bottom: 0.1px solid #cfcfcf;
   padding: 24px 0;
   margin-bottom: 72px;
 }
