@@ -98,11 +98,11 @@
   border-radius: 16px;
   box-shadow:var(--small-shadow);
   overflow: hidden;
-  flex-shrink: 0;
   width:312px;
   display: flex;
   flex-direction: column;
   transition: box-shadow 0.2s;
+ 
 }
 
 .travel-card:hover {

@@ -534,7 +534,6 @@ footer {
   font-size: 14px;
   line-height: 24px;
   border-top: 0.1px solid #cfcfcf;
-  margin-top: calc(var(--lh) * 6);
 }
 
 
@@ -678,7 +677,6 @@ footer {
 .footer_copy p {
   color: var(--sub-text);
   font-size: 12px;
-  font-weight: 600;
 }
 
 
