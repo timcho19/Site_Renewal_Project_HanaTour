@@ -21,5 +21,4 @@ $('.all_menu_btn').on('click', function(e) {
     $('.sign_btn').removeClass('active');
   }
 
-
 });
