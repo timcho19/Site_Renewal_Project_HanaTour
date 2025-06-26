@@ -359,6 +359,7 @@ header.sub_header{
   z-index: 2;
   color: var(--main-text);
   box-shadow: var(--small-shadow);
+  background-color: var(--white);
 }
 header img{
   width: 18px;
