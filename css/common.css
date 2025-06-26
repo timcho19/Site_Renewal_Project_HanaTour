@@ -398,6 +398,13 @@ header nav h1 a{
   background:url(../image/logo_color.png) no-repeat;
 
 }
+.main-menus li a{
+  transition: color 0.3s;
+}
+
+.main-menus li:hover a{
+  color:var(--primary);
+}
 
 
 
