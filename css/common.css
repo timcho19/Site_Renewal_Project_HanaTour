@@ -344,7 +344,7 @@ body {
 
 header {
   width: 100%;
-  /* background: rgba(0,0,0,0.15); */
+  background: rgba(0,0,0,0.08);
   box-sizing: border-box;
   position: relative;
   z-index: 2;
@@ -433,6 +433,7 @@ header .sub-menus li a{
 .all_menu_dropdown .dropdown_icons{
   display: flex;
   justify-content: space-between;
+  margin-bottom: 72px;
 }
 
 .all_menu_dropdown .dropdown_icons li a{
@@ -442,6 +443,10 @@ header .sub-menus li a{
   align-items: center;
   gap:12px;
 
+}
+.dropdown_lists{
+  display: flex;
+  justify-content: space-between;
 }
 
 
