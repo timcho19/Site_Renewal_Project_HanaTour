@@ -421,7 +421,6 @@ header .sub-menus li a{
 }
 
 .all_menu_dropdown {
-  display: none;
   position: absolute;
   top: 62px; /* 헤더 바로 아래 */
   left: 0;
@@ -431,10 +430,16 @@ header .sub-menus li a{
   z-index: 100;
   border-bottom: 1px solid #e0e0e0;
   padding: 72px 0;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease, visibility 0s linear 0.3s;
 }
 
 .all_menu_dropdown.active {
-  display: block;
+  opacity: 1;
+  visibility: visible;
+  transition: opacity 0.3s ease, visibility 0s linear 0s;
+
 }
 
 .all_menu_dropdown .dropdown_icons{
