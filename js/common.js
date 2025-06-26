@@ -20,6 +20,5 @@ $('.all_menu_btn').on('click', function(e) {
     $('header').removeClass('sub_header').addClass('main_header');
     $('.sign_btn').removeClass('active');
   }
-  
 
 });
