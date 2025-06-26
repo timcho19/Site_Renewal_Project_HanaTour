@@ -285,18 +285,34 @@
   font-weight: 700;
 }
 
-.stories{
-  display: flex;
-  gap:90px
+.youtube_container{
+  width:3720px;
+  margin: 0 auto;
+
 }
 .story_wrapper{
   position: relative;
-  width:3720px;
-  height: 617px;
+  overflow: hidden;
+  padding-top: 830px;
+}
+.stories{
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 200px;
+}
+.story {
+  
+  width:1142px;
+  /* 16:9 비율 (9/16 = 0.5625) */
+  height: 200px;
+  position: absolute;
+  
 }
 .controls{
   position: absolute;
-  right: calc(50%);
+  bottom: 0;
+  left: 50%;
   
 }
 .prev_btn{
@@ -306,12 +322,6 @@
 .next_btn{
   width: 52px;
   margin-left: 20px;
-}
-.story {
-  
-  width:1142px;
-  /* 16:9 비율 (9/16 = 0.5625) */
-  
 }
 .story > div{
   position: relative;
