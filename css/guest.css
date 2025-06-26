@@ -67,7 +67,21 @@
   margin-bottom: 12px;
 }
 
+.gusest_search_btn {
+  font-weight: bold;
+  color: black;
+  border: 1px solid #ccc;
+  border-radius: 0.375rem;
+  background-color: white;
+  box-shadow: none;
+}
 
+.gusest_search_btn:hover {
+  background-color: #712cf9;
+  color: white;
+  border-color: #712cf9;
+  transition: .3s;
+}
 
 footer{
   margin-top: calc(var(--lh) * 5);

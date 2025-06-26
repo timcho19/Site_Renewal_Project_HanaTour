@@ -19,7 +19,8 @@
 .kakao_btn,
 .naver_btn,
 .login_btn,
-.signup_btn{
+.signup_btn,
+.gusest_search_btn{
   width: 400px;
   height: 56px;
   width: 100%;
