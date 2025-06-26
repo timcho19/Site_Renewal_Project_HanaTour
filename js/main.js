@@ -70,3 +70,7 @@ let timer = setInterval(nextSlide, interval);
 //   function() { clearInterval(timer); },
 //   function() { timer = setInterval(nextSlide, interval); }
 // );
+
+
+
+

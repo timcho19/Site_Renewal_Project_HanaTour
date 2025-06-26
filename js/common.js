@@ -7,9 +7,7 @@ $('.top_btn').on('click', function() {
 
 });
 
-
-
-//헤더 드롭다운
+//메인페이지 헤더 드롭다운
 $('.all_menu_btn').on('click', function(e) {
   e.preventDefault();
   $('.all_menu_dropdown').toggleClass('active');
