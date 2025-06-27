@@ -87,3 +87,21 @@ $('.all_menu_btn').on('click', function(e) {
   }
 
 });
+/* - - - - - - tab filter - - - - - - -*/
+let tabBtns = $('.tab_btns'),
+    travelCards = $('.travel-card');
+    
+    
+    tabBtns.click(function(){
+    tabBtns.removeClass('active');
+    $(this).addClass('active');
+
+    let dataFilter = $(this).attr('data-filter');
+    console.log(dataFilter);
+
+    travelCards.hide();
+
+    $(dataFilter).show();
+  
+  });
+
