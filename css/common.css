@@ -375,11 +375,10 @@ body {
 
 header {
   width: 100%;
-  background: rgba(0,0,0,0.08);
+  background: rgba(0,0,0,0.2);
   box-sizing: border-box;
   position: relative;
   z-index: 2;
-  
 }
 
 
@@ -390,7 +389,7 @@ header.sub_header{
   z-index: 2;
   color: var(--main-text);
   box-shadow: var(--small-shadow);
-  background-color: var(--white);
+  background-color:#fff;
 }
 header img{
   width: 18px;
@@ -428,6 +427,9 @@ header nav h1 a{
 .sub_header nav h1 a{
   background:url(../image/logo_color.png) no-repeat;
 
+}
+.all_menu_btn.active{
+  color:var(--primary);
 }
 .main-menus li a{
   transition: color 0.3s;
