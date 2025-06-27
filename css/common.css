@@ -173,7 +173,6 @@ body{
   box-sizing: border-box;
   border-radius: 20px;
   border:var(--sub-text) solid 1px ;
-  margin:48px 24px;
 }
 
 .services_grid {
@@ -181,6 +180,7 @@ body{
   grid-template-columns: repeat(4, 1fr);
   gap: 40px;
   justify-items: center;
+  padding: 48px 24px;
 }
 
 
