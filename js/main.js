@@ -87,9 +87,11 @@ $('.all_menu_btn').on('click', function(e) {
   }
 
 });
+
+
 /* - - - - - - tab filter - - - - - - -*/
 let tabBtns = $('.tab_btns'),
-    travelCards = $('.travel-card');
+    travelCards = $('.special-travel .travel-card');
     
     
     tabBtns.click(function(){
@@ -105,3 +107,10 @@ let tabBtns = $('.tab_btns'),
   
   });
 
+
+/* - - - - - - best 여행지 무한 슬라이드 - - - - - */
+let monthlyTravel = $('.monthly-travel'),
+    monthlySlides = monthlyTravel.find('.weather-cards'),
+    monthlyCards = monthlySlides.find('.card')
+
+    
