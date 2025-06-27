@@ -223,12 +223,19 @@ button{
   display: inline-block;
 }
 
+.tab_btns:hover{
+  color: var(--primary);
+  border: 1px solid var(--primary);
+  transition: .3s ease-in;
+}
+
 .tab_btns.active{
   color: var(--primary);
   border: 1px solid  rgba(84,9, 218, .1);
   background-color: rgba(84,9, 218, .3);
   box-shadow: var(--small-shadow);
   font-weight: bold;
+  transition: .3s ease-out;
 }
 
 .sign_btn{
