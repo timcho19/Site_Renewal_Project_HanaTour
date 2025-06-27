@@ -152,16 +152,28 @@ body{
 .faq_section{
   margin-top: 216px;
 }
+.row{
+  padding-right:0;
+  padding-left:0;
+}
+.faq_section .container{
+  padding-right:0;
+  padding-left:0;
+}
 
 /*  서비스 그리드 섹션  */
 
 
-
+.services_section{
+   margin-top: 216px;
+   margin-bottom: 216px;
+}
 
 .services_container {
-  margin-top: 216px;
+  box-sizing: border-box;
   border-radius: 20px;
-  padding: 24px;
+  border:var(--sub-text) solid 1px ;
+  margin:48px 24px;
 }
 
 .services_grid {
