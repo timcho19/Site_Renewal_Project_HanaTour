@@ -734,3 +734,23 @@ footer {
  
 }
 
+
+
+/*likes*/
+.likes{
+  position: relative;
+}
+.likes .likes_ct{
+  display: none;
+ width: 18px;
+height: 18px;
+text-align: center;
+border-radius: 50%;
+line-height: 18px;
+font-size: 14px;
+position: absolute;
+bottom: -10px;
+left:100%;
+color: #fff;
+background: rgba(102, 102, 102, .6);
+}

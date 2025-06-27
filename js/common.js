@@ -12,3 +12,20 @@ $('.top_btn').on('click', function() {
 $('.all_menu_btn').click(function(){
   $(this).toggleClass('active');
 })
+
+
+
+//likes 버튼 클릭스 할일
+
+
+$('.likes').click(function(){
+  $(this).find('path').toggleClass('active')
+  $('.likes_ct').fadeIn();
+  $('.likes_ct').text($('.likes path.active').length);
+
+  if($('.likes path.active').length === 0){
+    $('.likes_ct').fadeOut();
+  }
+
+});
+

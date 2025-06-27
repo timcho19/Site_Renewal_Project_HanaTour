@@ -67,6 +67,11 @@
 }
 
 
+/* like 버튼*/
+
+.likes path.active{
+  fill:rgb(255, 87, 87);
+}
 
 /*투어리스트 섹션*/
 
