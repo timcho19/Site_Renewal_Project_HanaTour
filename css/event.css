@@ -1,0 +1,49 @@
+.event_mainbanner{
+  width:100%;
+}
+.event_mainbanner img{
+  width: 100%;
+}
+
+.event{
+  padding: 96px 0;
+}
+.event .h1{
+  text-align: center;
+}
+
+
+
+.tab{
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: var(--lh);
+  gap: 12px;
+}
+
+
+.event_lists{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  row-gap:48px;
+}
+
+.event_lists .event_list{
+  max-width: 424px;
+  background: #fff;
+  box-shadow: var(--small-shadow);
+  box-sizing: border-box;
+  border-radius: 15px;
+  
+}
+.event_lists .event_list .event_desc{
+  padding: 16px 10px;
+}
+.event_lists .event_list img{
+  width: 100%;
+}
+
+
+
+
