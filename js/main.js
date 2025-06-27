@@ -130,9 +130,9 @@ function slideLayout(cw, cm){
   })
 }
 
-function moveCard(num){
-  lef newLeft = -num * 
-}
+// function moveCard(num){
+//   lef newLeft = -num * 
+// }
 
 
     
