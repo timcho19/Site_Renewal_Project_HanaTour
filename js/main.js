@@ -109,8 +109,30 @@ let tabBtns = $('.tab_btns'),
 
 
 /* - - - - - - best 여행지 무한 슬라이드 - - - - - */
-let monthlyTravel = $('.monthly-travel'),
-    monthlySlides = monthlyTravel.find('.weather-cards'),
-    monthlyCards = monthlySlides.find('.card')
+let monthlyWrapper = $('.monthly-travel'),
+    monthlyCards = monthlyWrapper.find('.weather-cards'),
+    monthlyCard = monthlyCards.find('.card'),
+    cardWidth = 312,
+    cardMargin = 24;
+
+    moveAmt = cardWidth + cardMargin;
+
+
+monthlyCards.prepend(monthlyCard.clone());
+
+let allCard = monthlyCards.find(monthlyCard);
+
+function slideLayout(cw, cm){
+  allCard.each(function(idx){
+    let newLeft = idx * (cw + cm);
+
+    $(this).css({left:newLeft, widht:cw});
+  })
+}
+
+function moveCard(num){
+  lef newLeft = -num * 
+}
+
 
     
