@@ -200,9 +200,12 @@
 .shorts{
   
 }
-
+.tabstroy {
+  position: relative;
+}
 .slider-wrapper{
   position: relative;
+  overflow: hidden;
 }
 
 .contents_prev_btn,
@@ -210,6 +213,7 @@
  position: absolute;
  top: 50%;
  transform: translateY(-50%);
+ z-index: 1;;
 }
 
 .contents_prev_btn{

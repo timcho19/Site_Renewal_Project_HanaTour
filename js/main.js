@@ -106,6 +106,68 @@ let tabBtns = $('.tab_btns'),
     $(dataFilter).show();
   
   });
+/*    취향저격  컨셉따라 여행 슬라이드드     */
+
+const $wrapper = $('.slider-wrapper.special-travel');
+const $track = $wrapper.find('.travel-cards');
+const $cards = $track.children('.travel-card');
+const visibleCards = 4; 
+const cardgap= 24;
+const cardWH = $cards[0].offsetWidth + cardgap; 
+const totalOriginal = $cards.length;
+let currentIndex = visibleCards;
+let isAnimating = false;
+
+
+const $prepend = $cards.slice(-visibleCards).clone(); 
+const $append = $cards.slice(0, visibleCards).clone(); 
+$track.prepend($prepend);
+$track.append($append);
+
+const totalCards = totalOriginal + visibleCards * 2;
+
+
+$track.css({
+  width: cardWH * totalCards,
+  transform: `translateX(-${cardWH * currentIndex}px)`,
+});
+
+
+function moveSlide(dir) {
+  if (isAnimating) return;
+  isAnimating = true;
+  currentIndex += dir;
+
+  $track.css({
+    transition: 'transform 0.5s',
+    transform: `translateX(-${cardWH * currentIndex}px)`,
+  });
+
+  setTimeout(() => {
+    if (currentIndex <= visibleCards - 1) {
+      currentIndex = totalOriginal + (currentIndex - visibleCards);
+      $track.css({
+        transition: 'none',
+        transform: `translateX(-${cardWH * currentIndex}px)`,
+      });
+    } else if (currentIndex >= totalOriginal + visibleCards) {
+      currentIndex = visibleCards;
+      $track.css({
+        transition: 'none',
+        transform: `translateX(-${cardWH * currentIndex}px)`,
+      });
+    }
+    isAnimating = false;
+  }, 500);
+}
+
+
+$('.tabstroy .contents_prev_btn').click(function(){
+  moveSlide(-1);
+});
+$('.tabstroy .contents_next_btn').click(function(){
+  moveSlide(1);
+});
 
 
 /* - - - - - - best 여행지 무한 슬라이드 - - - - - */
