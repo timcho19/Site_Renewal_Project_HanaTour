@@ -176,11 +176,11 @@ let monthlyWrapper = $('.monthly-travel'),
     monthlyCard = monthlyCards.find('.card'),
     cardWidth = 312,
     cardMargin = 24;
-
-    moveAmt = cardWidth + cardMargin;
-
+    moveAmt = cardWidth + cardMargin,
+    speed = 1;
 
 monthlyCards.prepend(monthlyCard.clone());
+
 
 let allCard = monthlyCards.find(monthlyCard);
 
@@ -195,6 +195,5 @@ function slideLayout(cw, cm){
 // function moveCard(num){
 //   lef newLeft = -num * 
 // }
-
 
     

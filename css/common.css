@@ -643,7 +643,7 @@ footer {
 .footer_info p {
   margin-bottom: 8px;
   color: var(--sub-text);
-  font-size: 13px;
+  font-size: 12px;
   line-height: 24px;
 }
 
@@ -663,7 +663,12 @@ footer {
   gap: 24px;
   margin-top: calc(var(--lh) * 2);
   margin-bottom: 24px;
-  width: 80%;
+}
+
+.footer_emblem li img {
+  width: 100%;      /* li의 너비에 맞춤 */
+  max-width: 120px;  /* 최대 크기 제한 */
+  height: auto;
 }
 
 
