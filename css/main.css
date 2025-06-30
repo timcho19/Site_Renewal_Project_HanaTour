@@ -237,7 +237,6 @@
   font-size: 40px;
   line-height: 40px;
   font-weight: bold;
-  margin-bottom: 60px;
   text-align: center;
 }
 .monthly-travel .card{
@@ -252,14 +251,21 @@
   width: 48px;
   height: 48px;
 }
-
-.weather-cards{
-  width: 6240px;
-  display: flex;
-  gap: var(--lh);
-  margin-bottom: calc(var(--lh) * 2); 
+.weather-slider {
+  width: 100%;
+  overflow: hidden;
+  padding: 48px 0;
 }
+
+.weather-cards {
+  display: flex;
+  gap: 16px;
+  
+}
+
 .weather-cards .card{
+  width: 312px;
+  flex-shrink: 0;
   border-radius: 15px;
   overflow: hidden;
   border: none;
@@ -277,7 +283,8 @@
 .play_icon {
   transition: filter 0.2s ease, color 0.2s ease;
 }
-.play_btn:hover {
+.play_btn:hover,
+.play_btn.active {
   color: var(--primary); 
   opacity: 0.8;
 }
@@ -287,7 +294,8 @@
 .stop_icon {
   transition: filter 0.2s ease, color 0.2s ease;
 }
-.stop_btn:hover {
+.stop_btn:hover,
+.stop_btn.active {
   color: var(--primary); 
   opacity: 0.8;
 }

@@ -171,29 +171,80 @@ $('.tabstroy .contents_next_btn').click(function(){
 
 
 /* - - - - - - best 여행지 무한 슬라이드 - - - - - */
-let monthlyWrapper = $('.monthly-travel'),
-    monthlyCards = monthlyWrapper.find('.weather-cards'),
-    monthlyCard = monthlyCards.find('.card'),
-    cardWidth = 312,
-    cardMargin = 24;
-    moveAmt = cardWidth + cardMargin,
-    speed = 1;
+// let monthlyWrapper = $('.monthly-travel'),
+//     monthlyCards = monthlyWrapper.find('.weather-cards'),
+//     monthlyCard = monthlyCards.find('.card'),
+//     cardWidth = 312,
+//     cardMargin = 24;
+//     moveAmt = cardWidth + cardMargin,
+//     speed = 1;
 
-monthlyCards.prepend(monthlyCard.clone());
+// monthlyCards.prepend(monthlyCard.clone());
 
 
-let allCard = monthlyCards.find(monthlyCard);
+// let allCard = monthlyCards.find(monthlyCard);
 
-function slideLayout(cw, cm){
-  allCard.each(function(idx){
-    let newLeft = idx * (cw + cm);
+// function slideLayout(cw, cm){
+//   allCard.each(function(idx){
+//     let newLeft = idx * (cw + cm);
 
-    $(this).css({left:newLeft, widht:cw});
-  })
-}
+//     $(this).css({left:newLeft, widht:cw});
+//   })
+// }
 
 // function moveCard(num){
 //   lef newLeft = -num * 
 // }
 
     
+var $weatherSlider = $('.weather-cards');
+var $weatherCards = $weatherSlider.find('.card');
+var weatherCardCount = $weatherCards.length;
+var weatherCardWidth = 312;
+var weatherGap = 16;
+var weatherStep = weatherCardWidth + weatherGap;
+
+// 카드들을 복제해서 끝에 붙여 무한 롤링 구현
+$weatherCards.clone().appendTo($weatherSlider);
+
+var weatherTotalCards = $weatherSlider.find('.card').length;
+var weatherTotalWidth = weatherTotalCards * weatherStep;
+$weatherSlider.css('width', weatherTotalWidth + 'px');
+
+var weatherPos = 0;
+var weatherSpeed = 1.5; // 1px씩 이동 (원하는 속도 조절)
+var weatherIsPlaying = true;
+var weatherAnimationId;
+
+function weatherAnimate() {
+  if (!weatherIsPlaying) return;
+  weatherPos -= weatherSpeed;
+  if (Math.abs(weatherPos) >= weatherCardCount * weatherStep) {
+    // 원본 카드 전체가 지나가면 위치 리셋
+    weatherPos = 0;
+  }
+  $weatherSlider.css('transform', 'translateX(' + weatherPos + 'px)');
+  weatherAnimationId = requestAnimationFrame(weatherAnimate);
+}
+
+// 시작
+weatherAnimate();
+
+const playStopbtns = $('.slides_btns button');
+
+// 재생/멈춤 버튼
+$('.play_btn').on('click', function() {
+  if (!weatherIsPlaying) {
+    playStopbtns.removeClass('active');
+    $(this).addClass('active');
+    weatherIsPlaying = true;
+    weatherAnimate();
+    
+  }
+});
+$('.stop_btn').on('click', function() {
+  playStopbtns.removeClass('active');
+  $(this).addClass('active');
+  weatherIsPlaying = false;
+  cancelAnimationFrame(weatherAnimationId);
+});
