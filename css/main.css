@@ -57,7 +57,13 @@
   opacity: 0;
   transform: translateX(-500px);
   transition: opacity 0.7s cubic-bezier(.4,0,.2,1), transform 0.7s cubic-bezier(.4,0,.2,1);
+  font-family: "Do Hyeon", sans-serif;
+ 
   
+}
+.main-title-area .main-title{
+  font-weight: 400;
+  font-style: normal;
 }
 
 .mslide.active .main-title-area {
@@ -237,7 +243,6 @@
   font-size: 40px;
   line-height: 40px;
   font-weight: bold;
-  margin-bottom: 60px;
   text-align: center;
 }
 .monthly-travel .card{
@@ -252,14 +257,21 @@
   width: 48px;
   height: 48px;
 }
-
-.weather-cards{
-  width: 6240px;
-  display: flex;
-  gap: var(--lh);
-  margin-bottom: calc(var(--lh) * 2); 
+.weather-slider {
+  width: 100%;
+  overflow: hidden;
+  padding: 48px 0;
 }
+
+.weather-cards {
+  display: flex;
+  gap: 16px;
+  
+}
+
 .weather-cards .card{
+  width: 312px;
+  flex-shrink: 0;
   border-radius: 15px;
   overflow: hidden;
   border: none;
@@ -277,7 +289,8 @@
 .play_icon {
   transition: filter 0.2s ease, color 0.2s ease;
 }
-.play_btn:hover {
+.play_btn:hover,
+.play_btn.active {
   color: var(--primary); 
   opacity: 0.8;
 }
@@ -287,7 +300,8 @@
 .stop_icon {
   transition: filter 0.2s ease, color 0.2s ease;
 }
-.stop_btn:hover {
+.stop_btn:hover,
+.stop_btn.active {
   color: var(--primary); 
   opacity: 0.8;
 }
@@ -359,8 +373,7 @@
 .controls{
   position: absolute;
   bottom: 0;
-  left: 50%;
-  
+  right: 21%;
 }
 .prev_btn{
   width: 52px;
