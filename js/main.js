@@ -249,3 +249,17 @@ $('.stop_btn').on('click', function() {
   weatherIsPlaying = false;
   cancelAnimationFrame(weatherAnimationId);
 });
+
+//마우스호버,아웃 재생 멈춤
+
+$weatherSlider.on('mouseover',function(){
+  playStopbtns.removeClass('active');
+  $('.stop_btn').addClass('active');
+  weatherIsPlaying = false;
+  cancelAnimationFrame(weatherAnimationId);
+}).on('mouseleave',function(){
+  playStopbtns.removeClass('active');
+  $('.play_btn').addClass('active');
+  weatherIsPlaying = true;
+  weatherAnimate();
+});
