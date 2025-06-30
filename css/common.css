@@ -403,10 +403,11 @@ header.sub_header{
   box-shadow: var(--small-shadow);
   background-color:#fff;
 }
-header img{
+/* header img{
   width: 18px;
   height: 18px;
-}
+} */
+
 header nav{
 
   display: flex;
