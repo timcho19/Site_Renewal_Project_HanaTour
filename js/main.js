@@ -108,9 +108,9 @@ let tabBtns = $('.tab_btns'),
   });
 /*    취향저격  컨셉따라 여행 슬라이드드     */
 
-const $wrapper = $('.slider-wrapper.special-travel');
-const $track = $wrapper.find('.travel-cards');
-const $cards = $track.children('.travel-card');
+const $wrapper = $('.slider-wrapper');
+const $track = $wrapper.find('.items');
+const $cards = $track.find('.item');
 const visibleCards = 4; 
 const cardgap= 24;
 const cardWH = $cards[0].offsetWidth + cardgap; 
@@ -162,10 +162,10 @@ function moveSlide(dir) {
 }
 
 
-$('.tabstroy .contents_prev_btn').click(function(){
+$('.item_wrapper .contents_prev_btn').click(function(){
   moveSlide(-1);
 });
-$('.tabstroy .contents_next_btn').click(function(){
+$('.item_wrapper .contents_next_btn').click(function(){
   moveSlide(1);
 });
 
