@@ -9,9 +9,6 @@ $('.top_btn').on('click', function() {
 
 //전체메뉴 클릭 시, active 추가 (컬러)
 
-$('.all_menu_btn').click(function(){
-  $(this).toggleClass('active');
-})
 
 
 
