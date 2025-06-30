@@ -57,7 +57,13 @@
   opacity: 0;
   transform: translateX(-500px);
   transition: opacity 0.7s cubic-bezier(.4,0,.2,1), transform 0.7s cubic-bezier(.4,0,.2,1);
+  font-family: "Do Hyeon", sans-serif;
+ 
   
+}
+.main-title-area .main-title{
+  font-weight: 400;
+  font-style: normal;
 }
 
 .mslide.active .main-title-area {
