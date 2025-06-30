@@ -31,12 +31,7 @@ let slideWrapper = $('.story_wrapper'),
 
       function moveSlide(num) {
         slides.stop().animate({ left: -num * moveAmt + 'px' }, 500, function () {
-          if (num >= totalCount - slideCount) {
-
-            slides.css('left', -startIdx * moveAmt + 'px');
-            currentIdx = startIdx;
-          } else if (num < slideCount) {
-
+          if (num >= totalCount - slideCount || num < slideCount) {
             slides.css('left', -startIdx * moveAmt + 'px');
             currentIdx = startIdx;
           }
