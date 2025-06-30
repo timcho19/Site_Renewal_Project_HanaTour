@@ -54,6 +54,13 @@
   font-size: 0.75rem;
   color: #333;
 }
+.form-floating-custom.guest_email{
+  display: none;
+}
+
+.form-floating-custom.guest_email.active{
+  display: block;
+}
 
 .mt-4 p{
   margin-top: var(--lh);
@@ -69,14 +76,18 @@
 
 .input_desc{
   width: 100%;
-  height: 56px;
+  height: 100%;
   color: var(--sub-text);
   border: 1px solid rgba(175,175,175,0.3);
   background: rgba(175,175,175,0.1);
   border-radius: 6px;
   font-size: 12px;
-  line-height: 56px;
+  line-height: 35px;
   padding-left: 12px;
+}
+
+.input_desc span{
+  font-weight: bold;
 }
 
 .gusest_search_btn {
@@ -97,4 +108,9 @@
 
 footer{
   margin-top: calc(var(--lh) * 5);
+}
+
+.form-check-input:checked{
+    background-color: var(--primary);
+    border-color: var(--primary);
 }
