@@ -79,6 +79,7 @@ let timer = setInterval(nextSlide, interval);
 $('.all_menu_btn').on('click', function(e) {
   e.preventDefault();
   $('.all_menu_dropdown').toggleClass('active');
+  if($('header').css('position') !== 'fixed'){
   if( $('header').hasClass('main_header')){
     $('header').removeClass('main_header').addClass('sub_header');
     $('.sign_btn').addClass('active');
@@ -86,6 +87,7 @@ $('.all_menu_btn').on('click', function(e) {
     $('header').removeClass('sub_header').addClass('main_header');
     $('.sign_btn').removeClass('active');
   }
+}
 });
 
 
@@ -170,31 +172,6 @@ $('.tabstroy .contents_next_btn').click(function(){
 });
 
 
-/* - - - - - - best 여행지 무한 슬라이드 - - - - - */
-// let monthlyWrapper = $('.monthly-travel'),
-//     monthlyCards = monthlyWrapper.find('.weather-cards'),
-//     monthlyCard = monthlyCards.find('.card'),
-//     cardWidth = 312,
-//     cardMargin = 24;
-//     moveAmt = cardWidth + cardMargin,
-//     speed = 1;
-
-// monthlyCards.prepend(monthlyCard.clone());
-
-
-// let allCard = monthlyCards.find(monthlyCard);
-
-// function slideLayout(cw, cm){
-//   allCard.each(function(idx){
-//     let newLeft = idx * (cw + cm);
-
-//     $(this).css({left:newLeft, widht:cw});
-//   })
-// }
-
-// function moveCard(num){
-//   lef newLeft = -num * 
-// }
 
     
 var $weatherSlider = $('.weather-cards');
@@ -262,3 +239,31 @@ $weatherSlider.on('mouseover',function(){
   weatherIsPlaying = true;
   weatherAnimate();
 });
+
+
+//두번째 섹션부터 상단에 헤더 따라다니기
+
+const scondSectionTop = $('.travel-container').offset().top;
+
+$(window).scroll(function(){
+  var scramt = $(window).scrollTop();
+  if(scramt > scondSectionTop){
+    $('header').removeClass('main_header').addClass('sub_header');
+    $('.sign_btn').addClass('active');
+    $('header').css({
+      position:'fixed',
+      top:0,
+      left:0
+    })
+  }else{
+    $('.all_menu_dropdown').removeClass('active');
+    $('header').removeClass('sub_header').addClass('main_header');
+    $('.sign_btn').removeClass('active');
+    $('header').css({
+      position:'relative',
+      top:0,
+      left:0
+    })
+  }
+
+})
