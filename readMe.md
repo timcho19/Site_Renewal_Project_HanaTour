@@ -18,7 +18,8 @@
 
 - **Design**: Figma
 - **Frontend**: HTML5, CSS3, JavaScript, jQuery
-
+- **programs**: Figma, Vs-Code, Xampp
+- **Backend** : PHP, MySql
 
 
 ## 👥 주요 구현 화면 및 담당자
