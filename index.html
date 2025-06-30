@@ -302,7 +302,7 @@
       </div>
     </div> -->
     
-    <div class="slider-wrapper">
+    <div class="slider-wrapper slideshow1">
       <div class="travel-cards-container">
         <div class="travel-cards">
             <div class="travel-card">
@@ -420,7 +420,7 @@
     <p class="h1 contents-title">
       바로 떠나는 세계여행 <span>✈️</span>
     </p>
-    <div class="slider-wrapper" id="sliderWrapper">
+    <div class="slider-wrapper slideshow2" id="sliderWrapper">
       <div class="slide">
         <div class="shorts-content">
           <p class="shorts">
@@ -468,7 +468,7 @@
       <button class="tab_btns" data-filter=".family">#효도여행</button>
       <button class="tab_btns" data-filter=".mood">#감성여행</button>
     </div>
-    <div class="slider-wrapper special-travel">
+    <div class="slider-wrapper special-travel slideshow3">
       <div class="travel-cards-container">
       <div class="travel-cards">
           <div class="travel-card special">
@@ -921,6 +921,14 @@
           </svg>
       </button>
     </div>
+
+    <script type="module">
+      import slideshow from 'js/main.js'; 
+
+      slideshow('.slideshow1');
+      slideshow('.slideshow2');
+      slideshow('.slideshow3');
+  </script>
     <script src="js/main.js"></script>
     <script src="js/common.js"></script>
   </body>

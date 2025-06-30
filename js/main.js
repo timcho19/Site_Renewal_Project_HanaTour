@@ -105,6 +105,8 @@ let tabBtns = $('.tab_btns'),
   });
 /*    취향저격  컨셉따라 여행 슬라이드드     */
 
+const slideshow = function (target) {
+
 const $wrapper = $('.travel-cards-container');
 const $track = $wrapper.find('.travel-cards');
 const $cards = $track.children('.travel-card');
@@ -165,7 +167,8 @@ $('.slider-wrapper .contents_prev_btn').click(function(){
 $('.slider-wrapper .contents_next_btn').click(function(){
   contentSlide(1);
 });
-
+}
+export default slideshow;
 
 
     
