@@ -259,7 +259,12 @@ button{
   line-height: var(--lh);
   display: inline-block;
 }
-
+.sign_btn.active{
+  color: var(--white);
+  background: var(--primary);
+  border: 1px solid var(--primary);
+  box-shadow: var(--small-shadow);
+}
 .sign_btn:hover{
   color: var(--white);
   background: var(--primary);
