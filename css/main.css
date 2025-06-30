@@ -137,7 +137,6 @@
 
 .card-content {
   padding: 16px 10px;
-  flex: 1;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -193,6 +192,7 @@
   border-radius: 15px;
   box-shadow: var(--small-shadow);
   position: relative;
+  height: 240px;
 }
 
 .shorts-content{
@@ -206,12 +206,12 @@
 .shorts{
   
 }
-.item_wrapper {
+.travel-cards-container {
   position: relative;
+  overflow: hidden;
 }
 .slider-wrapper{
   position: relative;
-  overflow: hidden;
 }
 
 .contents_prev_btn,
@@ -366,7 +366,6 @@
   
   width:1142px;
   /* 16:9 비율 (9/16 = 0.5625) */
-  height: 200px;
   position: absolute;
   
 }
@@ -383,6 +382,11 @@
   width: 52px;
   margin-left: 20px;
 }
+.prev_btn circle:hover,
+.next_btn circle:hover{
+  border-color: var(--primary);
+}
+
 .story > div{
   position: relative;
   padding-bottom: 56.25%;
