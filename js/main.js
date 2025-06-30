@@ -6,6 +6,7 @@ let slideWrapper = $('.story_wrapper'),
                 slideWidth = 1142,
                 slideMargin = 90,
                 moveAmt = slideWidth + slideMargin,
+                halfAmt = slideWidth/3;
                 prevBtn = slideWrapper.find('.controls .prev_btn'),
                 nextBtn = slideWrapper.find('.controls .next_btn');
 
@@ -18,7 +19,7 @@ let slideWrapper = $('.story_wrapper'),
     let totalCount = allSlide.length;
 
     allSlide.each(function (idx) {
-        $(this).css({ left: idx * moveAmt + 'px' });
+        $(this).css({ left: idx * moveAmt + halfAmt + 'px' });
       });
     
       slides.css('width', moveAmt * totalCount + 'px');
@@ -133,7 +134,7 @@ $track.css({
 });
 
 
-function moveSlide(dir) {
+function contentSlide(dir) {
   if (isAnimating) return;
   isAnimating = true;
   currentIndex += dir;
@@ -163,10 +164,10 @@ function moveSlide(dir) {
 
 
 $('.tabstroy .contents_prev_btn').click(function(){
-  moveSlide(-1);
+  contentSlide(-1);
 });
 $('.tabstroy .contents_next_btn').click(function(){
-  moveSlide(1);
+  contentSlide(1);
 });
 
 
@@ -176,7 +177,7 @@ let monthlyWrapper = $('.monthly-travel'),
     monthlyCard = monthlyCards.find('.card'),
     cardWidth = 312,
     cardMargin = 24;
-    moveAmt = cardWidth + cardMargin,
+    moveAmount = cardWidth + cardMargin,
     speed = 1;
 
 monthlyCards.prepend(monthlyCard.clone());

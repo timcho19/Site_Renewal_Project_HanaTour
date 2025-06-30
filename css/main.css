@@ -359,8 +359,7 @@
 .controls{
   position: absolute;
   bottom: 0;
-  left: 50%;
-  
+  right: 21%;
 }
 .prev_btn{
   width: 52px;

@@ -295,6 +295,10 @@ button{
   margin-bottom: var(--lh);
 }
 
+.contact .service_check:hover{
+  text-decoration: underline;
+}
+
 
 /* badge */
 .review{
@@ -543,7 +547,7 @@ footer {
   gap: 36px;
   border-bottom: 0.1px solid #cfcfcf;
   padding: var(--lh) 0;
-  margin-bottom: calc(var(--lh) * 2);
+  /*margin-bottom: calc(var(--lh) * 2);*/
 }
 
 .footer_nav a {
@@ -563,11 +567,10 @@ footer {
 
 
 .footer_contacts {
-  margin: 48px 0;
+  margin: 24px 0;
   display: flex;
   flex-wrap: wrap;
   gap: 40px;
-  margin-bottom: 48px;
 }
 
 
