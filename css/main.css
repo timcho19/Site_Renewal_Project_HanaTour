@@ -214,6 +214,9 @@
   position: relative;
 }
 
+.slider-container{
+  padding-bottom: 12px;
+}
 .contents_prev_btn,
 .contents_next_btn{
  position: absolute;
