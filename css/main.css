@@ -100,6 +100,7 @@
   display: flex;
   gap:24px;
   position: relative;
+  padding-bottom: 10px;
   
 }
 
@@ -172,12 +173,10 @@
 /* 상품 슬라이드
 */
 
-.travel-slider-container {
-  position: relative;
-  width: 1320px;
-  margin: 0 auto;
-  overflow: hidden;
-}
+
+
+
+
 
 
 
@@ -203,15 +202,15 @@
   border-radius: 15px;
   overflow: hidden;
 }
-.shorts{
-  
-}
+
 .travel-cards-container,.slider-container {
   position: relative;
   overflow: hidden;
+  padding: 0 20px; /* 좌우 그림자 공간 확보 (그림자 크기에 맞게 조정) */
 }
 .slider-wrapper{
   position: relative;
+  margin: 0 -20px;
 }
 
 .slider-container{
