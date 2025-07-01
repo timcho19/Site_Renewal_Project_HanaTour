@@ -7,6 +7,14 @@
 .sub_header{
   margin-bottom: calc(var(--lh) * 5);
 }
+.side-menus>li{
+  line-height: 16px;
+}
+
+.side-menus img{
+  width: 16px;
+  height: 16px;
+}
 .logo{
   text-align: center;
   margin-bottom: calc(var(--lh) * 3);

@@ -7,6 +7,14 @@
 .sub_header{
   margin-bottom: calc(var(--lh) * 5);
 }
+.side-menus>li{
+  line-height: 16px;
+}
+
+.side-menus img{
+  width: 16px;
+  height: 16px;
+}
 
 /* 로고 */
 .logo {
@@ -54,10 +62,13 @@
   font-size: 0.75rem;
   color: #333;
 }
+
+.form-floating-custom.guest_phone,
 .form-floating-custom.guest_email{
   display: none;
 }
 
+.form-floating-custom.guest_phone.active,
 .form-floating-custom.guest_email.active{
   display: block;
 }

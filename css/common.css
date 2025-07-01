@@ -429,6 +429,16 @@ header nav ul{
 header nav .side-menus{
   gap:24px;
 }
+
+.side-menus>li{
+  line-height: 16px;
+}
+
+.side-menus img{
+  width: 16px;
+  height: 16px;
+}
+
 header nav h1 a{
   display: block;
   width:123px;
