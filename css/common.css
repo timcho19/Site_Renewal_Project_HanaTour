@@ -535,7 +535,25 @@ header .sub-menus li a{
   margin-bottom: 15px;
 }
 
+/*햄버거메뉴*/
+.hamburger-menu{
+  display:none;
+}
 
+
+@media (max-width: 960px) {
+
+  .main-menus{
+    display: none;
+  }
+  .side-menus li:not(:last-child) {
+    display: none;
+  }
+  .hamburger-menu{
+    display:block;
+  }
+
+}
 
 
 
