@@ -383,9 +383,16 @@
   width: 52px;
   margin-left: 20px;
 }
-.prev_btn circle:hover,
-.next_btn circle:hover{
-  border-color: var(--primary);
+
+.prev_btn:hover svg circle,
+.next_btn:hover svg circle{
+  stroke: var(--primary);
+  transition: 0.3s;
+}
+.prev_btn:hover svg path,
+.next_btn:hover svg path{
+  fill: var(--primary);
+  stroke: var(--primary);
 }
 
 .story > div{
