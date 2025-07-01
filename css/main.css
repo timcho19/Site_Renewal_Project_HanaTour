@@ -100,6 +100,7 @@
   display: flex;
   gap:24px;
   position: relative;
+  padding-bottom: 10px;
   
 }
 
@@ -172,12 +173,10 @@
 /* 상품 슬라이드
 */
 
-.travel-slider-container {
-  position: relative;
-  width: 1320px;
-  margin: 0 auto;
-  overflow: hidden;
-}
+
+
+
+
 
 
 
@@ -205,17 +204,20 @@
   height: 555px;
   display: block;
 }
-.shorts{
-  
-}
+
 .travel-cards-container,.slider-container {
   position: relative;
   overflow: hidden;
+  padding: 0 20px; /* 좌우 그림자 공간 확보 (그림자 크기에 맞게 조정) */
 }
 .slider-wrapper{
   position: relative;
+  margin: 0 -20px;
 }
 
+.slider-container{
+  padding-bottom: 12px;
+}
 .contents_prev_btn,
 .contents_next_btn{
  position: absolute;
@@ -356,7 +358,7 @@
 .story_wrapper{
   position: relative;
   overflow: hidden;
-  padding-top: 830px;
+  padding-top: 35%;
 }
 .stories{
   position: absolute;
@@ -366,15 +368,14 @@
 }
 .story {
   
-  width:1142px;
-  /* 16:9 비율 (9/16 = 0.5625) */
+  width:800px;
   position: absolute;
   
 }
 .controls{
   position: absolute;
   bottom: 0;
-  right: 21%;
+  right: 30%;
 }
 .prev_btn{
   width: 52px;

@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="icon" href="image/favicon-16x16.png">
+  <link rel="icon" href="image/logo_favicon.svg">
   <title>하나투어 비회원 조회</title>
 
    
@@ -26,7 +26,7 @@
       </ul>
       <ul class="side-menus">
         <li><a href=""><img src="/image/vector.png"></a></li>
-        <li><a href="">로그인</a></li>
+        <li><a href="login.html">로그인</a></li>
         <li><a class="sign_btn active" href="">회원가입</a></li>
       </ul>
     </nav>
@@ -147,12 +147,18 @@
     </div>
     <form action="" method="POST">
       <div class="form-floating-custom">
-        <input type="text" id="guest_name" placeholder=" " required>
+        <input type="text" class="form-control" id="guest_name" placeholder=" " minlength="2" required>
         <label for="guest_name">이름</label>
+        <div class="invalid-feedback">
+          이름을 2자 이상 입력해주세요.
+        </div>
       </div>
       <div class="form-floating-custom">
-        <input type="text" id="guest_number" placeholder=" " required>
+        <input type="text" class="form-control" id="guest_number" placeholder=" " required>
         <label for="guest_number">예약번호</label>
+        <div class="invalid-feedback">
+          H 또는 C로 시작하는 12자리 번호를 입력해주세요.
+        </div>
       </div>
       <p class="input_desc">
         <span>📢 유의사항</span>
@@ -176,12 +182,18 @@
         </div>
         <form action="" method="POST">
           <div class="form-floating-custom guest_phone active">
-            <input type="text" id="guest_phone" placeholder=" " required>
+            <input type="tel" class="form-control" id="guest_phone" placeholder=" " pattern="[0-9]{10,11}" required>
             <label for="guest_name">연락처</label>
+            <div class="invalid-feedback">
+              (예 : 01012341234) , ‘-’ 제외 입력
+            </div>
           </div>
             <div class="form-floating-custom guest_email">
-              <input type="text" id="guest_email" placeholder=" " required>
+              <input type="email" class="form-control" id="guest_email" placeholder=" " required>
               <label for="guest_email">이메일</label>
+              <div class="invalid-feedback">
+                올바른 이메일 주소를 입력해주세요.
+              </div>
             </div>
         </form> 
       </div>

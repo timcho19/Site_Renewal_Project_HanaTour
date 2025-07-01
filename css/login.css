@@ -89,6 +89,10 @@
   color: #333;
 }
 
+.form-control:focus{
+  box-shadow: none;
+}
+
 /* 아코디언 */
 .accordion-item {
   border: none;
