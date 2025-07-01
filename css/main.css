@@ -98,8 +98,8 @@
 
 .travel-cards {
   display: flex;
-  transition: transform 0.5s;
   gap:24px;
+  position: relative;
   
 }
 
@@ -206,7 +206,7 @@
 .shorts{
   
 }
-.travel-cards-container {
+.travel-cards-container,.slider-container {
   position: relative;
   overflow: hidden;
 }

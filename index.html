@@ -304,9 +304,9 @@
     </div> -->
     
     <div class="slider-wrapper slideshow1">
-      <div class="travel-cards-container">
-        <div class="travel-cards">
-            <div class="travel-card">
+      <div class="travel-cards-container slider-container">
+        <div class="travel-cards slider-content">
+            <div class="travel-card slider-item">
               <div class="product_img">
                 <img src="image/tour1.png" alt="보홀" />
                 <button class="likes">
@@ -329,7 +329,7 @@
                 </a>
               </div>
             </div>
-            <div class="travel-card">
+            <div class="travel-card slider-item">
               <div class="product_img">
                 <img src="image/tour2.png" alt="일본 오카야마" />
                 <button class="likes">
@@ -352,7 +352,7 @@
                 </a>
               </div>
             </div>
-            <div class="travel-card">
+            <div class="travel-card slider-item">
               <div class="product_img">
                 <img src="image/tour3.png" alt="베트남 푸꾸옥" />
                 <button class="likes">
@@ -375,7 +375,7 @@
                 </a>
               </div>
             </div>
-            <div class="travel-card">
+            <div class="travel-card slider-item">
               <div class="product_img">
                 <img src="image/tour4.png" alt="코타키나발루" />
                 <button class="likes">
@@ -422,21 +422,21 @@
       바로 떠나는 세계여행 <span>✈️</span>
     </p>
     <div class="slider-wrapper slideshow2" id="sliderWrapper">
-      <div class="slide">
-        <div class="shorts-content">
-          <p class="shorts">
+      <div class="slide slider-container ">
+        <div class="shorts-content slider-content">
+          <p class="shorts slider-item">
             <iframe allowfullscreen="" frameborder="0"  src="https://www.youtube.com/embed/90pXHf6fhk8" title="YouTube video player" width="315">
             </iframe>
           </p>
-          <p class="shorts">
+          <p class="shorts slider-item">
             <iframe allowfullscreen="" frameborder="0"  src="https://www.youtube.com/embed/90pXHf6fhk8" title="YouTube video player" width="315">
             </iframe>
           </p>
-          <p class="shorts">
+          <p class="shorts slider-item">
             <iframe allowfullscreen="" frameborder="0"  src="https://www.youtube.com/embed/90pXHf6fhk8" title="YouTube video player" width="315">
             </iframe>
           </p>
-          <p class="shorts">
+          <p class="shorts slider-item">
             <iframe allowfullscreen="" frameborder="0"  src="https://www.youtube.com/embed/90pXHf6fhk8" title="YouTube video player" width="315">
             </iframe>
           </p>
@@ -470,9 +470,9 @@
       <button class="tab_btns" data-filter=".mood">#감성여행</button>
     </div>
     <div class="slider-wrapper special-travel slideshow3">
-      <div class="travel-cards-container">
-      <div class="travel-cards">
-          <div class="travel-card special">
+      <div class="travel-cards-container  slider-container">
+      <div class="travel-cards slider-content">
+          <div class="travel-card special  slider-item">
             <div class="product_img">
               <img src="image/tour1.png" alt="보홀" />
               <button class="likes">
@@ -495,7 +495,7 @@
               </a>
             </div>
           </div>
-          <div class="travel-card special">
+          <div class="travel-card special slider-item">
             <div class="product_img">
               <img src="image/tour2.png" alt="일본 오카야마" />
               <button class="likes">
@@ -518,7 +518,7 @@
               </a>
             </div>
           </div>
-          <div class="travel-card special">
+          <div class="travel-card special slider-item">
             <div class="product_img">
               <img src="image/tour3.png" alt="푸꾸옥" />
               <button class="likes">
@@ -541,7 +541,7 @@
               </a>
             </div>
           </div>
-          <div class="travel-card special">
+          <div class="travel-card special slider-item">
             <div class="product_img">
               <img src="image/tour4.png" alt="코타키나발루" />
               <button class="likes">
@@ -923,14 +923,14 @@
       </button>
     </div>
 
-    <script type="module">
-      import slideshow from 'js/main.js'; 
-
-      slideshow('.slideshow1');
-      slideshow('.slideshow2');
-      slideshow('.slideshow3');
-  </script>
     <script src="js/main.js"></script>
     <script src="js/common.js"></script>
+    <script type="module">
+      import slideshow from '/js/slide.js'; 
+
+      slideshow('.slideshow1');
+      slideshow('.slideshow2', 30);
+      slideshow('.slideshow3');
+    </script>
   </body>
   </html>
