@@ -3,10 +3,10 @@ let slideWrapper = $('.story_wrapper'),
     slide = slides.find('.story'),
     currentIdx = 0,
     slideCount = slide.length,
-    slideWidth = 1142,
-    slideMargin = 90,
+    slideWidth = 800,
+    slideMargin = 100,
     moveAmt = slideWidth + slideMargin,
-    halfAmt = slideWidth/3;
+    halfAmt = slideWidth/1.5;
     prevBtn = slideWrapper.find('.controls .prev_btn'),
     nextBtn = slideWrapper.find('.controls .next_btn');
 

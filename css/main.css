@@ -357,7 +357,7 @@
 .story_wrapper{
   position: relative;
   overflow: hidden;
-  padding-top: 830px;
+  padding-top: 35%;
 }
 .stories{
   position: absolute;
@@ -367,15 +367,14 @@
 }
 .story {
   
-  width:1142px;
-  /* 16:9 비율 (9/16 = 0.5625) */
+  width:800px;
   position: absolute;
   
 }
 .controls{
   position: absolute;
   bottom: 0;
-  right: 21%;
+  right: 30%;
 }
 .prev_btn{
   width: 52px;
