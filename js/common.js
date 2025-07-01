@@ -26,3 +26,12 @@ $('.likes').click(function(){
 
 });
 
+//헤더 햄버거 버튼 클릭시
+const aside = $('aside');
+const asideBtn = $('.hamburger-menu');
+
+
+asideBtn.click(function(){
+  
+  aside.addClass('active')
+});
