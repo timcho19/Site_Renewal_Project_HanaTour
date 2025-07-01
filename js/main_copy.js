@@ -250,78 +250,26 @@ $weatherSlider.on('mouseover',function(){
 });
 
 
-/* - - - - - 날씨 API - - - - - -
-let result;
+var swiper = new Swiper(".shorts", {
+  slidesPerView: 4,
+  spaceBetween: 15,
+  breakpoints: {
+    640: {
+      slidesPerView: 2,
+      spaceBetween: 20,
+    },
+    768: {
+      slidesPerView: 4,
+      spaceBetween: 40,
+    },
+    1024: {
+      slidesPerView: 5,
+      spaceBetween: 50,
+    },
+  },
+});
+/*
+const swiperSlide = $('.swiper-slide')
 
-const getWeather = (cityName) => {
-  fetch(`https://api.openweathermap.org/data/2.5/forecast?q=${cityName}&appid=b799259d92c437e1d782b0cc2d7e2238&units=metric&lang=kr`)
-    .then(res => res.json())
-    .then(data => {
-      const list = data.list;
-
-      // 오늘 날짜 (현지 시간 기준으로 조정 필요할 수도 있음)
-      const today = new Date().toISOString().split('T')[0];
-
-      // 오늘 날짜에 해당하는 데이터만 필터링
-      const todayData = list.filter(item => item.dt_txt.startsWith(today));
-
-      // 최고 / 최저 기온 구하기
-      const maxTemp = Math.max(...todayData.map(item => item.main.temp_max)).toFixed(1);
-      const minTemp = Math.min(...todayData.map(item => item.main.temp_min)).toFixed(1);
-      
-      // 가장 많이 등장한 날씨 상태 선택 (예: 흐림, 맑음 등)
-      const weatherFrequency = {};
-      todayData.forEach(item => {
-        const desc = item.weather[0].description;
-        weatherFrequency[desc] = (weatherFrequency[desc] || 0) + 1;
-      });
-      const mainWeather = Object.entries(weatherFrequency).sort((a, b) => b[1] - a[1])[0][0];
-      
-      // 대표 아이콘 (첫 번째 시간대의 아이콘 사용)
-      const icon = todayData[0].weather[0].icon;
-
-      result = {
-        city: data.city.name,
-        date: today,
-        maxTemp,
-        minTemp,
-        mainWeather,
-        icon
-      };
-      console.log(result)
-
-      const $weatherInfo = $(`
-        <div class="card">
-          <div class="card-body">
-            <img src="/image/${result.city}.png" alt="">
-            <p class="h5">${result.city}의 날씨를 확인해보세요!</p>
-            <div class="weather-info">
-                <img src="https://openweathermap.org/img/wn/${result.icon}.png" alt="${result.mainWeather}">
-              <p class="weather">
-                최고 <span class="hightemp">${result.maxTemp}</span>도 /
-                최저 <span class="lowtemp">${result.minTemp}</span>도 기온으로
-                오늘의 날씨는 ${result.mainWeather}!
-              </p>
-            </div>
-          </div>
-        </div>
-      `);
-      console.log($weatherInfo);
-      
-      $('.weather-cards').append($weatherInfo);
-
-
-    });
-};
-
-getWeather('itary');
-getWeather('japan');
-getWeather('japan');
-getWeather('thailand');
-getWeather('shanghai');
-getWeather('singapore');
-getWeather('paris');
-getWeather('australia');
-getWeather('itary');
-getWeather('itary');
+ swiperSlide.css({width:'25%'})
 */

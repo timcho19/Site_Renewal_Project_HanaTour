@@ -1,0 +1,396 @@
+@import url('reset.css');
+@import url('common.css');
+
+
+/*WS*/
+
+.main_section {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  min-height: 700px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  overflow: hidden;
+}
+.mslides-container {
+  position: absolute;
+  top: 0; left: 0; width: 100%; height: 100%;
+  z-index: 1;
+}
+
+.mslide {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: opacity 1.5s ease;
+  background-size: cover;
+  background-position: center;
+  z-index: 1;
+}
+
+.mslide1 { background-image: url('../image/main_slide1.png'); }
+.mslide2 { background-image: url('../image/main_slide2.png'); }
+.mslide3 { background-image: url('../image/main_slide3.png'); }
+.mslide4 { background-image: url('../image/main_slide4.png'); }
+.mslide5 { background-image: url('../image/main_slide5.png'); }
+
+.mslide.active {
+  opacity: 1;
+  z-index: 2;
+}
+
+
+.main-title-area {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  color:var(--white);
+  text-shadow: 0 2px 8px rgba(0,0,0,0.3);
+  position: absolute;
+  left:102px;
+  bottom:82px;
+  opacity: 0;
+  transform: translateX(-500px);
+  transition: opacity 0.7s cubic-bezier(.4,0,.2,1), transform 0.7s cubic-bezier(.4,0,.2,1);
+  font-family: "Do Hyeon", sans-serif;
+ 
+  
+}
+.main-title-area .main-title{
+  font-weight: 400;
+  font-style: normal;
+}
+
+.mslide.active .main-title-area {
+  opacity: 1;
+  transform: translateX(0);
+  transition-delay: 0.2s;
+}
+
+
+/* like 버튼*/
+
+.likes path.active{
+  fill:rgb(255, 87, 87);
+}
+
+/*투어리스트 섹션*/
+
+.travel-container {
+  width: 1320px;
+  margin: 0 auto;
+  padding-top: calc(var(--lh) * 6);
+}
+
+.travel-banner {
+  border-radius: 15px;
+  overflow: hidden;
+  margin-bottom: calc(var(--lh) * 3);
+}
+.travel-banner img{
+  width: 100%;
+}
+
+.travel-cards {
+  display: flex;
+  gap:24px;
+  position: relative;
+  padding-bottom: 10px;
+  
+}
+
+.travel-card {
+  background: #fff;
+  border-radius: 16px;
+  box-shadow:var(--small-shadow);
+  overflow: hidden;
+  width:312px;
+  display: flex;
+  flex-direction: column;
+  transition: box-shadow 0.2s;
+}
+.product_img{
+  position: relative
+}
+
+.travel-card button{
+  position: absolute;
+  padding: 0;
+  right: 5px;
+  bottom: 5px;
+}
+
+.travel-card:hover {
+  box-shadow: 0 4px 16px rgba(0,0,0,0.12);
+}
+
+.travel-card img {
+  width: 100%;
+  object-fit: cover;
+}
+
+
+
+.card-content {
+  padding: 16px 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.card-content ul {
+  color: #333;
+}
+
+.card-content ul li {
+  margin-bottom: 4px;
+}
+.card-content div{
+  margin-top: var(--lh);
+}
+
+.card-tags {
+  margin-top: 10px;
+  font-size: 14px;
+  word-break: keep-all;
+  color: var(--sub-text);
+}
+
+
+.contents_prev_btn,
+.contents_next_btn{
+ position: absolute;
+ top: 50%;
+ transform: translateY(-50%);
+}
+
+
+/* 상품 슬라이드
+*/
+
+
+
+
+
+
+
+
+
+
+
+/* //WS */
+
+
+/* 아랑 */
+.card-content{
+  border-radius: 15px;
+  box-shadow: var(--small-shadow);
+  position: relative;
+  height: 240px;
+}
+
+
+
+.travel-cards-container,.slider-container {
+  position: relative;
+  overflow: hidden;
+  padding: 0 20px; /* 좌우 그림자 공간 확보 (그림자 크기에 맞게 조정) */
+}
+.slider-wrapper{
+  position: relative;
+  margin: 0 -20px;
+}
+
+.slider-container{
+  padding-bottom: 12px;
+}
+.swiper-wrapper{
+  overflow:hidden;
+}
+
+
+.contents_prev_btn{
+  color: var(--sub-text);
+  left: -6%;
+}
+.contents_next_btn{
+  color: var(--sub-text);
+  right: -6%;
+}
+
+.tab{
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: var(--lh);
+  gap: 12px;
+}
+
+
+.best-travel-title {
+  font-size: 40px;
+  line-height: 40px;
+  font-weight: bold;
+  text-align: center;
+}
+.monthly-travel .card{
+  width: 312px;
+  box-shadow: var(--small-shadow);
+}
+.weather-info{
+  display: flex;
+  gap: var(--lh);
+}
+.weather-info img{
+  width: 48px;
+  height: 48px;
+}
+.weather-slider {
+  width: 100%;
+  overflow: hidden;
+  padding: 48px 0;
+}
+
+.weather-cards {
+  display: flex;
+  gap: 16px;
+  
+}
+
+.weather-cards .card{
+  width: 312px;
+  flex-shrink: 0;
+  border-radius: 15px;
+  overflow: hidden;
+  border: none;
+}
+.slides_btns{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.slides_btns button{
+  color: #cfcfcf;
+}
+/* - - - - slides 재생/정지 버튼 - - - - */
+
+.play_icon {
+  transition: filter 0.2s ease, color 0.2s ease;
+}
+.play_btn:hover,
+.play_btn.active {
+  color: var(--primary); 
+  opacity: 0.8;
+}
+.play_btn:hover .play_icon {
+  filter: drop-shadow(var(--small-shadow));
+}
+.stop_icon {
+  transition: filter 0.2s ease, color 0.2s ease;
+}
+.stop_btn:hover,
+.stop_btn.active {
+  color: var(--primary); 
+  opacity: 0.8;
+}
+.stop_btn:hover .stop_icon {
+  filter: drop-shadow(var(--small-shadow));
+}
+
+
+
+
+
+
+
+
+/* 진욱 */
+.youtube {
+  position: relative;
+  z-index: 1;
+}
+
+.youtube::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 80%;
+  background: linear-gradient(
+    rgba(8, 209, 217, 0.3) 0%,
+    rgba(255, 255, 255, 0.8) 100%
+  );
+  z-index: -1;
+  pointer-events: none;
+}
+.section_title{
+  text-align: center;
+  padding: 58px 0;
+}
+
+.section_title h5{
+  line-height:24px;
+  font-weight: bold;
+}
+
+.youtube_container{
+  width:3720px;
+  margin: 0 auto;
+
+}
+.story_wrapper{
+  position: relative;
+  overflow: hidden;
+  padding-top: 35%;
+}
+.stories{
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 200px;
+}
+.story {
+  
+  width:800px;
+  position: absolute;
+  
+}
+.controls{
+  position: absolute;
+  bottom: 0;
+  right: 30%;
+}
+.prev_btn{
+  width: 52px;
+  height: 52px;
+}
+.next_btn{
+  width: 52px;
+  margin-left: 20px;
+}
+
+.prev_btn:hover svg circle,
+.next_btn:hover svg circle{
+  stroke: var(--primary);
+  transition: 0.3s;
+}
+.prev_btn:hover svg path,
+.next_btn:hover svg path{
+  fill: var(--primary);
+  stroke: var(--primary);
+}
+
+.story > div{
+  position: relative;
+  padding-bottom: 56.25%;
+  overflow: hidden;
+}
+
+.story .h5{
+  color:var(--sub-text);
+}
