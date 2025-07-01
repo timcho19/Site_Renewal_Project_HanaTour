@@ -481,6 +481,10 @@ header .sub-menus li a{
   color: var(--black);
 }
 
+header.sub_header .side-menus svg {
+  fill: black !important;
+  color: black !important; 
+}
 .all_menu_dropdown {
   position: absolute;
   top: 62px; /* 헤더 바로 아래 */
@@ -551,6 +555,9 @@ header .sub-menus li a{
   }
   .hamburger-menu{
     display:block;
+  }
+  .all_menu_dropdown{
+    display: none;
   }
 
 }
