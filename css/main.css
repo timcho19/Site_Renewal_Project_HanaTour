@@ -202,6 +202,8 @@
 .shorts-content p{
   border-radius: 15px;
   overflow: hidden;
+  height: 555px;
+  display: block;
 }
 .shorts{
   

@@ -1,15 +1,15 @@
 /*    취향저격  컨셉따라 여행 슬라이드드     */
 
-const slideshow = function (target,gap=24) {
+const slideshow = function (target) {
 
     const $wrapper = $(target);
     const $track = $wrapper.find('.slider-container');
     const $content = $wrapper.find('.slider-content');
     const $cards = $track.find('.slider-content .slider-item');
     const visibleCards = 4; 
-    const cardgap= gap;
+    const cardgap= 24;
     const cardWH = $cards.eq(0).outerWidth() + cardgap; 
-    const totalOriginal = $cards.length;
+
     let currentIndex = 0;
     let isAnimating = false;
      
