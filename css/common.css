@@ -164,24 +164,79 @@ body{
 /*  서비스 그리드 섹션  */
 
 
-.services_section{
-   margin-top: 108px;
-   margin-bottom: 108px;
+.services_section {
+  margin-top: 108px;
+  margin-bottom: 108px;
 }
 
 .services_container {
   box-sizing: border-box;
   border-radius: 20px;
-  border:#dee2e6 solid .5px ;
+  border: var(--sub-text) solid 0.5px;
+  overflow: hidden;
 }
 
 .services_grid {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 40px;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 24px;
   justify-items: center;
-  padding: 48px 24px;
+  padding: 40px 32px;
+  max-width: 1200px;
+  margin: 0 auto;
 }
+
+.services_grid .item {
+  width: 220px;
+  height: 140px;
+  border-radius: 12px;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  cursor: pointer;
+  background: var(--white);
+  border: 1px solid rgba(0, 0, 0, 0.05);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+}
+
+
+.services_grid .item:hover {
+  transform: translateY(-8px) scale(1.02);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+  border-color:  #007bff;
+}
+
+
+
+.services_grid .item img {
+  width: 48px;
+  height: 48px;
+  margin-bottom: 12px;
+  transition: transform 0.3s ease;
+  filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.1));
+}
+
+.services_grid .item:hover img {
+  transform: scale(1.1);
+}
+
+.services_grid .item div {
+  font-weight: 500;
+  color: var(--main-text);
+  font-size: 16px;
+  text-align: center;
+  line-height: 1.4;
+  margin: 0;
+  transition: color 0.3s ease;
+}
+
+.services_grid .item:hover div {
+  color: var(--main-color, #007bff);
+}
+
 
 
 
@@ -193,7 +248,7 @@ body{
   border-radius: 12px;
   transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
   cursor: pointer;
-  background: var(--white);/
+  background: var(--white);
   border: 1px solid rgba(0, 0, 0, 0.05);
   display: flex;
   flex-direction: column;
@@ -213,7 +268,6 @@ body{
   height: 48px;
   margin-bottom: 12px;
   transition:0.3s ease;
-  filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.1));
 }
 .services_grid .item:hover img {
   transform: scale(1.1);
@@ -227,7 +281,9 @@ body{
   line-height: 1.4;
   margin: 0;
   transition: color 0.3s ease;
-  
+}
+.services_grid .item:hover div {
+  color: var(--main-color, #007bff);
 }
 
 
