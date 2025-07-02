@@ -825,11 +825,11 @@ footer {
   gap: 12px;
 }
 
-.contact button {
+.contact .qna_btn {
   margin-top: var(--lh);
 }
 
-.contact button:hover{
+.contact .qna_btn:hover{
   color: var(--white);
   background-color: var(--primary);
   transition: .3s;
