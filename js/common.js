@@ -55,3 +55,14 @@ $(document).ready(function() {
     aside.removeClass('active');
   }
 });
+
+//어사이드 탭버튼 클릭시 할일
+$('.aside_btns button').click(function(){
+  $('.aside_btns button').removeClass('active');
+  $(this).addClass('active');
+  let tabIdx =  $(this).index();
+
+  $('.aside_tabs > div').hide();
+  $('.aside_tabs > div').eq(tabIdx).show();
+
+})
