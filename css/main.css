@@ -194,15 +194,44 @@
   height: 240px;
 }
 
-.shorts-content{
-  display: flex;
-  justify-content: space-between;
+
+.youtube_shorts {
+  position: relative;
 }
-.shorts-content p{
+
+.swiper {
+  width: 100%;
+  height: 500px;
+  position: relative;
+}
+
+.swiper-slide iframe {
+  width: 100%;
+  height: 100%;
   border-radius: 15px;
-  overflow: hidden;
-  height: 555px;
-  display: block;
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+  all: unset;
+  color: var(--sub-text);
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 1;
+}
+
+.swiper-button-prev::after,
+.swiper-button-next::after {
+  display: none;
+}
+
+.swiper-button-prev{
+  left: -6%;
+}
+
+.swiper-button-next{
+  right: -6%;
 }
 
 .travel-cards-container,.slider-container {
@@ -218,12 +247,13 @@
 .slider-container{
   padding-bottom: 12px;
 }
+
 .contents_prev_btn,
 .contents_next_btn{
  position: absolute;
  top: 50%;
  transform: translateY(-50%);
- z-index: 1;;
+ z-index: 1;
 }
 
 .contents_prev_btn{
@@ -403,11 +433,9 @@
   overflow: hidden;
 }
 .story iframe {
-  position: absolute;
-  top: 0;
-  left: 0;
   width: 100%;
   height: 100%;
+  border-radius: 15px;
 }
 .story .h5{
   color:var(--sub-text);
