@@ -768,10 +768,17 @@ footer {
   display: flex;
   flex-direction: column;
   gap:12px;
+  
 }
 .side_bar button{
   width:38px;
   height: 38px;
+  position: relative;
+}
+.side_bar button svg{
+  position: absolute;
+  top:0;
+  left: 0;
 }
 
 .side_bar button svg circle{
