@@ -298,7 +298,6 @@
 }
 .weather-info{
   display: flex;
-  gap: var(--lh);
 }
 .weather-info img{
   width: 48px;
@@ -323,6 +322,20 @@
   overflow: hidden;
   border: none;
 }
+
+.card-body{
+  padding: 0;
+}
+
+.card-body .weather-title{
+  font-size: 19px;
+  font-weight: bold;
+}
+
+.card-body p{
+  padding: 12px;
+}
+
 .slides_btns{
   display: flex;
   justify-content: center;

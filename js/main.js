@@ -182,6 +182,175 @@ let tabBtns = $('.tab_btns'),
 
 
 
+/* 날씨/무한슬라이드 */
+
+const cities = ['japan', 'japan', 'japan', 'thailand', 'shanghai', 'singapore', 'paris', 'australia', 'australia', 'japan'];
+let loadedCount = 0;
+
+const getWeather = (cityName) => {
+  return fetch(`https://api.openweathermap.org/data/2.5/forecast?q=${cityName}&appid=b799259d92c437e1d782b0cc2d7e2238&units=metric&lang=kr`)
+    .then(res => res.json())
+    .then(data => {
+      const list = data.list;
+      const today = new Date().toISOString().split('T')[0];
+      const todayData = list.filter(item => item.dt_txt.startsWith(today));
+      const maxTemp = Math.max(...todayData.map(item => item.main.temp_max)).toFixed(1);
+      const minTemp = Math.min(...todayData.map(item => item.main.temp_min)).toFixed(1);
+
+      const weatherFrequency = {};
+      todayData.forEach(item => {
+        const desc = item.weather[0].description;
+        weatherFrequency[desc] = (weatherFrequency[desc] || 0) + 1;
+      });
+      const mainWeather = Object.entries(weatherFrequency).sort((a, b) => b[1] - a[1])[0][0];
+      const icon = todayData[0].weather[0].icon;
+
+      const result = {
+        city: data.city.name,
+        date: today,
+        maxTemp,
+        minTemp,
+        mainWeather,
+        icon
+      };
+
+      const $weatherInfo = $(`
+        <div class="card">
+          <div class="card-body">
+            <img src="/image/${result.city}.png" alt="">
+            <p class="weather-title">${result.city}의 날씨를 확인해보세요!</p>
+            <div class="weather-info">
+              <img src="https://openweathermap.org/img/wn/${result.icon}.png" alt="${result.mainWeather}">
+              <p class="weather">
+                최고 <span class="hightemp">${result.maxTemp}</span>도 /
+                최저 <span class="lowtemp">${result.minTemp}</span>도 기온으로
+                오늘의 날씨는 ${result.mainWeather}!
+              </p>
+            </div>
+          </div>
+        </div>
+      `);
+    
+      $('.weather-cards').append($weatherInfo);
+      loadedCount++;
+
+      // 모든 도시의 데이터가 로드되었을 때만 애니메이션 시작
+      if (loadedCount === cities.length) {
+        initWeatherSlider(); // 슬라이더 설정 + 애니메이션 시작
+      }
+    });
+};
+
+// 날씨 데이터 로드
+cities.forEach(city => getWeather(city));
+
+
+// 슬라이더 및 애니메이션 초기화
+function initWeatherSlider() {
+  var $weatherSlider = $('.weather-cards');
+  var $weatherCards = $weatherSlider.find('.card');
+  var weatherCardCount = $weatherCards.length;
+  var weatherCardWidth = 312;
+  var weatherGap = 16;
+  var weatherStep = weatherCardWidth + weatherGap;
+
+  $weatherCards.clone().appendTo($weatherSlider);
+
+  var weatherTotalCards = $weatherSlider.find('.card').length;
+  var weatherTotalWidth = weatherTotalCards * weatherStep;
+  $weatherSlider.css('width', weatherTotalWidth + 'px');
+
+  var weatherPos = 0;
+  var weatherSpeed = 1.5;
+  var weatherIsPlaying = true;
+  var weatherAnimationId;
+
+  function weatherAnimate() {
+    if (!weatherIsPlaying) return;
+    weatherPos -= weatherSpeed;
+    if (Math.abs(weatherPos) >= weatherCardCount * weatherStep) {
+      weatherPos = 0;
+    }
+    $weatherSlider.css('transform', 'translateX(' + weatherPos + 'px)');
+    weatherAnimationId = requestAnimationFrame(weatherAnimate);
+  }
+
+  weatherAnimate();
+}
+
+
+
+/* - - - - 날씨 - - - - 
+
+let result;
+
+const getWeather = (cityName) => {
+  fetch(`https://api.openweathermap.org/data/2.5/forecast?q=${cityName}&appid=b799259d92c437e1d782b0cc2d7e2238&units=metric&lang=kr`)
+    .then(res => res.json())
+    .then(data => {
+      const list = data.list;
+
+      const today = new Date().toISOString().split('T')[0];
+      const todayData = list.filter(item => item.dt_txt.startsWith(today));
+
+      const maxTemp = Math.max(...todayData.map(item => item.main.temp_max)).toFixed(1);
+      const minTemp = Math.min(...todayData.map(item => item.main.temp_min)).toFixed(1);
+
+      const weatherFrequency = {};
+      todayData.forEach(item => {
+        const desc = item.weather[0].description;
+        weatherFrequency[desc] = (weatherFrequency[desc] || 0) + 1;
+      });
+
+      const mainWeather = Object.entries(weatherFrequency).sort((a, b) => b[1] - a[1])[0][0];
+      const icon = todayData[0].weather[0].icon;
+
+      result = {
+        city: data.city.name,
+        date: today,
+        maxTemp,
+        minTemp,
+        mainWeather,
+        icon
+      };
+
+      const $weatherInfo = $(`
+        <div class="card">
+          <div class="card-body">
+            <img src="/image/${result.city}.png" alt="">
+            <p class="h5">${result.city}의 날씨를 확인해보세요!</p>
+            <div class="weather-info">
+              <img src="https://openweathermap.org/img/wn/${result.icon}.png" alt="${result.mainWeather}">
+              <p class="weather">
+                최고 <span class="hightemp">${result.maxTemp}</span>도 /
+                최저 <span class="lowtemp">${result.minTemp}</span>도 기온으로
+                오늘의 날씨는 ${result.mainWeather}!
+              </p>
+            </div>
+          </div>
+        </div>
+      `);
+
+      $('.weather-cards').append($weatherInfo);
+    });
+};
+
+getWeather('japan');
+getWeather('japan');
+getWeather('japan');
+getWeather('thailand');
+getWeather('shanghai');
+getWeather('singapore');
+getWeather('paris');
+getWeather('australia');
+getWeather('australia');
+getWeather('japan');
+*/
+
+
+
+
+/* slide
     
 var $weatherSlider = $('.weather-cards');
 var $weatherCards = $weatherSlider.find('.card');
@@ -215,7 +384,10 @@ function weatherAnimate() {
 
 // 시작
 weatherAnimate();
+ */
 
+
+/*
 const playStopbtns = $('.slides_btns button');
 
 // 재생/멈춤 버튼
@@ -248,7 +420,7 @@ $weatherSlider.on('mouseover',function(){
   weatherIsPlaying = true;
   weatherAnimate();
 });
-
+*/
 
 /* - - - - - - shorts swiper - - - - - */
 
@@ -279,84 +451,3 @@ $weatherSlider.on('mouseover',function(){
     },
   });
 
-
-
-
-
-
-
-/* - - - - - 날씨 API - - - - - -
-let result;
-
-const getWeather = (cityName) => {
-  fetch(`https://api.openweathermap.org/data/2.5/forecast?q=${cityName}&appid=b799259d92c437e1d782b0cc2d7e2238&units=metric&lang=kr`)
-    .then(res => res.json())
-    .then(data => {
-      const list = data.list;
-
-      // 오늘 날짜 (현지 시간 기준으로 조정 필요할 수도 있음)
-      const today = new Date().toISOString().split('T')[0];
-
-      // 오늘 날짜에 해당하는 데이터만 필터링
-      const todayData = list.filter(item => item.dt_txt.startsWith(today));
-
-      // 최고 / 최저 기온 구하기
-      const maxTemp = Math.max(...todayData.map(item => item.main.temp_max)).toFixed(1);
-      const minTemp = Math.min(...todayData.map(item => item.main.temp_min)).toFixed(1);
-      
-      // 가장 많이 등장한 날씨 상태 선택 (예: 흐림, 맑음 등)
-      const weatherFrequency = {};
-      todayData.forEach(item => {
-        const desc = item.weather[0].description;
-        weatherFrequency[desc] = (weatherFrequency[desc] || 0) + 1;
-      });
-      const mainWeather = Object.entries(weatherFrequency).sort((a, b) => b[1] - a[1])[0][0];
-      
-      // 대표 아이콘 (첫 번째 시간대의 아이콘 사용)
-      const icon = todayData[0].weather[0].icon;
-
-      result = {
-        city: data.city.name,
-        date: today,
-        maxTemp,
-        minTemp,
-        mainWeather,
-        icon
-      };
-      console.log(result)
-
-      const $weatherInfo = $(`
-        <div class="card">
-          <div class="card-body">
-            <img src="/image/${result.city}.png" alt="">
-            <p class="h5">${result.city}의 날씨를 확인해보세요!</p>
-            <div class="weather-info">
-                <img src="https://openweathermap.org/img/wn/${result.icon}.png" alt="${result.mainWeather}">
-              <p class="weather">
-                최고 <span class="hightemp">${result.maxTemp}</span>도 /
-                최저 <span class="lowtemp">${result.minTemp}</span>도 기온으로
-                오늘의 날씨는 ${result.mainWeather}!
-              </p>
-            </div>
-          </div>
-        </div>
-      `);
-      console.log($weatherInfo);
-      
-      $('.weather-cards').append($weatherInfo);
-
-
-    });
-};
-
-getWeather('itary');
-getWeather('japan');
-getWeather('japan');
-getWeather('thailand');
-getWeather('shanghai');
-getWeather('singapore');
-getWeather('paris');
-getWeather('australia');
-getWeather('itary');
-getWeather('itary');
-*/
