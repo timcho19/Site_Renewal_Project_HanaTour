@@ -261,6 +261,9 @@ $weatherSlider.on('mouseover',function(){
       prevEl: ".swiper-button-prev",
     },
     breakpoints: {
+      300: {
+        slidesPerView: 1,
+      },
       640: {
         slidesPerView: 2,
         spaceBetween: 20,

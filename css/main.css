@@ -197,6 +197,9 @@
 
 .youtube_shorts {
   position: relative;
+  max-width: 1320px;
+  margin: 0 auto;
+ 
 }
 
 .swiper {
