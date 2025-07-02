@@ -41,3 +41,17 @@ asideBtn.click(function(){
 asidecloseBtn.click(function(){
   aside.removeClass('active')
 })
+
+// 브라우저 리사이즈
+$(window).on('resize', function() {
+  if ($(window).width() >= 960) {
+    aside.removeClass('active'); // 960px 이상이면 무조건 닫힘
+  }
+});
+
+// 페이지 로드 시에도 상태 체크
+$(document).ready(function() {
+  if ($(window).width() >= 960) {
+    aside.removeClass('active');
+  }
+});
