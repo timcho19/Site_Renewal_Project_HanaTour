@@ -172,7 +172,7 @@ body{
 .services_container {
   box-sizing: border-box;
   border-radius: 20px;
-  border: var(--sub-text) solid 0.5px;
+  border: #cfcfcf solid 0.1px;
   overflow: hidden;
 }
 
