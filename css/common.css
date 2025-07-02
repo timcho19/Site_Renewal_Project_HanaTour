@@ -589,8 +589,8 @@ button{
 body {
   font-family: 'Inter', sans-serif;
   height: 100%;
-  width: 100vw;
-  overflow-x: hidden;
+  width: 100%;
+  /* overflow-x: hidden; */
 }
 
 
