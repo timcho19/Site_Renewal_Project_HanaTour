@@ -547,20 +547,109 @@ header.sub_header .side-menus svg {
 /*어사이드 햄버거 */
 aside {
   background-color: #fff;
-  width: 50%;
+  width: 650px;
   height: 100vh;
   top: 0;
-  right:-50%;
+  right:-650px;
   position: fixed;
   transition: right 0.3s ; /*역방향*/
+  padding: 24px 36px;
+  display: flex;
+  flex-direction: column; /* 세로 정렬 */
 }
 aside.active{
   right:0px;
   transition:right 0.3s; /*순방향*/
+  box-shadow: var(--large-shadow);
   
 }
+.aside_input {
+  appearance: none; 
+  background-color: #F7F7F8; 
+  border: none; 
+  padding: 8px 12px; 
+  border-radius: 15px; 
+  font-size: 16px; 
+  color: #333;
+  outline: none;
+  margin-bottom: 24px;
+}
+.aside_top{
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 24px;
+}
 
+.aside_best{
+  display: flex;
+  justify-content: space-between;
+  gap: 24px;
+  margin-bottom: 24px;
 
+}
+.aside_best > div{
+  width:20%;
+  max-width: 90px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+}
+
+.aside_best > div p{
+  font-size: 1rem;
+}
+
+.aside_best > div img{
+  width: 100%;
+}
+
+.aside_btns {
+  width: 100%;
+  display: flex;
+}
+.aside_btns button{
+  width:50%;
+  font-size: 24px;
+  font-weight: bold;
+  padding: 10px 0;
+  border-bottom: 2px solid #D9D9D9;
+  margin-bottom: 48px;
+}
+.aside_btns button.active{
+  border-bottom: 2px solid var(--primary);
+}
+
+.aside_tabs{
+  position: relative;
+  flex: 1 1 auto;  /* 남은 공간 모두 차지 */
+  min-height: 0;   /* flex 아이템이 오버플로우 되지 않게 */
+
+}
+.aside_tab{
+  position: absolute;
+  top:0;
+  right:0;
+  bottom:0;
+  left:0;
+  display: none;
+}
+.aside_tab.active{
+  display: block;
+}
+.aside_tab ul{
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+}
+.aside_tab ul li a{
+  font-size: 22px;
+  font-weight: bold;
+}
+
+/*메인섹션 관련 미디어*/
 @media (max-width: 960px) {
 
   .main-menus{
