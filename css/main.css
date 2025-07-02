@@ -400,9 +400,7 @@
 }
 .story_wrapper{
   position: relative;
-  overflow: hidden;
-  padding-top: 35%;
-  height: 500px;
+  height: 580px;
 }
 .stories{
   position: absolute;
@@ -416,11 +414,14 @@
   position: absolute;
   
 }
+.container{
+  max-width: 1320px;
+}
 
 .controls{
-  position: absolute;
-  bottom: 0;
-  right: 30%;
+ 
+  display: flex;
+  justify-content: right;
 }
 .prev_btn{
   width: 52px;
@@ -446,7 +447,6 @@
   width: 100%;
   position: relative;
   padding-bottom: 56.25%;
-  overflow: hidden;
 }
 
 .story iframe {
