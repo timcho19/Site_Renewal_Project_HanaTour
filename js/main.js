@@ -251,8 +251,8 @@ $weatherSlider.on('mouseover',function(){
 
 
 /* - - - - - - shorts swiper - - - - - */
-window.addEventListener('load', () => {
-  var swiper = new Swiper(".shorts", {
+
+  var swiper = new Swiper(".swiper.shorts", {
     loop: true,
     slidesPerView: 4,
     spaceBetween: 24,
@@ -275,7 +275,6 @@ window.addEventListener('load', () => {
       },
     },
   });
-});
 
 
 
