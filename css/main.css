@@ -75,7 +75,8 @@
 
 /* like 버튼*/
 
-.likes svg{
+.likes .line-heart,
+.likes .fill-heart{
   width: 28px;
   height: 28px;
   fill: var(--white);
