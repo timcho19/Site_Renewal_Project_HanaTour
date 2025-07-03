@@ -35,17 +35,21 @@ const asidecloseBtn = $('.aside_close');
 
 asideBtn.click(function(){
   
-  aside.addClass('active')
+  aside.addClass('active');
+  $('.side_bar').hide();
+  
 });
 
 asidecloseBtn.click(function(){
   aside.removeClass('active')
+  $('.side_bar').show();
 })
 
 // 브라우저 리사이즈
 $(window).on('resize', function() {
   if ($(window).width() >= 960) {
     aside.removeClass('active'); // 960px 이상이면 무조건 닫힘
+    $('.side_bar').show();
   }
 });
 
