@@ -752,7 +752,7 @@ header.sub_header .side-menus svg {
 /*어사이드 햄버거 */
 aside {
   background-color: #fff;
-  width: 650px;
+  width: 500px;
   height: 100vh;
   top: 0;
   right:-650px;
@@ -761,6 +761,7 @@ aside {
   padding: 24px 36px;
   display: flex;
   flex-direction: column; /* 세로 정렬 */
+  z-index: 9999;
 }
 aside.active{
   right:0px;
@@ -768,7 +769,12 @@ aside.active{
   box-shadow: var(--large-shadow);
   
 }
+aside form{
+  width: 100%;
+  margin-bottom: 24px;
+}
 .aside_input {
+  width: 100%;
   appearance: none; 
   background-color: #F7F7F8; 
   border: none; 
@@ -777,6 +783,9 @@ aside.active{
   font-size: 16px; 
   color: #333;
   outline: none;
+  margin-bottom: 24px;
+}
+aside .h6{
   margin-bottom: 24px;
 }
 .aside_top{
@@ -788,8 +797,9 @@ aside.active{
 .aside_best{
   display: flex;
   justify-content: space-between;
+  text-align: center;
   gap: 24px;
-  margin-bottom: 24px;
+  margin-bottom: 48px;
 
 }
 .aside_best > div{
@@ -800,12 +810,13 @@ aside.active{
   gap: 10px;
   align-items: center;
 }
-
-.aside_best > div p{
-  font-size: 1rem;
+.aside_best > div a img{
+  margin-bottom: 10px;
 }
 
-.aside_best > div img{
+
+
+.aside_best img{
   width: 100%;
 }
 
@@ -871,6 +882,11 @@ aside.active{
   }
   .all_menu_dropdown{
     display: none;
+  }
+  header nav{
+
+    padding: 12px 24px;
+
   }
 
 }
@@ -1059,7 +1075,7 @@ footer {
 */
 .side_bar{
   position: fixed;
-  z-index: 9999;
+  z-index: 5000;
   bottom: 50px;
   right: 50px;
   display: flex;
