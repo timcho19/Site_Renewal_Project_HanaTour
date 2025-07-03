@@ -241,8 +241,7 @@ const getWeather = (cityName) => {
 
       // 모든 도시의 데이터가 로드되었을 때만 애니메이션 시작
       if (loadedCount === cities.length) {    
-
-        console.log('애니메이션 시작');
+        //console.log('애니메이션 시작');
         initWeatherSlider(); // 슬라이더 설정 + 애니메이션 시작
       }
     });
@@ -280,7 +279,7 @@ function initWeatherSlider() {
   function weatherAnimate() {
     if (!weatherIsPlaying) return;
     weatherPos -= weatherSpeed;
-    console.log(weatherPos);
+    //console.log(weatherPos);
 
     if (Math.abs(weatherPos) >= weatherCardCount * weatherStep) {
       weatherPos = 0;
