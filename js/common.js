@@ -16,14 +16,16 @@ $('.top_btn').on('click', function() {
 
 
 $('.likes').click(function(){
-  $(this).find('path').toggleClass('active')
-  $('.likes_ct').fadeIn();
-  $('.likes_ct').text($('.likes path.active').length);
+  $(this).find('.line-heart').toggle();
+  $(this).find('.fill-heart').toggle();
 
-  if($('.likes path.active').length === 0){
+  likeCount = $('.likes .fill-heart:visible').length;
+
+  if(likeCount > 0){
+    $('.likes_ct').text(likeCount).fadeIn();
+  } else {
     $('.likes_ct').fadeOut();
   }
-
 });
 
 //헤더 햄버거 버튼 클릭시
