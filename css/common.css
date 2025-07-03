@@ -889,10 +889,20 @@ aside .h6{
   header nav{
 
     padding: 12px 24px;
-
   }
 
 }
+@media (max-width: 576px) {
+  aside {
+    max-width: 576px;
+    width: 100%;
+    right: -100%;
+    padding: 24px 36px;
+  }
+
+
+}
+
 
 
 
