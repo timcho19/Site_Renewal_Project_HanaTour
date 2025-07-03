@@ -793,6 +793,9 @@ aside .h6{
   justify-content: space-between;
   margin-bottom: 24px;
 }
+.aside_top a{
+  line-height: 25px;
+}
 
 .aside_best{
   display: flex;
@@ -886,10 +889,20 @@ aside .h6{
   header nav{
 
     padding: 12px 24px;
-
   }
 
 }
+@media (max-width: 576px) {
+  aside {
+    max-width: 576px;
+    width: 100%;
+    right: -100%;
+    padding: 24px 36px;
+  }
+
+
+}
+
 
 
 
@@ -931,10 +944,7 @@ footer {
   color: var(--primary);
 }
 
-.footer_nav a strong {
-  font-weight: 700;
-  color: var(--primary);
-}
+
 
 
 .footer_contacts {
@@ -993,11 +1003,12 @@ footer {
   border-bottom: 0.1px solid #cfcfcf;
 }
 .sns li:hover {
-  transform: translateY(-2px);
+  transform: translateY(-6px);
+  transition: transform 0.3s	cubic-bezier(0.7, 0, 0.84, 0)
 }
 .sns li  {
   display: flex;
-  transition:  0.3s ease;
+  transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1);
 }
 .sns img {
   width: 30px;   

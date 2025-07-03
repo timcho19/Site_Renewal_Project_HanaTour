@@ -40,6 +40,7 @@ let slideWrapper = $('.story_wrapper'),
 
   nextBtn.click(function(){
       moveSlide(++currentIdx);
+      console.log(moveSlide());
   });
   prevBtn.click(function(){
       moveSlide(--currentIdx);
@@ -241,6 +242,7 @@ const getWeather = (cityName) => {
 
       // 모든 도시의 데이터가 로드되었을 때만 애니메이션 시작
       if (loadedCount === cities.length) {    
+
         //console.log('애니메이션 시작');
         initWeatherSlider(); // 슬라이더 설정 + 애니메이션 시작
       }
@@ -253,7 +255,7 @@ cities.forEach(city => getWeather(city));
 
 // 슬라이더 및 애니메이션 초기
 
-  console.log(weatherCardCount);
+  //console.log(weatherCardCount);
   var weatherCardWidth = 312;
   var weatherGap = 16;
   var weatherStep = weatherCardWidth + weatherGap;
@@ -461,3 +463,12 @@ $weatherSlider.on('mouseover',function(){
     },
   });
 
+/* - - - - - - - tab filter json - - - - - - - */
+const productList = $('.image-list');
+
+fetch('json/data.json')
+.then(res => res.json())
+.then(data => {
+  console.log(data);
+  //imageData = data;
+});
