@@ -181,6 +181,11 @@ let tabBtns = $('.tab_btns'),
   });
 
 
+/* 날씨/무한슬라이드 변수 */
+
+  let $weatherSlider = $('.weather-cards');
+  let $weatherCards;
+  let weatherCardCount;
 
 /* 날씨/무한슬라이드 */
 
@@ -235,7 +240,9 @@ const getWeather = (cityName) => {
       loadedCount++;
 
       // 모든 도시의 데이터가 로드되었을 때만 애니메이션 시작
-      if (loadedCount === cities.length) {
+      if (loadedCount === cities.length) {    
+
+        console.log('애니메이션 시작');
         initWeatherSlider(); // 슬라이더 설정 + 애니메이션 시작
       }
     });
@@ -245,14 +252,21 @@ const getWeather = (cityName) => {
 cities.forEach(city => getWeather(city));
 
 
-// 슬라이더 및 애니메이션 초기화
-function initWeatherSlider() {
-  var $weatherSlider = $('.weather-cards');
-  var $weatherCards = $weatherSlider.find('.card');
-  var weatherCardCount = $weatherCards.length;
+// 슬라이더 및 애니메이션 초기
+
+  console.log(weatherCardCount);
   var weatherCardWidth = 312;
   var weatherGap = 16;
   var weatherStep = weatherCardWidth + weatherGap;
+  var weatherAnimationId;
+  var weatherPos = 0;
+  var weatherSpeed = 1.5;
+  var weatherIsPlaying = true;
+
+function initWeatherSlider() {
+
+  $weatherCards = $weatherSlider.find('.card');
+  weatherCardCount = $weatherCards.length;
 
   $weatherCards.clone().appendTo($weatherSlider);
 
@@ -260,14 +274,14 @@ function initWeatherSlider() {
   var weatherTotalWidth = weatherTotalCards * weatherStep;
   $weatherSlider.css('width', weatherTotalWidth + 'px');
 
-  var weatherPos = 0;
-  var weatherSpeed = 1.5;
-  var weatherIsPlaying = true;
-  var weatherAnimationId;
+
+}
 
   function weatherAnimate() {
     if (!weatherIsPlaying) return;
     weatherPos -= weatherSpeed;
+    console.log(weatherPos);
+
     if (Math.abs(weatherPos) >= weatherCardCount * weatherStep) {
       weatherPos = 0;
     }
@@ -276,9 +290,6 @@ function initWeatherSlider() {
   }
 
   weatherAnimate();
-}
-
-
 
 /* - - - - 날씨 - - - - 
 
@@ -387,7 +398,7 @@ weatherAnimate();
  */
 
 
-/*
+
 const playStopbtns = $('.slides_btns button');
 
 // 재생/멈춤 버튼
@@ -420,7 +431,7 @@ $weatherSlider.on('mouseover',function(){
   weatherIsPlaying = true;
   weatherAnimate();
 });
-*/
+
 
 /* - - - - - - shorts swiper - - - - - */
 
