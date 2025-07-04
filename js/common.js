@@ -72,3 +72,9 @@ $('.aside_btns button').click(function(){
   $('.aside_tabs > div').eq(tabIdx).show();
 
 })
+
+//footer show_info 클릭시 할일
+$('.show_info').click(function(){
+  $('.company_info').stop().slideToggle("slow");
+  $(this).find('.bi').toggleClass('rotate');
+})
