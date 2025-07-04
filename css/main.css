@@ -111,7 +111,8 @@
   width: 100%;
 }
 
-.travel-cards {
+.travel-cards,
+.concept-cards {
   display: flex;
   gap:24px;
   position: relative;
@@ -129,6 +130,7 @@
   flex-direction: column;
   transition: box-shadow 0.2s;
 }
+
 .product_img{
   position: relative
 }
