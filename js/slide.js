@@ -33,25 +33,20 @@ const slideshow = function (target) {
   function contentSlide(dir) {
     if (isAnimating) return;
     isAnimating = true;
-    currentIndex += dir;
-      console.log('currentIndex:', currentIndex);
-    $content.animate({
-      left: -cardWH * currentIndex + 'px'
-    }, 300);
-
   
-    setTimeout(() => {
+    currentIndex += dir;
+    console.log('currentIndex:', currentIndex);
+  
+    $content.stop(true, true).animate({
+      left: -cardWH * currentIndex + 'px'
+    }, 300, () => {
       if (currentIndex === visibleCards || currentIndex === -visibleCards) {
         currentIndex = 0;
-        $content.css({
-          left: -cardWH * currentIndex + 'px'
-        });
+        $content.css('left', -cardWH * currentIndex + 'px');
       }
-      
       isAnimating = false;
-    }, 300);
+    });
   }
-  
   
   $('.slider-wrapper .contents_prev_btn').click(function(){
     contentSlide(-1);
