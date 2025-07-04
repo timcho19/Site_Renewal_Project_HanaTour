@@ -40,7 +40,6 @@ let slideWrapper = $('.story_wrapper'),
 
   nextBtn.click(function(){
       moveSlide(++currentIdx);
-      console.log(moveSlide());
   });
   prevBtn.click(function(){
       moveSlide(--currentIdx);
@@ -173,7 +172,6 @@ let tabBtns = $('.tab_btns'),
     $(this).addClass('active');
 
     let dataFilter = $(this).attr('data-filter');
-    console.log(dataFilter);
 
     travelCards.hide();
 
@@ -471,7 +469,6 @@ const productList = $('.concept-cards');
 fetch('json/data.json')
 .then(res => res.json()) //json형태를 객체 변환!
 .then(data => {
-  console.log(data);
   renderList(data);
 });
 
