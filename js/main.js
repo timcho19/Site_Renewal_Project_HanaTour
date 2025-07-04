@@ -440,7 +440,16 @@ var swiper = new Swiper(".swiper.shorts", {
   loop: true,
   spaceBetween: 16,
   slidesPerView: 4, // 기본값 (최대 해상도용)
+  
+  pagination: {
+    el: ".swiper-pagination",  // ✅ 대상 요소
+    clickable: true,           // ✅ 클릭 가능하도록
+  },
 
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
   breakpoints: {
     0: {
       slidesPerView: 1.5,
