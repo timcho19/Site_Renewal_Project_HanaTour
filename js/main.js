@@ -6,9 +6,9 @@ let slideWrapper = $('.story_wrapper'),
     slideWidth = 800,
     slideMargin = 100,
     moveAmt = slideWidth + slideMargin,
-    halfAmt = slideWidth/1.5;
-    prevBtn = slideWrapper.find('.controls .prev_btn'),
-    nextBtn = slideWrapper.find('.controls .next_btn');
+    halfAmt = slideWidth / 1.5;
+    prevBtn = slideWrapper.siblings('.controls').find('.prev_btn'),
+    nextBtn = slideWrapper.siblings('.controls').find('.next_btn');
 
 
 
@@ -20,6 +20,7 @@ let slideWrapper = $('.story_wrapper'),
 
   allSlide.each(function (idx) {
       $(this).css({ left: idx * moveAmt + halfAmt + 'px' });
+    console.log(allSlide);
     });
   
     slides.css('width', moveAmt * totalCount + 'px');
@@ -40,7 +41,6 @@ let slideWrapper = $('.story_wrapper'),
 
   nextBtn.click(function(){
       moveSlide(++currentIdx);
-      console.log(moveSlide());
   });
   prevBtn.click(function(){
       moveSlide(--currentIdx);
@@ -438,18 +438,20 @@ $weatherSlider.on('mouseover',function(){
 
 var swiper = new Swiper(".swiper.shorts", {
   loop: true,
-  spaceBetween: 16,
-  slidesPerView: 4, // 기본값 (최대 해상도용)
-  
-  pagination: {
-    el: ".swiper-pagination",  // ✅ 대상 요소
-    clickable: true,           // ✅ 클릭 가능하도록
-  },
+  spaceBetween: 24,
+  grabCursor: true,
+  simulateTouch: true,
 
   navigation: {
     nextEl: ".swiper-button-next",
     prevEl: ".swiper-button-prev",
   },
+
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+
   breakpoints: {
     0: {
       slidesPerView: 1.5,

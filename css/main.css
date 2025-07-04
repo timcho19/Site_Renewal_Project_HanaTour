@@ -448,7 +448,9 @@
 }
 
 .youtube_container{
-  width:3720px;
+  max-width: 100%;
+  width: 100%;
+  overflow: hidden; /* optional */
   margin: 0 auto;
 
 }
