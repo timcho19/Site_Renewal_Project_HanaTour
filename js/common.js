@@ -53,6 +53,11 @@ $(window).on('resize', function() {
     aside.removeClass('active'); // 960px 이상이면 무조건 닫힘
     $('.side_bar').show();
   }
+  if ($(window).width() >= 576) {
+    $('.company_info').show(); // 576px 이상이면 항상 보이게
+  } else {
+    $('.company_info').hide(); // 576px 미만이면 숨김(초기상태)
+  }
 });
 
 // 페이지 로드 시에도 상태 체크
