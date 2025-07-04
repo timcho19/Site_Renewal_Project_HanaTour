@@ -165,7 +165,7 @@ $(window).scroll(function(){
 
 /* - - - - - - tab filter - - - - - - -*/
 let tabBtns = $('.tab_btns'),
-    travelCards = $('.special-travel .travel-card');
+    travelCards = $('.special-travel .concept-cards');
     
     
     tabBtns.click(function(){
@@ -173,11 +173,11 @@ let tabBtns = $('.tab_btns'),
     $(this).addClass('active');
 
     let dataFilter = $(this).attr('data-filter');
+    console.log(dataFilter)
 
     travelCards.hide();
 
-    $(dataFilter).show();
-  
+    $('.special-travel .concept-cards' + dataFilter).show();
   });
 
 
@@ -483,6 +483,7 @@ const productList = $('.concept-cards');
 fetch('json/data.json')
 .then(res => res.json()) //json형태를 객체 변환!
 .then(data => {
+  //console.log(data);
   renderList(data);
 });
 
@@ -496,7 +497,7 @@ function renderList(item){
       description += `<li>${d}</li>`
     ));
     itemHTML += `
-            <div class="travel-card slider-item">
+            <div class="travel-card slider-item special">
               <div class="product_img">
               <img src="${i.img}" alt="보홀" />
               <button class="likes">
