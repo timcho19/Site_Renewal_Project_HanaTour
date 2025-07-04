@@ -503,7 +503,11 @@ button{
 
 .contact .h5{
   line-height: calc(var(--lh) * 2);
-  margin-bottom: var(--lh);
+}
+
+.contact .service_check{
+  margin-top: 12px;
+  color: var(--primary);
 }
 
 .contact .service_check:hover{
@@ -829,7 +833,7 @@ aside .h6{
 }
 .aside_btns button{
   width:50%;
-  font-size: 24px;
+  font-size: 20px;
   font-weight: bold;
   padding: 10px 0;
   border-bottom: 2px solid #D9D9D9;
@@ -866,7 +870,7 @@ aside .h6{
 
 }
 .aside_tab ul li a{
-  font-size: 22px;
+  font-size: 16px;
   font-weight: bold;
 }
 
@@ -922,7 +926,10 @@ footer {
   border-top: 0.1px solid #cfcfcf;
 }
 
-
+footer .big-container{
+  display: flex;
+  flex-direction: column;
+}
 .footer_nav {
   display: flex;
   justify-content: center;
@@ -944,7 +951,9 @@ footer {
   color: var(--primary);
 }
 
-
+.footer_top{
+  order:1;
+}
 
 
 .footer_contacts {
@@ -956,8 +965,11 @@ footer {
 
 
 .contact {
-  padding: 24px;
+  
   flex: 1;
+  display: flex;
+  flex-direction: column;
+  
 }
 
 .contact h4 {
@@ -969,9 +981,8 @@ footer {
 
 .contact h5 {
   font-size: 16px;
-  font-weight: 00;
   color: var(--main-text);
-  margin-bottom: 12px;
+ 
 }
 
 .contact p{
@@ -986,6 +997,7 @@ footer {
 
 .contact .qna_btn {
   margin-top: var(--lh);
+  font-size: 0.8rem;
 }
 
 .contact .qna_btn:hover{
@@ -1000,7 +1012,7 @@ footer {
   justify-content: flex-end;
   gap: 12px;
   padding-bottom: 12px;
-  border-bottom: 0.1px solid #cfcfcf;
+  order: 2;
 }
 .sns li:hover {
   transform: translateY(-6px);
@@ -1014,6 +1026,10 @@ footer {
   width: 30px;   
 }
 
+.footer_bottom{
+  order: 3;
+  border-top: 0.1px solid #cfcfcf;
+}
 .footer_info {
   display: flex;
   justify-content: space-between;
@@ -1067,23 +1083,53 @@ footer {
   font-size: 12px;
 }
 
+/*푸터 미디어 반응형*/
+@media (max-width: 1320px) {
+ 
+  footer .big-container{
+    width:100%;
+    padding: 0 24px;
+  }
 
-/*
-.shorts {
-  position:relative;
-  height:0;
-  padding-bottom:555px;
-  width: 22%;
 }
+@media (max-width: 960px) {
+  .contact {
+    flex: 0 0 calc(50% - 20px);
+    max-width: calc(50% - 20px);
+    box-sizing: border-box;
+  }
+  .contact:last-child {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
 
-.shorts iframe {
-  position:absolute;
-  top:0;
-  left:0;
-  width: 100%;
-  height: 100%;
 }
-*/
+@media (max-width: 767px) {
+  .sns {
+    order: 0; 
+    padding-top: 48px;
+    padding-bottom: 48px;
+    justify-content: center;
+    gap:24px;
+  }
+  .footer_top {
+    order: 1;
+  }
+  .footer_bottom {
+    order: 2;
+  }
+  
+}
+@media (max-width: 576px) {
+  .contact {
+    flex: 0 0 100%;
+    max-width: 100%;
+    
+    align-items: center;
+    text-align: center;
+  }
+
+}
 .side_bar{
   position: fixed;
   z-index: 5000;
