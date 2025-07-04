@@ -264,6 +264,22 @@
 .swiper-button-next{
   right: -6%;
 }
+
+
+.swiper-pagination-bullet {
+  width: 10px;
+  height: 10px;
+  background: #ccc;
+  opacity: 1;
+  margin: 0 5px;
+  border-radius: 50%;
+  transition:  0.3s;
+}
+
+.swiper-pagination-bullet-active {
+  background: var(--primary); 
+}
+
 @media (max-width: 768px) {
   .swiper-button-prev,
   .swiper-button-next {
