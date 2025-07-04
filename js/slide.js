@@ -22,7 +22,7 @@ const slideshow = function (target) {
 
   
   const totalCards = $content.find('.slider-item').length;
-  console.log(cardWH,totalCards);
+  //console.log(cardWH,totalCards);
   
   $content.css({
     width: cardWH * totalCards +'px',
@@ -34,7 +34,7 @@ const slideshow = function (target) {
     if (isAnimating) return;
     isAnimating = true;
     currentIndex += dir;
-      console.log('currentIndex:', currentIndex);
+      //console.log('currentIndex:', currentIndex);
     $content.animate({
       left: -cardWH * currentIndex + 'px'
     }, 300);
@@ -55,7 +55,7 @@ const slideshow = function (target) {
   
   $('.slider-wrapper .contents_prev_btn').click(function(){
     contentSlide(-1);
-    console.log('prev');
+    //console.log('prev');
   });
   
   $('.slider-wrapper .contents_next_btn').click(function(){
