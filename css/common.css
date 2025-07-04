@@ -1030,6 +1030,8 @@ footer .big-container{
 }
 
 .footer_bottom{
+  display: flex;
+  flex-direction: column;
   order: 3;
   border-top: 0.1px solid #cfcfcf;
  
@@ -1089,17 +1091,18 @@ footer .big-container{
   display: flex;
   gap: 24px;
   margin-bottom: 24px;
-  flex-wrap: wrap;
+  /* flex-wrap: wrap; */
   
 }
 .footer_emblem li {
-  flex: 1 1 calc(100% / 6 - 24px); /* 기본: 6개 한 줄 */
-  max-width: 120px;
+  flex: 1 1 calc(100% / 6 -24px); /* 기본: 6개 한 줄 */
+
 }
 
 .footer_emblem li img {
   width: 100%;      /* li의 너비에 맞춤 */
   height: auto;
+  max-width: 120px;
 }
 
 
@@ -1149,6 +1152,7 @@ footer .big-container{
     order: 2;
   }
   
+  
 }
 @media (max-width: 576px) {
   .contact {
@@ -1173,12 +1177,12 @@ footer .big-container{
     gap: 12px; /* 모바일에서 간격 조정 (선택) */
   }
   .footer_emblem li {
-    flex: 1 1 calc(100% / 3 - 12px); /* 한 줄에 3개씩 */
-    max-width: 100px; /* 필요시 조정 */
+    flex: 1 1 calc(100% / 3 -12px ); /* 한 줄에 3개씩 */
+   
   }
-  .footer_emblem li img {
-    max-width: 100px; /* 필요시 조정 */
-  }
+
+  
+  
 
 }
 .side_bar{
