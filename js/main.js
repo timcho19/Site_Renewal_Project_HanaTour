@@ -436,32 +436,34 @@ $weatherSlider.on('mouseover',function(){
 
 /* - - - - - - shorts swiper - - - - - */
 
-  var swiper = new Swiper(".swiper.shorts", {
-    loop: true,
-    slidesPerView: 4,
-    spaceBetween: 24,
-    navigation: {
-      nextEl: ".swiper-button-next",
-      prevEl: ".swiper-button-prev",
+var swiper = new Swiper(".swiper.shorts", {
+  loop: true,
+  spaceBetween: 16,
+  slidesPerView: 4, // 기본값 (최대 해상도용)
+
+  breakpoints: {
+    0: {
+      slidesPerView: 1.5,
+      spaceBetween: 12,
     },
-    breakpoints: {
-      300: {
-        slidesPerView: 1,
-      },
-      640: {
-        slidesPerView: 2,
-        spaceBetween: 20,
-      },
-      768: {
-        slidesPerView: 3,
-        spaceBetween: 40,
-      },
-      1024: {
-        slidesPerView: 4,
-        spaceBetween: 50,
-      },
+    576: {
+      slidesPerView: 1.5,
+      spaceBetween: 16,
     },
-  });
+    768: {
+      slidesPerView: 2,
+      spaceBetween: 20,
+    },
+    960: {
+      slidesPerView: 3,
+      spaceBetween: 24,
+    },
+    1140: {
+      slidesPerView: 4,
+      spaceBetween: 24,
+    }
+  }
+});
 
 /* - - - - - - - tab filter json - - - - - - - */
 const productList = $('.image-list');
