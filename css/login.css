@@ -93,6 +93,22 @@
   box-shadow: none;
 }
 
+.tel-form{
+  display: flex;
+  gap: 6px;
+}
+
+.tel-form button{
+  font-size: 10px;
+  font-weight: bold;
+  width: 100px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  background-color : #ccc;
+  color: var(--main-text);
+}
+
+
 /* 아코디언 */
 .accordion-item {
   border: none;
@@ -157,6 +173,93 @@
   margin-bottom: 12px;
 }
 
+.terms-wrapper{
+  display: flex;
+  margin-bottom: var(--lh);
+  justify-content: space-between;
+  align-items: center;
+  font-size: 14px;
+}
+
+.form-check-label{
+  margin-left: var(--lh);
+}
+
+
+.privacy-terms,
+.marketing-terms{
+  display: flex;
+  justify-content: space-between;
+  font-size: 12px;
+  margin-bottom: 12px;
+}
+
+.more{
+  margin-right: 18px;
+}
+
+.bi-chevron-down {
+  transition: 0.3s ease;
+  transform-origin: center;
+  display: inline-block;
+}
+
+.right.active .bi-chevron-down {
+  transform: rotate(-180deg);
+}
+
+.sub-terms{
+  display: none;
+}
+.sub-terms.open{
+  display: block;
+}
+
+.detail-terms{
+  display: flex;
+  align-items: center;
+  display: none;
+}
+.detail-terms.open{
+  display: block;
+}
+
+.form-check-input:checked {
+    background-color: var(--primary);
+    border-color: var(--primary);
+}
+.form-check-input:focus{
+  box-shadow: none;
+}
+
+.modal-header{
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #cfcfcf;
+}
+
+dialog {
+  font-size: 14px;
+  border: none;
+  border-radius: 15px;
+  box-shadow: var(--small-shadow);
+  max-width: 600px;
+  width: 90%;
+  max-height: 80vh;
+  padding: 12px 24px;
+  background: white;
+  overflow: hidden;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.haedsup{
+  color: var(--sub-text);
+}
+
+
+
 /* 회원가입 버튼 */
 .signupSuccess {
   font-weight: bold;
@@ -190,9 +293,15 @@
 
 .login_btn:hover {
   background-color: #712cf9;
-  color: white;
+  color: var(--white);
   border-color: #712cf9;
   transition: .3s;
+}
+
+.login_btn:disabled{
+  color: var(--white);
+  background-color: var(--sub-text);
+  border-color: var(--sub-text);
 }
 
 .signup_btn:hover {
@@ -201,6 +310,19 @@
   border-color: #712cf9;
   transition: .3s;
 }
+
+.login{
+  opacity: 1;
+  visibility: visible;
+  transition: opacity 0.2s ease, visibility 0.2s ease;
+
+}
+
+.login.active{
+  opacity: 0;
+  visibility: hidden;
+}
+
 
 /* 회원/비회원 조회 링크 */
 .findInfo {
