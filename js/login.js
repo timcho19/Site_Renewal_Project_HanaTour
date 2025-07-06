@@ -33,21 +33,21 @@ $('.close-button').click(()=>{
 /* - - - - 로그인/회원가입 비활성화 - - - - */
 const loginId = $('#login_id');
 const loginPw = $('#login_pw');
-const loginBtn = $('login_btn');
+const loginBtn = $('.login_btn');
 
 console.log('버튼 disabled 상태:', document.querySelector('.login_btn').disabled);
 
-function loginValidate(){
-  let loginIdVal = loginId.val().trim();
-  let loginPwVal = loginPw.val().trim();
-
-  if(loginIdVal === '' && loginPwVal === ''){
-    loginBtn.disabled = true;
+function inputValidate(){ 
+  let userid = loginId.val().trim(); 
+  let userpw = loginPw.val().trim(); 
+  
+  
+  if(userid !== '' && userpw !== ''){
+    $('.login-btn').prop('disabled', false);
   }else{
-    loginBtn.disabled = false;
+    $('#login-btn').prop('disabled', true);
   }
 }
-
 
 /* - - - - login input validate - - - - */
 
