@@ -170,7 +170,7 @@ $(window).scroll(function(){
 
 /* 날씨/무한슬라이드 */
 
-const cities = ['japan', 'japan', 'japan', 'thailand', 'shanghai', 'singapore', 'paris', 'australia', 'australia', 'japan'];
+const cities = ['Rome,IT', 'New York', 'japan', 'thailand', 'shanghai', 'singapore', 'paris', 'australia', 'australia', 'Bern,CH' ];
 let loadedCount = 0;
 
 const getWeather = (cityName) => {
