@@ -831,7 +831,9 @@ aside .h6{
   width: 100%;
   display: flex;
 }
-.aside_btns button{
+.aside_btns a{
+  display: flex;
+  justify-content: center;
   width:50%;
   font-size: 20px;
   font-weight: bold;
@@ -840,7 +842,7 @@ aside .h6{
   margin-bottom: 48px;
   color: rgba(0,0,0,0.3);
 }
-.aside_btns button.active{
+.aside_btns a.active{
   border-bottom: 2px solid var(--primary);
   color:var(--black);
 }
