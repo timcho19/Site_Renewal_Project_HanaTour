@@ -284,7 +284,7 @@ header {
   background: rgba(0,0,0,0.2);
   box-sizing: border-box;
   position: relative;
-  z-index: 2;
+  z-index: 100;
 }
 
 
@@ -296,6 +296,7 @@ header.sub_header{
   color: var(--main-text);
   box-shadow: var(--small-shadow);
   background-color:#fff;
+  z-index: 100;
 }
 /* header img{
   width: 18px;
