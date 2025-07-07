@@ -6,24 +6,24 @@ const bannerslideshow = function(target) {
     const totalSlides = $slides.length;
   
     const $indicator = $container.find('#slideIndicator');
-    const $dotsContainer = $container.find('#dotsIndicator');
+    // const $dotsContainer = $container.find('#dotsIndicator');
     let autoplay;
   
 
-    $dotsContainer.empty();
-    for (let i = 0; i < totalSlides; i++) {
-      const $dot = $('<span class="dot"></span>');
-      if (i === 0) $dot.addClass('active');
-      $dotsContainer.append($dot);
-    }
+    // $dotsContainer.empty();
+    // for (let i = 0; i < totalSlides; i++) {
+    //   const $dot = $('<span class="dot"></span>');
+    //   if (i === 0) $dot.addClass('active');
+    //   $dotsContainer.append($dot);
+    // }
   
-    const $dots = $dotsContainer.find('.dot'); 
+    // const $dots = $dotsContainer.find('.dot'); 
   
     function updateSlider() {
       const translateX = -currentSlide * 100;
       $slider.css('transform', `translateX(${translateX}%)`);
       $indicator.text(`${currentSlide + 1}/${totalSlides}`);
-      $dots.removeClass('active').eq(currentSlide).addClass('active');
+      // $dots.removeClass('active').eq(currentSlide).addClass('active');
     }
   
     function nextSlide() {
