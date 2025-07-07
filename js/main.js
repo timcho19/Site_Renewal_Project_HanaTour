@@ -160,24 +160,6 @@ $(window).scroll(function(){
 })
 
 
-/* - - - - - - tab filter - - - - - - -*/
-let tabBtns = $('.tab_btns'),
-    travelCards = $('.special-travel .concept-cards');
-    
-    
-    tabBtns.click(function(){
-    tabBtns.removeClass('active');
-    $(this).addClass('active');
-
-    let dataFilter = $(this).attr('data-filter');
-    console.log(dataFilter)
-
-    travelCards.hide();
-
-    $('.special-travel .concept-cards' + dataFilter).show();
-  });
-
-
 /* 날씨/무한슬라이드 변수 */
 
   let $weatherSlider = $('.weather-cards');
@@ -540,7 +522,19 @@ fetch('json/data.json')
   });
 
 
-$('.tab').click(function(){
-  
+/* - - - - - - tab filter - - - - - - -*/
+let tabBtns = $('.tab_btns'),
+    travelCards = $('.special-travel .concept-cards');
+    
+    
+tabBtns.click(function(){
+tabBtns.removeClass('active');
+$(this).addClass('active');
 
+
+const conceptFilter = $(this).data('filter');
+
+$('.concept-cards .travel-card').hide();
+$('.concept-cards').find(conceptFilter).show();
 });
+
