@@ -170,7 +170,7 @@ $(window).scroll(function(){
 
 /* 날씨/무한슬라이드 */
 
-const cities = ['Rome,IT', 'New York', 'japan', 'thailand', 'shanghai', 'singapore', 'paris', 'australia', 'australia', 'Bern,CH' ];
+const cities = ['Rome,IT', 'New York', 'japan', 'thailand', 'shanghai', 'singapore', 'paris', 'australia', 'Agra,IN', 'Bern,CH' ];
 let loadedCount = 0;
 
 const getWeather = (cityName) => {
@@ -401,10 +401,10 @@ function renderList(item){
                 <ul>
                   ${description}
                 </ul>
-                <div class="card-tags">
-                  ${hashtag}
-                </div>
               </a>
+              <div class="card-tags">
+                <a href="">${hashtag}</a>
+              </div>
             </div>
           </div>
     `;
