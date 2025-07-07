@@ -57,4 +57,12 @@ const slideshow = function (target) {
     contentSlide(1);
   });
   }
-  export default slideshow;
+
+
+
+
+  
+  
+  export default
+    slideshow
+ ;
