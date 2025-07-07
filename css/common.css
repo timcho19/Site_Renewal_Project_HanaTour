@@ -489,17 +489,25 @@ aside .h6{
   margin-bottom: 48px;
 
 }
-.aside_best > div{
+.aside_best  li{
   width:20%;
   max-width: 90px;
   display: flex;
   flex-direction: column;
   gap: 10px;
   align-items: center;
+  
 }
-.aside_best > div a img{
+
+.aside_best li:not(:first-child) {
+  margin-left: -40px; 
+}
+.aside_best  li a img{
   margin-bottom: 10px;
+  box-shadow: 0 0 1px 3px white; 
+  border-radius: 50%;       
 }
+
 
 
 
