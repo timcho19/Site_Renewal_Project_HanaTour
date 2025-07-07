@@ -4,20 +4,12 @@ const bannerslideshow = function(target) {
     const $slider = $container.find('.bannerslider-wrapper');
     const $slides = $slider.find('.travel-banner');
     const totalSlides = $slides.length;
-  
     const $indicator = $container.find('#slideIndicator');
-    // const $dotsContainer = $container.find('#dotsIndicator');
+
     let autoplay;
   
 
-    // $dotsContainer.empty();
-    // for (let i = 0; i < totalSlides; i++) {
-    //   const $dot = $('<span class="dot"></span>');
-    //   if (i === 0) $dot.addClass('active');
-    //   $dotsContainer.append($dot);
-    // }
   
-    // const $dots = $dotsContainer.find('.dot'); 
   
     function updateSlider() {
       const translateX = -currentSlide * 100;
@@ -31,10 +23,7 @@ const bannerslideshow = function(target) {
       updateSlider();
     }
   
-    function goToSlide(slideIndex) {
-      currentSlide = slideIndex;
-      updateSlider();
-    }
+   
   
     function startAutoplay() {
       autoplay = setInterval(nextSlide, 5000);
@@ -50,11 +39,7 @@ const bannerslideshow = function(target) {
       .on('mouseenter', stopAutoplay)
       .on('mouseleave', startAutoplay);
   
-    $dots.each(function(index) {
-      $(this).on('click', function() {
-        goToSlide(index);
-      });
-    });
+ 
   };
   
   export default bannerslideshow;
