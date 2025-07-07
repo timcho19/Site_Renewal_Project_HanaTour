@@ -46,7 +46,68 @@ let slideWrapper = $('.story_wrapper'),
       moveSlide(--currentIdx);
   });
 
+//베너 슬라이드
 
+$(document).ready(function () {
+  let currentSlide = 0;
+  const $slider = $('.bannerslider-wrapper');
+  const $slides = $slider.find('.travel-banner');
+  const totalSlides = $slides.length;
+  const $bannerSlider = $('.bannerSlider');
+  const $indicator = $('#slideIndicator');
+  const $dots = $('.dot');
+  let autoplay;
+
+  function updateSlider() {
+    const translateX = -currentSlide * 100;
+    $slider.css('transform', `translateX(${translateX}%)`);
+    $indicator.text(`${currentSlide + 1}/${totalSlides}`);
+    $dots.removeClass('active').eq(currentSlide).addClass('active');
+  }
+
+  function nextSlide() {
+    currentSlide = (currentSlide + 1) % totalSlides;
+    updateSlider();
+  }
+
+  function previousSlide() {
+    currentSlide = (currentSlide - 1 + totalSlides) % totalSlides;
+    updateSlider();
+  }
+
+  function goToSlide(slideIndex) {
+    currentSlide = slideIndex;
+    updateSlider();
+  }
+
+  function startAutoplay() {
+    autoplay = setInterval(nextSlide, 5000);
+  }
+
+  function stopAutoplay() {
+    clearInterval(autoplay);
+  }
+
+  startAutoplay();
+
+  $bannerSlider
+    .on('mouseenter', function () {
+      stopAutoplay();
+    })
+    .on('mouseleave', function () {
+      startAutoplay();
+    });
+
+  $dots.each(function (index) {
+    $(this).on('click', function () {
+      goToSlide(index);
+    });
+  });
+
+
+  $('.nav-next').on('click', nextSlide);
+  $('.nav-prev').on('click', previousSlide);
+});
 
 
 
