@@ -251,14 +251,6 @@
 }
 
 
-.contents_prev_btn,
-.contents_next_btn{
- position: absolute;
- top: 50%;
- transform: translateY(-50%);
-}
-
-
 
 
 
@@ -586,9 +578,17 @@
 
 /*1320이하*/
 @media (max-width: 1320px){
-  .travel-container{
+  .travel-container,
+  .youtube_shorts{
     width:100%;
+    padding-left: 24px;
+    padding-right: 24px;
   }
+  .swiper {
+    
+    padding: 0 0;
+}
+  
 }
 
 /*768이하구간*/
