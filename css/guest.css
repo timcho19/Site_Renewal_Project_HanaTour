@@ -110,12 +110,19 @@
   box-shadow: none;
 }
 
-.gusest_search_btn:hover {
+.gusest_search_btn:hover{
   background-color: #5513d9;
   color: white;
   border-color: #712cf9;
   transition: .3s;
 }
+
+.gusest_search_btn:disabled{
+  color: var(--white);
+  background-color: #cfcfcf;
+  border-color: #cfcfcf;
+}
+
 
 footer{
   margin-top: calc(var(--lh) * 5);

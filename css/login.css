@@ -300,8 +300,8 @@ dialog {
 
 .login_btn:disabled{
   color: var(--white);
-  background-color: var(--sub-text);
-  border-color: var(--sub-text);
+  background-color: #cfcfcf;
+  border-color: #cfcfcf;
 }
 
 .signup_btn:hover {

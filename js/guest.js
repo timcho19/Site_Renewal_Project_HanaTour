@@ -28,3 +28,32 @@ $('input[name="guest"]').change(function(){
       guestPhone.addClass('active');
     }
 });
+
+
+
+/* 조회 버튼 비활성화 */
+const guestName = $('#guest_name');
+const guestNum = $('#guest_number');
+const searchBtn = $('.gusest_search_btn');
+
+
+function searchValidate(){ 
+  let guest_name = guestName.val().trim(); 
+  let guest_num = guestNum.val().trim(); 
+  let guest_phone = guestPhone.val().trim(); 
+  let guest_email = guestEmail.val().trim(); 
+ 
+  
+  if(userid !== '' && userpw !== ''){
+    loginBtn.prop('disabled', false);
+  }else{
+    loginBtn.prop('disabled', true);
+  }
+}
+
+
+loginId.on('input', loginValidate);
+loginPw.on('input', loginValidate);
+
+
+loginBtn.prop('disabled', true);
