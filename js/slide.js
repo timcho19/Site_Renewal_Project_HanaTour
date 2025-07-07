@@ -13,6 +13,15 @@ const slideshow = function (target) {
   let currentIndex = 0;
   let isAnimating = false;
    
+  $(window).on('resize', function() {
+    if (window.innerWidth <= 960) {
+      
+    }
+  
+    
+  });
+
+
   
   const $prependClones = $cards.clone().addClass('clone');
   const $appendClones = $cards.clone().addClass('clone');
