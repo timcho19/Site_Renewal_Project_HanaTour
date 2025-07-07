@@ -20,7 +20,7 @@ let slideWrapper = $('.story_wrapper'),
 
   allSlide.each(function (idx) {
       $(this).css({ left: idx * moveAmt + halfAmt + 'px' });
-    console.log(allSlide);
+    //console.log(allSlide);
     });
   
     slides.css('width', moveAmt * totalCount + 'px');
@@ -471,6 +471,8 @@ var swiper = new Swiper(".swiper.shorts", {
   }
 });
 
+
+
 /* - - - - - - - tab filter json - - - - - - - */
 
 const productList = $('.concept-cards');
@@ -500,7 +502,7 @@ function renderList(item){
 
 
     itemHTML += `
-            <div class="travel-card slider-item special">
+            <div class="travel-card slider-item">
               <div class="product_img">
               <img src="${i.img}" alt="보홀" />
               <button class="likes">
@@ -535,3 +537,11 @@ fetch('json/data.json')
     renderList(data);           // 카드 생성 먼저
     slideshow('.slider-wrapper'); // 그 후 슬라이드 초기화
   });
+
+
+$('.tab').click(function(){
+  const filterval = $(this).data('filter');
+
+  //data에서 category의 값과 클릭한 그 요소(this)의 값이 같으면 rederList(data);를 실행한다.
+
+});
