@@ -503,7 +503,7 @@ function renderList(item){
 
 
     itemHTML += `
-            <div class="travel-card slider-item">
+            <div class="travel-card slider-item ${i.category}">
               <div class="product_img">
               <img src="${i.img}" alt="보홀" />
               <button class="likes">
@@ -541,8 +541,6 @@ fetch('json/data.json')
 
 
 $('.tab').click(function(){
-  const filterval = $(this).data('filter');
-
-  //data에서 category의 값과 클릭한 그 요소(this)의 값이 같으면 rederList(data);를 실행한다.
+  
 
 });
