@@ -668,11 +668,11 @@ header nav h1 a{
 .all_menu_btn.active{
   color:var(--primary);
 }
-.main-menus li a{
+.main_menus li a{
   transition: color 0.3s;
 }
 
-.main-menus li:hover a{
+.main_menus li:hover a{
   color:var(--primary);
 }
 
@@ -831,7 +831,9 @@ aside .h6{
   width: 100%;
   display: flex;
 }
-.aside_btns button{
+.aside_btns a{
+  display: flex;
+  justify-content: center;
   width:50%;
   font-size: 20px;
   font-weight: bold;
@@ -840,7 +842,7 @@ aside .h6{
   margin-bottom: 48px;
   color: rgba(0,0,0,0.3);
 }
-.aside_btns button.active{
+.aside_btns a.active{
   border-bottom: 2px solid var(--primary);
   color:var(--black);
 }
@@ -859,9 +861,7 @@ aside .h6{
   left:0;
   display: none;
 }
-.aside_tab.active{
-  display: block;
-}
+#tab_1 { display: block; }
 .aside_tab ul{
   height: 100%;
   display: flex;
@@ -877,7 +877,7 @@ aside .h6{
 /*메인섹션 관련 미디어*/
 @media (max-width: 960px) {
 
-  .main-menus{
+  .main_menus{
     display: none;
   }
   .side-menus li:not(:last-child) {

@@ -117,8 +117,17 @@ let current = 0;
 const mslideCount = mslides.length;
 const interval = 5000; // 5초
 
+// 페이지네이션  생성
+const $pagination = $('.main_paginations ul');
+for (let i = 0; i < mslideCount; i++) {
+  $pagination.append('<li></li>');
+}
+const $dots = $pagination.find('li');
+$dots.eq(0).addClass('active');
+
 function showSlide(idx) {
   mslides.removeClass('active').eq(idx).addClass('active');
+  $dots.removeClass('active').eq(idx).addClass('active');
 }
 
 function nextSlide() {
@@ -128,29 +137,16 @@ function nextSlide() {
 
 let timer = setInterval(nextSlide, interval);
 
+// 페이지네이션 클릭 시 해당 슬라이드로 이동
+$dots.on('click', function() {
+  current = $(this).index();
+  showSlide(current);
+  clearInterval(timer);
+  timer = setInterval(nextSlide, interval);
+});
 
-// $('.slides-container, .main-title-area').hover(
-//   function() { clearInterval(timer); },
-//   function() { timer = setInterval(nextSlide, interval); }
-// );
 
 
-
-
-//메인페이지 헤더 드롭다운
-// $('.all_menu_btn').on('click', function(e) {
-//   e.preventDefault();
-//   $('.all_menu_dropdown').toggleClass('active');
-//   if($('header').css('position') !== 'fixed'){
-//   if( $('header').hasClass('main_header')){
-//     $('header').removeClass('main_header').addClass('sub_header');
-//     $('.sign_btn').addClass('active');
-//   }else{
-//     $('header').removeClass('sub_header').addClass('main_header');
-//     $('.sign_btn').removeClass('active');
-//   }
-// }
-// });
 // 헤더 초기 상태 저장
 let initialHeaderClass = $('header').hasClass('main_header') ? 'main_header' : 'sub_header';
 let initialSignBtnState = $('.sign_btn').hasClass('active');
@@ -557,6 +553,13 @@ function renderList(item){
     i.description.forEach(d=>(
       description += `<li>${d}</li>`
     ));
+
+    let hashtag = '';
+    i.hashtag.forEach(h=>(
+      hashtag += `<a href="">${h}</a>`
+    ));
+
+
     itemHTML += `
             <div class="travel-card slider-item special">
               <div class="product_img">
@@ -577,15 +580,15 @@ function renderList(item){
                   ${description}
                 </ul>
                 <div class="card-tags">
-                  #보홀 #해변리조트 #호핑투어 #휴양지 #조깅포인트
+                  ${hashtag}
                 </div>
               </a>
             </div>
           </div>
-    `
+    `;
   });
-  productList.html(itemHTML);
-};
+    productList.html(itemHTML);
+  };
 
 fetch('json/data.json')
   .then(res => res.json())

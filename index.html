@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -42,7 +42,7 @@
     <header class="main_header">
       <nav>
         <h1 class="main_logo"><a href="index.html">하나투어</a></h1>
-        <ul class="main-menus">
+        <ul class="main_menus">
           <li><a class="all_menu_btn" href="">전체메뉴</a></li>
           <li><a href="">해외여행</a></li>
           <li><a href="">국내여행</a></li>
@@ -156,60 +156,59 @@
            
         </div>
       </div> <!--드롭다운 -->
-      <aside class="">
+      <aside>
         <div class="aside_top">
           <a href=""> <img src="image/aside_login.png" alt="로그인"> 로그인</a>
           <button class="aside_close"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-x-lg" viewBox="0 0 16 16">
             <path d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8z"/>
           </svg></button>
         </div>
-        <form action="">
+        <form>
           <input type="search" class="aside_input" placeholder="검색어를 입력해주세요">
         </form>
         <p class="h6">베스트 여행지</p>
-        <div class="aside_best">
-          <div>
+        <ul class="aside_best">
+          <li>
             <a href=""><img src="image/ham_tokyo.png" alt="도쿄">도쿄</a>
-          </div>
-          <div>
+          </li>
+          <li>
             <a href=""><img src="image/ham_cota.png" alt="홍콩">홍콩</a>
-          </div>
-          <div> 
+          </li>
+          <li> 
             <a href=""><img src="image/ham_jeju.png" alt="제주">제주</a>
-         </div>
-          <div>
+         </li>
+          <li>
             <a href=""><img src="image/ham_newyork_.png" alt="뉴욕">뉴욕</a>
-          </div>
-          <div>
+          </li>
+          <li>
            <a href=""><img src="image/ham_danang.png" alt="다낭">다낭</a>
-          </div>
-        </div>
+          </li>
+        </ul>
         <div class="aside_btns">
-          <button class="active">하나투어</button>
-          <button class="">고객센터</button>
+          <a href="#tab_1" class="active">하나투어</a>
+          <a href="#tab_2">고객센터</a>
         </div>
         <div class="aside_tabs">
-          <div class="aside_tab tab_1 active">
+          <div class="aside_tab" id="tab_1">
             <ul>
-                 <li><a href="">해외여행</a></li>
-                 <li><a href="">국내여행</a></li>
-                 <li><a href="">항공권</a></li>
-                 <li><a href="">호텔</a></li>
-                 <li><a href="">렌트</a></li>
-                 <li><a href="">제우스</a></li>
-                 <li><a href="">티켓/투어</a></li>
-                 <li><a href="">이벤트/혜택</a></li>
-               </ul>
-         </div>
-         <div class="aside_tab tab_2">
-           <ul>
-            <li><a href="">FAQ(자주찾는질문)</a></li>
-            <li><a href="">챗봇 상담</a></li>
-            <li><a href="">1대1 문의</a></li>
-            <li><a href="">공지사항</a></li>
-           </ul>
-         </div>
-
+              <li><a href="#">해외여행</a></li>
+              <li><a href="#">국내여행</a></li>
+              <li><a href="#">항공권</a></li>
+              <li><a href="#">호텔</a></li>
+              <li><a href="#">렌트</a></li>
+              <li><a href="#">제우스</a></li>
+              <li><a href="#">티켓/투어</a></li>
+              <li><a href="#">이벤트/혜택</a></li>
+            </ul>
+          </div>
+          <div class="aside_tab" id="tab_2">
+            <ul>
+              <li><a href="#">FAQ(자주찾는질문)</a></li>
+              <li><a href="#">챗봇 상담</a></li>
+              <li><a href="#">1대1 문의</a></li>
+              <li><a href="#">공지사항</a></li>
+            </ul>
+          </div>
         </div>
        
         
@@ -227,7 +226,16 @@
           </div>
           <p class="main-desc">
             <a href="">
-              #NO 팁 #자유여행 #패키지 #5성급호텔
+              #NO 팁
+            </a>
+            <a href="">
+              #자유여행
+            </a>
+            <a href="">
+              #패키지
+            </a>
+            <a href="">
+             #5성급호텔
             </a>
           </p>
         </div>
@@ -240,7 +248,13 @@
           </div>
           <p class="main-desc">
             <a href="">
-            #사계절 매력 가득 #낮과 밤 언제나 #근교 소도시 즐기기
+            #사계절 매력 가득
+            </a>
+            <a href="">
+            #낮과 밤 언제나
+            </a>
+            <a href="">
+            #근교 소도시 즐기기
             </a>
           </p>
         </div>
@@ -266,7 +280,13 @@
           </div>
           <p class="main-desc">
             <a href="">
-              #주차별 할인 상품 #웰컴키트 증정 #할인쿠폰
+              #주차별 할인 상품
+            </a>
+            <a href="">
+              #웰컴키트 증정
+            </a>
+            <a href="">
+              #할인쿠폰
             </a>
           </p>
         </div>
@@ -279,15 +299,78 @@
           </div>
           <p class="main-desc">
             <a href="">
-              #문화체육관광부 #한국관광공사 #지역특별기획전
+              #문화체육관광부
+            </a>
+            <a href="">
+              #한국관광공사
+            </a>
+            <a href="">
+              #지역특별기획전
             </a>
           </p>
         </div>
       </div>
     </div>
-    
+    <div class="main_paginations">
+      <ul>
+        
+      </ul>
+    </div>
   </section>
-
+  <section class="mob_navigation">
+    <ul>
+      <li>
+        <a href="">
+          <img src="image/ic_trip.png" alt="">
+          <span>해외여행</span>
+        </a>
+      </li>
+      <li>
+        <a href="">
+          <img src="image/ic_koreatrip.png" alt="">
+          <span>국내여행</span>
+        </a>
+      </li>
+      <li>
+        <a href="">
+          <img src="image/ic_airplane.png" alt="">
+          <span>항공권</span>
+        </a>
+      </li>
+      <li>
+        <a href="">
+          <img src="image/ic_hotel.png" alt="">
+          <span>호텔</span>
+        </a>
+      </li>
+      <li>
+        <a href="">
+          <img src="image/ic_rent.png" alt="">
+          <span>렌트</span>
+        </a>
+      </li>
+      <li>
+        <a href="">
+          <img src="image/ic_zeus.png" alt="">
+          <span>제우스</span>
+        </a>
+      </li>
+      <li>
+        <a href="">
+          <img src="image/ic_ticket.png" alt="">
+          <span>티켓/투어</span>
+        </a>
+      </li>
+      <li>
+        <a href="">
+          <img src="image/ic_event.png" alt="">
+          <span>이벤트/혜택</span>
+        </a>
+      </li>
+      
+     
+    </ul>
+  </section>
   <section class="travel-container big-pd-bottom">
     
       <div class="bannerSlider">
@@ -347,7 +430,11 @@
                     <li>🔹 노쇼핑으로 여유있는 일정</li>
                   </ul>
                   <div class="card-tags">
-                    #보홀 #해변리조트 #호핑투어 #휴양지 #조깅포인트
+                    <a href="">#보홀</a>
+                    <a href="">#해변리조트</a>
+                    <a href="">#호핑투어</a>
+                    <a href="">#휴양지</a>
+                    <a href="">#조깅포인트</a>
                   </div>
                 </a>
               </div>
@@ -373,7 +460,9 @@
                     <li>🌳 프리미엄 료칸에서의 힐링 체험</li>
                   </ul>
                   <div class="card-tags">
-                    #일본온천여행 #료칸스테이 #프리미엄체험
+                    <a href="">#일본온천여행</a>
+                    <a href="">#료칸스테이</a>
+                    <a href="">#프리미엄체험</a>
                   </div>
                 </a>
               </div>
@@ -399,7 +488,9 @@
                     <li>🏖 케이블카와 사파리 체험 포함</li>
                   </ul>
                   <div class="card-tags">
-                    #푸꾸옥올인클루시브 #휴양지 #5성급리조트
+                    <a href="">#푸꾸옥올인클루시브</a>
+                    <a href="">#휴양지</a>
+                    <a href="">#5성급리조트</a>
                   </div>
                 </a>
               </div>
@@ -425,7 +516,10 @@
                     <li>✨ 킹피셔와 맛집투어 포함</li>
                   </ul>
                   <div class="card-tags">
-                    #코타키나발루 #호핑투어 #선셋비치 #맛집투어
+                    <a href="">#코타키나발루</a>
+                    <a href="">#호핑투어</a>
+                    <a href="">#선셋비치</a>
+                    <a href="">#맛집투어</a>
                   </div>
                 </a>
               </div>
@@ -450,9 +544,9 @@
 
   <!-- 아랑 -->
   <section class="youtube_shorts big-pd-bottom">
-    <p class="h1 contents-title">
+    <h2 class="h1 contents-title">
       바로 떠나는 세계여행 <span>✈️</span>
-    </p>
+    </h2>
     <button type="button" class="swiper-button-prev">
       <svg xmlns="http://www.w3.org/2000/svg" width="50" height="93" fill="currentColor" class="bi bi-chevron-left" viewBox="0 0 16 16">
         <path fill-rule="evenodd" d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0"/>
@@ -524,9 +618,9 @@
       <a href="event.html"><img src="image/mtop_bnr_img4.png" alt="배너"></a>
     </div>
       
-    <p class="h1 contents-title">
+    <h2 class="h1 contents-title">
       취향저격! 컨셉따라 여행 <span class="emoji">👋</span>
-    </p>
+    </h2>
     <div class="tab">
       <button class="tab_btns active" data-filter=".special">#이색체험</button>
       <button class="tab_btns" data-filter=".food">#미식투어</button>
@@ -658,11 +752,11 @@
   </section>
 
   <section class="monthly-travel big-pd-bottom">
-    <p class="h1 best-travel-title">
+    <h2 class="h1 best-travel-title">
       <span class="emoji">💜</span>
       가장 사랑받는 월간 BEST 여행지
       <span class="emoji">💜</span>
-    </p>
+    </h2>
     <div class="weather-slider">
       <div class="weather-cards">
 <!--
@@ -803,9 +897,9 @@
   <!-- 진욱 -->
   <section class="youtube big-pd-bottom">
       <div class="section_title">
-      <p class="h1 contents-title">HANATOUR TRAVEL STORY</p>
-      <p class="h5">이 영상 하나면 여행 욕구 폭발 주의 🔥<br>
-        실시간 여행 소식과 특가 정보까지! 하나투어 유튜브 구독하고 놓치지 마세요 📺</p>
+      <h2 class="h1 contents-title">HANATOUR TRAVEL STORY</h2>
+      <h3 class="h5">이 영상 하나면 여행 욕구 폭발 주의 🔥<br>
+        실시간 여행 소식과 특가 정보까지! 하나투어 유튜브 구독하고 놓치지 마세요 📺</h3>
       </div>
       <div class="story_wrapper">
         <div class="stories">
