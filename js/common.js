@@ -67,20 +67,22 @@ $(document).ready(function() {
   }
 });
 
-//어사이드 탭버튼 클릭시 할일
-$('.aside_btns a').click(function(){
+// 어사이드 탭버튼 클릭시 할일
+$('.aside_btns a').click(function(e){
+  e.preventDefault(); // a태그 기본 동작 방지
+
+
   $('.aside_btns a').removeClass('active');
   $(this).addClass('active');
-  let tabIdx =  $(this).index();
+
+  let target = $(this).attr('href');
+
 
   $('.aside_tabs > div').hide();
-  $('.aside_tabs > div').eq(tabIdx).show();
-
-})
-
-$('.aside_btns').on('click', function(e){
-  e.preventDefault();
+  $(target).show();
 });
+
+
 
 //footer show_info 클릭시 할일
 $('.show_info').click(function(){

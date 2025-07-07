@@ -861,9 +861,7 @@ aside .h6{
   left:0;
   display: none;
 }
-.aside_tab.active{
-  display: block;
-}
+#tab_1 { display: block; }
 .aside_tab ul{
   height: 100%;
   display: flex;
