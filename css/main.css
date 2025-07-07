@@ -231,7 +231,7 @@
 /* 점 인디케이터 */
 .dots-indicator {
   position: absolute;
-  bottom: 20px;
+  bottom: 8px;
   left: 50%;
   transform: translateX(-50%);
   display: flex;
