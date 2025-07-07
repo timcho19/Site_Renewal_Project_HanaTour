@@ -820,7 +820,7 @@ footer .big-container{
 
 /*푸터 미디어 반응형*/
 @media (max-width: 1320px) {
- 
+  
   footer .big-container{
     width:100%;
     padding: 0 24px;
