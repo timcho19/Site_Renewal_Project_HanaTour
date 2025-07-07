@@ -510,22 +510,36 @@ aside .h6{
 .aside_btns {
   width: 100%;
   display: flex;
+  position: relative;
 }
-.aside_btns button{
+.aside_btns a{
   width:50%;
   font-size: 20px;
   font-weight: bold;
   padding: 10px 0;
   border-bottom: 2px solid #D9D9D9;
-  margin-bottom: 48px;
+  
   color: rgba(0,0,0,0.3);
+  text-align: center;
 }
-.aside_btns button.active{
-  border-bottom: 2px solid var(--primary);
+.aside_btns a.active{
   color:var(--black);
+}
+.aside_btns .underline {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 50%;
+  height: 2px;
+  background: var(--primary);
+  transition: transform 0.3s cubic-bezier(.4,0,.2,1);
+  z-index: 2;
+  pointer-events: none;
+ 
 }
 
 .aside_tabs{
+  margin-top: 48px;
   position: relative;
   flex: 1 1 auto;  /* 남은 공간 모두 차지 */
   min-height: 0;   /* flex 아이템이 오버플로우 되지 않게 */

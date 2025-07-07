@@ -39,13 +39,17 @@ asideBtn.click(function(){
   
   aside.addClass('active');
   $('.side_bar').hide();
+  $('body').css('overflow', 'hidden');
   
 });
 
 asidecloseBtn.click(function(){
   aside.removeClass('active')
   $('.side_bar').show();
+  $('body').css('overflow', '');
 })
+
+
 
 // 브라우저 리사이즈
 $(window).on('resize', function() {
@@ -64,6 +68,7 @@ $(window).on('resize', function() {
 $(document).ready(function() {
   if ($(window).width() >= 960) {
     aside.removeClass('active');
+    $('body').css('overflow', '');
   }
 });
 
@@ -89,3 +94,18 @@ $('.show_info').click(function(){
   $('.company_info').stop().slideToggle("slow");
   $(this).find('.bi').toggleClass('rotate');
 })
+
+
+/*어사이드바 언더라인 애니메이션*/
+$('.aside_btns a').on('click', function(e){
+  e.preventDefault();
+  var $btns = $('.aside_btns a');
+  var $underline = $('.aside_btns .underline');
+  var idx = $btns.index(this);
+
+  $btns.removeClass('active');
+  $(this).addClass('active');
+
+  // underline 이동
+  $underline.css('transform', 'translateX(' + (idx * 100) + '%)');
+});
