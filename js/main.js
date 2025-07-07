@@ -401,10 +401,10 @@ function renderList(item){
                 <ul>
                   ${description}
                 </ul>
-                <div class="card-tags">
-                  ${hashtag}
-                </div>
               </a>
+              <div class="card-tags">
+                <a href="">${hashtag}</a>
+              </div>
             </div>
           </div>
     `;
