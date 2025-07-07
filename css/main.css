@@ -662,7 +662,7 @@
   .main_section  {
     min-height: 500px;
     border-radius: 0 0 35px 35px;
-    max-height: 652px;
+    max-height: 550px;
   }
   .main-title-area {
 
@@ -727,3 +727,9 @@
 }
 
 
+@media (max-width: 567px) {
+  .main_section  {
+    min-height: 300px;
+    max-height: 350px;
+  }
+}

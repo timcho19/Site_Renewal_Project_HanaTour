@@ -136,6 +136,7 @@ $(window).on('resize', function() {
 
 //두번째 섹션부터 상단에 헤더 따라다니기
 
+
 const scondSectionTop = $('.travel-container').offset().top;
 
 $(window).scroll(function(){
