@@ -15,7 +15,7 @@
     "category": "special"
   },
   {
-    "img": "image",
+    "img": "image/special_nepal.png",
     "title": "네팔 히말라야 트레킹 6박 7일",
     "description": [
       "🏔️ 에베레스트 베이스캠프 트레킹 체험",
@@ -30,7 +30,7 @@
     "category": "special"
   },
   {
-    "img": "image/tour3.png",
+    "img": "image/special_island.png",
     "title": "아이슬란드 오로라 헌팅 4박 5일",
     "description": [
       "✨ 신비로운 오로라 관측 투어",
@@ -45,7 +45,7 @@
     "category": "special"
   },
   {
-    "img": "image/tour4.png",
+    "img": "image/special_moroco.png",
     "title": "모로코 사하라 사막 캠핑 5박 6일",
     "description": [
       "🐪 낙타 트레킹과 사막 캠핑 체험",
@@ -60,7 +60,7 @@
     "category": "special"
   },
   {
-    "img": "image/tour5.png",
+    "img": "image/special_inida.png",
     "title": "인도 케랄라 하우스보트 4박 5일",
     "description": [
       "🛥️ 백워터에서 전통 하우스보트 투숙",
@@ -75,7 +75,7 @@
     "category": "special"
   },
   {
-    "img": "image/tour6.png",
+    "img": "image/special_kenya.png",
     "title": "케냐 사파리 6박 7일",
     "description": [
       "🦁 마사이마라 빅5 사파리 체험",
@@ -90,7 +90,7 @@
     "category": "special"
   },
   {
-    "img": "image/tour7.png",
+    "img": "image/special_bootan.png",
     "title": "부탄 전통문화 체험 5박 6일",
     "description": [
       "🏯 히말라야 왕국 전통 사원 순례",
@@ -105,7 +105,7 @@
     "category": "special"
   },
   {
-    "img": "image/tour8.png",
+    "img": "image/special_kangwondo.png",
     "title": "강원도 짚라인 어드벤처 2박 3일",
     "description": [
       "🚁 산악 짚라인과 스카이워크 체험",
@@ -120,7 +120,7 @@
     "category": "special"
   },
   {
-    "img": "image/tour9.png",
+    "img": "image/food_italy.png",
     "title": "이탈리아 토스카나 와인투어 6박 7일",
     "description": [
       "🍷 키안티 와이너리 투어와 와인 테이스팅",
@@ -135,7 +135,7 @@
     "category": "food"
   },
   {
-    "img": "image/tour10.png",
+    "img": "image/food_france.png",
     "title": "프랑스 파리 미식투어 5박 6일",
     "description": [
       "🥐 파리 베이커리 투어와 크루아상 만들기",
@@ -150,7 +150,7 @@
     "category": "food"
   },
   {
-    "img": "image/tour11.png",
+    "img": "image/food_tokyo.png",
     "title": "일본 도쿄 이자카야 투어 4박 5일",
     "description": [
       "🍣 츠키지 시장 투어와 스시 체험",
@@ -165,7 +165,7 @@
     "category": "food"
   },
   {
-    "img": "image/tour12.png",
+    "img": "image/food_tailand.png",
     "title": "태국 방콕 쿠킹클래스 4박 5일",
     "description": [
       "🌶️ 현지 시장 투어와 태국 요리 클래스",
@@ -180,7 +180,7 @@
     "category": "food"
   },
   {
-    "img": "image/tour13.png",
+    "img": "image/food_spain.png",
     "title": "스페인 바르셀로나 타파스 투어 5박 6일",
     "description": [
       "🍤 현지 타파스 바 투어와 와인 페어링",
@@ -195,7 +195,7 @@
     "category": "food"
   },
   {
-    "img": "image/tour14.png",
+    "img": "image/food_india.png",
     "title": "인도 뉴델리 스파이스 투어 5박 6일",
     "description": [
       "🌶️ 스파이스 마켓 투어와 커리 클래스",
@@ -210,7 +210,7 @@
     "category": "food"
   },
   {
-    "img": "image/tour15.png",
+    "img": "image/food_mexican.png",
     "title": "멕시코 메리다 요리 체험 4박 5일",
     "description": [
       "🌮 유카탄 전통 요리 클래스",
@@ -225,7 +225,7 @@
     "category": "food"
   },
   {
-    "img": "image/tour16.png",
+    "img": "image/food_busan.png",
     "title": "부산 해산물 투어 2박 3일",
     "description": [
       "🦀 자갈치 시장 투어와 해산물 회센터",
@@ -240,7 +240,7 @@
     "category": "food"
   },
   {
-    "img": "image/tour17.png",
+    "img": "image/family_japan.png",
     "title": "일본 온천 힐링 4박 5일",
     "description": [
       "♨️ 하코네 온천 리조트 프리미엄 패키지",
@@ -255,7 +255,7 @@
     "category": "family"
   },
   {
-    "img": "image/tour18.png",
+    "img": "image/family_china_kyelim.png",
     "title": "중국 계림 크루즈 5박 6일",
     "description": [
       "🛳️ 리강 유람선과 편안한 크루즈 투어",
@@ -270,7 +270,7 @@
     "category": "family"
   },
   {
-    "img": "image/tour19.png",
+    "img": "image/family_taipei.png",
     "title": "대만 타이베이 편안한 여행 4박 5일",
     "description": [
       "🚄 고속철도로 편리한 이동",
@@ -285,7 +285,7 @@
     "category": "family"
   },
   {
-    "img": "image/tour20.png",
+    "img": "image/family_singapore.png",
     "title": "싱가포르 편안한 도시투어 4박 5일",
     "description": [
       "🏨 마리나베이 5성급 호텔 숙박",
@@ -300,7 +300,7 @@
     "category": "family"
   },
   {
-    "img": "image/tour21.png",
+    "img": "image/family_tailand.png",
     "title": "태국 치앙마이 스파 리조트 5박 6일",
     "description": [
       "💆‍♀️ 리조트 내 전문 스파 트리트먼트",
@@ -315,7 +315,7 @@
     "category": "family"
   },
   {
-    "img": "image/tour22.png",
+    "img": "image/family_danang.png",
     "title": "베트남 다낭 리조트 4박 5일",
     "description": [
       "🏖️ 해변가 5성급 리조트 올인클루시브",
@@ -330,7 +330,7 @@
     "category": "family"
   },
   {
-    "img": "image/tour23.png",
+    "img": "image/family_jeju.png",
     "title": "제주도 프리미엄 3박 4일",
     "description": [
       "🚗 렌터카 없이 편안한 투어버스 이용",
@@ -345,7 +345,7 @@
     "category": "family"
   },
   {
-    "img": "image/tour24.png",
+    "img": "image/family_kyungju.png",
     "title": "경주 문화유산 투어 2박 3일",
     "description": [
       "🏛️ 불국사와 석굴암 편안한 관람",
@@ -360,7 +360,7 @@
     "category": "family"
   },
   {
-    "img": "image/tour25.png",
+    "img": "image/mood_praga.png",
     "title": "체코 프라하 감성여행 5박 6일",
     "description": [
       "🏰 동화 같은 프라하 성과 구시가 광장",
@@ -375,7 +375,7 @@
     "category": "mood"
   },
   {
-    "img": "image/tour26.png",
+    "img": "image/mood_santorini.png",
     "title": "그리스 산토리니 감성여행 4박 5일",
     "description": [
       "🌅 에게해 절벽 위 하얀 집들과 일몰",
@@ -390,7 +390,7 @@
     "category": "mood"
   },
   {
-    "img": "image/tour27.png",
+    "img": "image/mood_Türkiye.png",
     "title": "튀르키예 카파도키아 열기구 4박 5일",
     "description": [
       "🎈 일출과 함께하는 열기구 투어",
@@ -405,7 +405,7 @@
     "category": "mood"
   },
   {
-    "img": "image/tour28.png",
+    "img": "image/mood_india.png",
     "title": "인도 타지마할 감성여행 5박 6일",
     "description": [
       "🕌 사랑의 상징 타지마할 일출 감상",
@@ -420,7 +420,7 @@
     "category": "mood"
   },
   {
-    "img": "image/tour29.png",
+    "img": "image/mood_machupicchu.png",
     "title": "페루 마추픽추 감성여행 6박 7일",
     "description": [
       "🏔️ 잃어버린 도시 마추픽추 일출 감상",
@@ -435,7 +435,7 @@
     "category": "mood"
   },
   {
-    "img": "image/tour30.png",
+    "img": "image/mood_italy.png",
     "title": "이탈리아 베니스 감성여행 4박 5일",
     "description": [
       "🚤 곤돌라를 타고 운하 투어",
@@ -450,7 +450,7 @@
     "category": "mood"
   },
   {
-    "img": "image/tour31.png",
+    "img": "image/mood_provence.png",
     "title": "프랑스 프로방스 감성여행 5박 6일",
     "description": [
       "💜 라벤더 밭과 해바라기 농장 투어",
@@ -465,7 +465,7 @@
     "category": "mood"
   },
   {
-    "img": "image/tour32.png",
+    "img": "image/mood_kangrueng.png",
     "title": "강릉 감성여행 2박 3일",
     "description": [
       "🌊 정동진 일출과 감성 해변 카페",
