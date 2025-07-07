@@ -184,13 +184,13 @@
 .travel-container {
   width: 1320px;
   margin: 0 auto;
-  padding-top: calc(var(--lh) * 6);
+  padding-top: 72px;
 }
 
 .bannerSlider {
   position: relative;
   overflow: hidden;
-  border-radius: 20px;
+  border-radius: 15px;
   box-shadow: 0 10px 30px rgba(0,0,0,0.1);
   margin-bottom:calc(var(--lh) * 6);;
 }
@@ -210,9 +210,9 @@
 
 .travel-banner img {
   width: 100%;
-  height: 144px;
+  /* height: 144px;
   object-fit: cover;
-  display: block;
+  display: block; */
 }
 
 /* 슬라이드 인디케이터 */
@@ -252,16 +252,14 @@
   background: white;
   transform: scale(1.2);
 }
-
+@media (max-width: 1320px){
+  .travel-container{
+    width:100%;
+  }
+}
 @media (max-width: 768px) {
-  .travel-banner img {
-      height: 107px;
-  }
   
-  .navigation {
-      width: 35px;
-      height: 35px;
-  }
+  
   
   
   .slide-indicator {
@@ -275,12 +273,7 @@
       bottom: 15px;
   }
   
-  .play-pause-btn {
-      bottom: 15px;
-      right: 15px;
-      width: 30px;
-      height: 30px;
-  }
+
 }
 
 
