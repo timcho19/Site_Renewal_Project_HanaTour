@@ -200,7 +200,6 @@
 
 .dot.active {
   background: white;
-  transform: scale(1.2);
 }
 
 
@@ -360,6 +359,13 @@
   border-radius: 50%;
   transition:  0.3s;
 }
+
+
+.youtube_shorts .swiper-pagination {
+  bottom: 76px !important;
+}
+
+
 
 .swiper-pagination-bullet-active {
   background: var(--primary); 
