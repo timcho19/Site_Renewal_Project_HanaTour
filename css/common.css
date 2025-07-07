@@ -668,11 +668,11 @@ header nav h1 a{
 .all_menu_btn.active{
   color:var(--primary);
 }
-.main-menus li a{
+.main_menus li a{
   transition: color 0.3s;
 }
 
-.main-menus li:hover a{
+.main_menus li:hover a{
   color:var(--primary);
 }
 
@@ -877,7 +877,7 @@ aside .h6{
 /*메인섹션 관련 미디어*/
 @media (max-width: 960px) {
 
-  .main-menus{
+  .main_menus{
     display: none;
   }
   .side-menus li:not(:last-child) {
