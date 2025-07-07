@@ -496,6 +496,13 @@ function renderList(item){
     i.description.forEach(d=>(
       description += `<li>${d}</li>`
     ));
+
+    let hashtag = '';
+    i.hashtag.forEach(h=>(
+      hashtag += `<a href="">${h}</a>`
+    ));
+
+
     itemHTML += `
             <div class="travel-card slider-item special">
               <div class="product_img">
@@ -516,15 +523,15 @@ function renderList(item){
                   ${description}
                 </ul>
                 <div class="card-tags">
-                  #보홀 #해변리조트 #호핑투어 #휴양지 #조깅포인트
+                  ${hashtag}
                 </div>
               </a>
             </div>
           </div>
-    `
+    `;
   });
-  productList.html(itemHTML);
-};
+    productList.html(itemHTML);
+  };
 
 fetch('json/data.json')
   .then(res => res.json())

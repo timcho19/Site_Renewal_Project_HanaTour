@@ -68,8 +68,8 @@ $(document).ready(function() {
 });
 
 //어사이드 탭버튼 클릭시 할일
-$('.aside_btns button').click(function(){
-  $('.aside_btns button').removeClass('active');
+$('.aside_btns a').click(function(){
+  $('.aside_btns a').removeClass('active');
   $(this).addClass('active');
   let tabIdx =  $(this).index();
 
@@ -77,6 +77,10 @@ $('.aside_btns button').click(function(){
   $('.aside_tabs > div').eq(tabIdx).show();
 
 })
+
+$('.aside_btns').on('click', function(e){
+  e.preventDefault();
+});
 
 //footer show_info 클릭시 할일
 $('.show_info').click(function(){
