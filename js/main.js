@@ -130,6 +130,8 @@ $(window).on('resize', function() {
       $('.sign_btn').removeClass('active');
     }
   }
+
+  
 });
 
 //두번째 섹션부터 상단에 헤더 따라다니기
@@ -270,111 +272,7 @@ function initWeatherSlider() {
 
   weatherAnimate();
 
-/* - - - - 날씨 - - - - 
 
-let result;
-
-const getWeather = (cityName) => {
-  fetch(`https://api.openweathermap.org/data/2.5/forecast?q=${cityName}&appid=b799259d92c437e1d782b0cc2d7e2238&units=metric&lang=kr`)
-    .then(res => res.json())
-    .then(data => {
-      const list = data.list;
-
-      const today = new Date().toISOString().split('T')[0];
-      const todayData = list.filter(item => item.dt_txt.startsWith(today));
-
-      const maxTemp = Math.max(...todayData.map(item => item.main.temp_max)).toFixed(1);
-      const minTemp = Math.min(...todayData.map(item => item.main.temp_min)).toFixed(1);
-
-      const weatherFrequency = {};
-      todayData.forEach(item => {
-        const desc = item.weather[0].description;
-        weatherFrequency[desc] = (weatherFrequency[desc] || 0) + 1;
-      });
-
-      const mainWeather = Object.entries(weatherFrequency).sort((a, b) => b[1] - a[1])[0][0];
-      const icon = todayData[0].weather[0].icon;
-
-      result = {
-        city: data.city.name,
-        date: today,
-        maxTemp,
-        minTemp,
-        mainWeather,
-        icon
-      };
-
-      const $weatherInfo = $(`
-        <div class="card">
-          <div class="card-body">
-            <img src="/image/${result.city}.png" alt="">
-            <p class="h5">${result.city}의 날씨를 확인해보세요!</p>
-            <div class="weather-info">
-              <img src="https://openweathermap.org/img/wn/${result.icon}.png" alt="${result.mainWeather}">
-              <p class="weather">
-                최고 <span class="hightemp">${result.maxTemp}</span>도 /
-                최저 <span class="lowtemp">${result.minTemp}</span>도 기온으로
-                오늘의 날씨는 ${result.mainWeather}!
-              </p>
-            </div>
-          </div>
-        </div>
-      `);
-
-      $('.weather-cards').append($weatherInfo);
-    });
-};
-
-getWeather('japan');
-getWeather('japan');
-getWeather('japan');
-getWeather('thailand');
-getWeather('shanghai');
-getWeather('singapore');
-getWeather('paris');
-getWeather('australia');
-getWeather('australia');
-getWeather('japan');
-*/
-
-
-
-
-/* slide
-    
-var $weatherSlider = $('.weather-cards');
-var $weatherCards = $weatherSlider.find('.card');
-var weatherCardCount = $weatherCards.length;
-var weatherCardWidth = 312;
-var weatherGap = 16;
-var weatherStep = weatherCardWidth + weatherGap;
-
-// 카드들을 복제해서 끝에 붙여 무한 롤링 구현
-$weatherCards.clone().appendTo($weatherSlider);
-
-var weatherTotalCards = $weatherSlider.find('.card').length;
-var weatherTotalWidth = weatherTotalCards * weatherStep;
-$weatherSlider.css('width', weatherTotalWidth + 'px');
-
-var weatherPos = 0;
-var weatherSpeed = 1.5; // 1px씩 이동 (원하는 속도 조절)
-var weatherIsPlaying = true;
-var weatherAnimationId;
-
-function weatherAnimate() {
-  if (!weatherIsPlaying) return;
-  weatherPos -= weatherSpeed;
-  if (Math.abs(weatherPos) >= weatherCardCount * weatherStep) {
-    // 원본 카드 전체가 지나가면 위치 리셋
-    weatherPos = 0;
-  }
-  $weatherSlider.css('transform', 'translateX(' + weatherPos + 'px)');
-  weatherAnimationId = requestAnimationFrame(weatherAnimate);
-}
-
-// 시작
-weatherAnimate();
- */
 
 
 
