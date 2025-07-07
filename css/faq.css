@@ -49,14 +49,23 @@
   
   .faq_section{
     margin-top: 108px;
+    padding: 0 24px;
   }
   
   .faq_section .container{
     max-width: 1320px;
     margin: 0 auto;
-    padding: 0 24px;
     
   }
+  .container, .container-fluid, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
+    --bs-gutter-x: 1.5rem;
+    --bs-gutter-y: 0;
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 0;
+    padding-right: 0;
+}
   
   /*  서비스 그리드 섹션  */
   
@@ -174,17 +183,19 @@
     
     .faq_section {
       margin-top: 60px;
-    }
-    
-    .faq_section .container {
       padding: 0 16px;
     }
+    
+
     
     .services_section {
       margin: 60px auto;
       padding: 0 16px;
     }
     
+    .faq_section h2 {
+      font-size: 24px;
+    }
     .services_section h2 {
       font-size: 24px;
       margin-bottom: 30px;
