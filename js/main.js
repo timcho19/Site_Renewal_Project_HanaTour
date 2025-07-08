@@ -85,6 +85,73 @@ $dots.on('click', function() {
   timer = setInterval(nextSlide, interval);
 });
 
+//
+let startX = 0;
+let isDragging = false;
+const threshold = 50; // 스와이프 인식 최소 거리(px)
+
+// 터치 시작
+$('.mslides-container').on('touchstart', function(e) {
+  startX = e.originalEvent.touches[0].clientX;
+  isDragging = true;
+});
+
+// 터치 이동 (선택사항)
+$('.mslides-container').on('touchmove', function(e) {
+  if (!isDragging) return;
+});
+
+// 터치 종료
+$('.mslides-container').on('touchend', function(e) {
+  if (!isDragging) return;
+  isDragging = false;
+  let endX = e.originalEvent.changedTouches[0].clientX;
+  let diff = endX - startX;
+  if (Math.abs(diff) > threshold) {
+    if (diff < 0) {
+      // 왼쪽 스와이프: 다음 슬라이드
+      current = (current + 1) % mslideCount;
+    } else {
+      // 오른쪽 스와이프: 이전 슬라이드
+      current = (current - 1 + mslideCount) % mslideCount;
+    }
+    showSlide(current);
+    clearInterval(timer);
+    timer = setInterval(nextSlide, interval);
+  }
+});
+
+// --- 마우스 드래그도 지원하려면 아래 추가 ---
+
+let mouseDownX = 0;
+let mouseDragging = false;
+
+$('.mslides-container').on('mousedown', function(e) {
+  mouseDownX = e.clientX;
+  mouseDragging = true;
+});
+
+$(document).on('mousemove', function(e) {
+  if (!mouseDragging) return;
+});
+
+$(document).on('mouseup', function(e) {
+  if (!mouseDragging) return;
+  mouseDragging = false;
+  let mouseUpX = e.clientX;
+  let diff = mouseUpX - mouseDownX;
+  if (Math.abs(diff) > threshold) {
+    if (diff < 0) {
+      current = (current + 1) % mslideCount;
+    } else {
+      current = (current - 1 + mslideCount) % mslideCount;
+    }
+    showSlide(current);
+    clearInterval(timer);
+    timer = setInterval(nextSlide, interval);
+  }
+});
+
 
 
 // 헤더 초기 상태 저장

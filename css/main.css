@@ -793,6 +793,10 @@
     padding-left: 24px;
     padding-right: 0;
   }
+  .side_bar{
+    bottom: 20px;
+    right: 20px;
+  }
  
 }
 
