@@ -1,10 +1,11 @@
 @import url('reset.css');
 @import url('common.css');
 
-
 body{
   overflow-x: hidden;
 }
+
+
 
 /*WS*/
 
@@ -302,12 +303,18 @@ body{
 .swiper {
   position: relative;
   padding: 0 12px;
+  width: 100%;
+  height: 100%;
 }
+
+
 .swiper-slide{
   box-sizing: border-box;
   padding: 0; 
   overflow: hidden;
+  width: 60%;
 }
+
 .iframe-wrapper{
       width: 100%;
       aspect-ratio: 9 / 16;
@@ -366,7 +373,6 @@ body{
 .swiper-pagination-bullet-active {
   background: var(--primary); 
 }
-
 
 
 
@@ -500,6 +506,7 @@ body{
 
 
 /* 진욱 */
+
 .section_title{
   text-align: center;
   padding: 58px 0;
@@ -509,11 +516,6 @@ body{
   line-height:24px;
   font-weight: bold;
 }
-
-.youtube{
-  position: relative;
-}
-
 .youtube_video {
   padding: 0 60px;
   overflow: visible;
@@ -546,13 +548,31 @@ body{
   height: 100%;
   border: 0;
 }
-.videobtns{
-  position: absolute;
+
+.controls{
+ 
   display: flex;
-  gap: 24px;
-  left: 50%;
+  justify-content: right;
+}
+.prev_btn{
+  width: 52px;
+  height: 52px;
+}
+.next_btn{
+  width: 52px;
+  margin-left: 20px;
 }
 
+.prev_btn:hover svg circle,
+.next_btn:hover svg circle{
+  stroke: var(--primary);
+  transition: 0.3s;
+}
+.prev_btn:hover svg path,
+.next_btn:hover svg path{
+  fill: var(--primary);
+  stroke: var(--primary);
+}
 
 .side_bar{
   position: fixed;

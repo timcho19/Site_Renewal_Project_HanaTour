@@ -313,7 +313,7 @@ $weatherSlider.on('mouseover',function(){
 
 /* - - - - - - shorts swiper - - - - - */
 
-var swiper = new Swiper(".swiper.shorts", {
+const swiper = new Swiper(".swiper.shorts", {
   loop: true,
   spaceBetween: 24,
   grabCursor: true,
@@ -366,8 +366,8 @@ const swiper2 = new Swiper(".youtube_video", {
   spaceBetween: 30,
 
   navigation: {
-    nextEl: ".prev_btn.swiper-button-next",
-    prevEl: ".next_btn.swiper-button-prev",
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
   },
 
   breakpoints: {
@@ -393,10 +393,6 @@ const swiper2 = new Swiper(".youtube_video", {
     }
   }
 });
-
-
-
-
 
 
 
