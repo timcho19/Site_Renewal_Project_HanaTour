@@ -298,7 +298,8 @@ dialog {
   transition: .3s;
 }
 
-.login_btn:disabled{
+.login_btn:disabled,
+.signup_btn:disabled{
   color: var(--white);
   background-color: #cfcfcf;
   border-color: #cfcfcf;
