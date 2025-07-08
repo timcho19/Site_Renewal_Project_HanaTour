@@ -560,6 +560,7 @@ body{
 .next_btn{
   fill: #cfcfcf;
   opacity: 0.4;
+  transition: .3s ease-out;
   transform: scale(1);
 }
 
