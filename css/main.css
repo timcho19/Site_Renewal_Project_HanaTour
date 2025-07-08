@@ -213,6 +213,7 @@
   gap:24px;
   position: relative;
   padding-bottom: 10px;
+  left: 0;
   
 }
 
@@ -711,25 +712,48 @@
   .swiper {
     
     padding: 0 0;
-}
+  }
 
 
-.contents_prev_btn {
-  left: 0; /* 또는 원하는 만큼 양수로 조정 */
-}
-.contents_next_btn {
-  right: 0; /* 또는 원하는 만큼 양수로 조정 */
-}
-.swiper-button-prev{
-  left: 0;
-}
 
-.swiper-button-next{
-  right: 0;
-}
+  .swiper-button-prev{
+    left: 0;
+  }
+
+  .swiper-button-next{
+    right: 0;
+  }
+
+  .contents_prev_btn,
+  .contents_next_btn {
+    top: 50%;
+    bottom: 16px;
+    transform: none;
+    width: 40px;
+    height: 40px;
+    background: rgba(0,0,0,0.35); /* 반투명 검정 */
+    color: #fff; /* 아이콘은 흰색 */
+    border-radius: 50%;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    z-index: 2;
+    border: none;
+    opacity: 0.5;
+    transition: opacity 0.3s;
+  }
+  .contents_prev_btn:hover,
+  .contents_next_btn:hover{
+    opacity: 0.8;
+  } 
+  .contents_prev_btn { left: 10px; right: auto; }
+  .contents_next_btn { right: 10px; left: auto; }
 
   
 }
+
 
 /*768이하구간*/
 

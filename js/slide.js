@@ -65,7 +65,16 @@ const slideshow = function (target) {
   $('.slider-wrapper .contents_next_btn').click(function(){
     contentSlide(1);
   });
+
+      // 터치 이벤트 등록 (여기서부터 추가)
+  $('.slider-wrapper .travel-cards-container').swipe({
+    swipeLeft: function() { contentSlide(1); },
+    swipeRight: function() { contentSlide(-1); },
+    threshold: 50
+  });
+
   }
+
 
 
 
