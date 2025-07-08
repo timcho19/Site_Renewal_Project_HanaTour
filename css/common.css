@@ -826,6 +826,9 @@ footer .big-container{
     padding: 0 24px;
   }
 
+  .footer_nav{
+    padding: 12px 24px;
+  }
 }
 @media (max-width: 960px) {
   .main_menus{
@@ -881,6 +884,11 @@ footer .big-container{
     align-items: center;
     text-align: center;
   }
+
+  .footer_nav{
+    gap:20px;
+  }
+
   .footer_info{
     align-items: center;
     text-align: center;
