@@ -991,5 +991,14 @@ footer .big-container{
     transition: .3s ease-out;
   }
 
+  .h1{
+    margin-bottom: 24px;
+    font-size: 24px;
+  }
+
+  .big-pd-bottom {
+    padding-bottom: calc(var(--lh) * 4);
+}
+
 }
 

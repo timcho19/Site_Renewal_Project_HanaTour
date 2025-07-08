@@ -538,6 +538,7 @@ body{
 }
 
 .youtube{
+  overflow: hidden;
   position: relative;
   background: linear-gradient(to bottom, rgba(6, 208, 218, 0.6), #fff 50%);
 }
@@ -830,9 +831,14 @@ body{
     flex-direction: column;
     align-items: center;
     gap:2px;
+
   }
   .mob_navigation ul li a img{
-    max-width: 60px;
+    max-width: 50px;
+  }
+  .mob_navigation ul li a span{
+    font-size: 14px;
+    font-weight:500;
   }
   .travel-container {
     padding-top: 0px;
@@ -875,5 +881,8 @@ body{
   .main_section  {
     min-height: 400px;
     max-height: 450px;
+  }
+  .youtube-placeholder .play-btn {
+    width: 70px;
   }
 }
