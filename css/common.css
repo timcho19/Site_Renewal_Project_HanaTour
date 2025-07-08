@@ -94,7 +94,7 @@ body{
 
 .h3{
   color: var(--black);
-  line-height: calc(var(--lh) * 2);
+  /* line-height: calc(var(--lh) * 2); */
   font-weight: bold;
   margin-top: var(--lh);
 }
