@@ -461,6 +461,112 @@ const swiper2 = new Swiper(".youtube_video", {
     }
   }
 });
+/* - - - - - - - 지금가장뜨는 여행지  슬라이드 - - - - - - - */ 
+
+const $hotwrapper = $('.hot-wrapper');
+const $hottrack = $hotwrapper.find('.hot-container');
+const $hotcontent = $hotwrapper.find('.hot-content');
+const $hotcards = $hotcontent.find('.hot-item');
+
+const hotVisibleCards = 4;
+const hotCardGap = 24;
+const hotCardWH = 312 + hotCardGap;
+
+let hotCurrentIndex = 0;
+let hotIsAnimating = false;
+
+const $hotPrependClones = $hotcards.clone().addClass('clone');
+const $hotAppendClones = $hotcards.clone().addClass('clone');
+
+$hotcontent.prepend($hotPrependClones);
+$hotcontent.append($hotAppendClones);
+
+const hotTotalCards = $hotcontent.find('.hot-item').length;
+
+$hotcontent.css({
+  width: hotCardWH * hotTotalCards + 'px',
+  left: -hotCardWH * hotVisibleCards + 'px'
+});
+
+function hotContentSlide(dir) {
+  if (hotIsAnimating) return;
+  hotIsAnimating = true;
+
+  hotCurrentIndex += dir;
+  $hotcontent.stop(true, true).animate({
+    left: -hotCardWH * (hotVisibleCards + hotCurrentIndex) + 'px'
+  }, 300, () => {
+    if (hotCurrentIndex === $hotcards.length || hotCurrentIndex === -$hotcards.length) {
+      hotCurrentIndex = 0;
+      $hotcontent.css('left', -hotCardWH * hotVisibleCards + 'px');
+    }
+    hotIsAnimating = false;
+  });
+}
+
+$('.hot-wrapper .contents_prev_btn').click(function () {
+  hotContentSlide(-1);
+  resetHotAutoSlide();
+});
+
+$('.hot-wrapper .contents_next_btn').click(function () {
+  hotContentSlide(1);
+  resetHotAutoSlide();
+});
+
+// 오토 슬라이드
+let hotAutoTimer = setInterval(function () {
+  hotContentSlide(1);
+}, 5000);
+
+function resetHotAutoSlide() {
+  clearInterval(hotAutoTimer);
+  hotAutoTimer = setInterval(function () {
+    hotContentSlide(1);
+  }, 5000);
+}
+
+// 터치 슬라이드
+let hotStartX = 0;
+let hotIsDragging = false;
+const hotThreshold = 50;
+
+$hottrack.on('touchstart', function (e) {
+  hotStartX = e.originalEvent.touches[0].clientX;
+  hotIsDragging = true;
+});
+
+$hottrack.on('touchend', function (e) {
+  if (!hotIsDragging) return;
+  hotIsDragging = false;
+  let hotEndX = e.originalEvent.changedTouches[0].clientX;
+  let diff = hotEndX - hotStartX;
+  if (Math.abs(diff) > hotThreshold) {
+    hotContentSlide(diff < 0 ? 1 : -1);
+    resetHotAutoSlide();
+  }
+});
+
+// 마우스 드래그
+let hotMouseDownX = 0;
+let hotMouseDragging = false;
+
+$hottrack.on('mousedown', function (e) {
+  hotMouseDownX = e.clientX;
+  hotMouseDragging = true;
+});
+
+$(document).on('mouseup', function (e) {
+  if (!hotMouseDragging) return;
+  hotMouseDragging = false;
+  let hotMouseUpX = e.clientX;
+  let diff = hotMouseUpX - hotMouseDownX;
+  if (Math.abs(diff) > hotThreshold) {
+    hotContentSlide(diff < 0 ? 1 : -1);
+    resetHotAutoSlide();
+  }
+});
+
 
 
 
