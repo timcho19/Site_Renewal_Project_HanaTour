@@ -122,7 +122,7 @@ $('.mslides-container').on('touchend', function(e) {
   }
 });
 
-// --- 마우스 드래그도 지원하려면 아래 추가 ---
+
 
 let mouseDownX = 0;
 let mouseDragging = false;
@@ -525,6 +525,14 @@ function resetHotAutoSlide() {
     hotContentSlide(1);
   }, 5000);
 }
+
+$hotwrapper.on('mouseenter', function () {
+  clearInterval(hotAutoTimer);
+});
+
+$hotwrapper.on('mouseleave', function () {
+  resetHotAutoSlide();
+});
 
 // 터치 슬라이드
 let hotStartX = 0;

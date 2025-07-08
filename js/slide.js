@@ -54,7 +54,12 @@ const slideshow = function (target) {
     clearInterval(autoTimer);
     autoTimer = setInterval(() => contentSlide(1), 5000);
   }
-
+  $wrapper.mouseenter(function(){
+    clearInterval(autoTimer);
+  })
+  $wrapper.mouseleave(function(){
+    resetAutoSlide();
+  });
   // 슬라이드 터치/드래그 기능
   let startX = 0;
   let isDragging = false;
