@@ -1,10 +1,11 @@
 @import url('reset.css');
 @import url('common.css');
 
-
 body{
   overflow-x: hidden;
 }
+
+
 
 /*WS*/
 
@@ -302,12 +303,18 @@ body{
 .swiper {
   position: relative;
   padding: 0 12px;
+  width: 100%;
+  height: 100%;
 }
+
+
 .swiper-slide{
   box-sizing: border-box;
   padding: 0; 
   overflow: hidden;
+  width: 60%;
 }
+
 .iframe-wrapper{
       width: 100%;
       aspect-ratio: 9 / 16;
@@ -369,7 +376,6 @@ body{
 
 
 
-
 .travel-cards-container,.slider-container {
   position: relative;
   overflow: hidden;
@@ -380,9 +386,7 @@ body{
   margin: 0 -20px;
 }
 
-
 .slider-container{
-
   padding-bottom: 12px;
 }
 
@@ -502,6 +506,7 @@ body{
 
 
 /* 진욱 */
+
 .section_title{
   text-align: center;
   padding: 58px 0;
@@ -511,11 +516,6 @@ body{
   line-height:24px;
   font-weight: bold;
 }
-
-.youtube{
-  position: relative;
-}
-
 .youtube_video {
   padding: 0 60px;
   overflow: visible;
@@ -548,13 +548,31 @@ body{
   height: 100%;
   border: 0;
 }
-.videobtns{
-  position: absolute;
+
+.controls{
+ 
   display: flex;
-  gap: 24px;
-  left: 50%;
+  justify-content: right;
+}
+.prev_btn{
+  width: 52px;
+  height: 52px;
+}
+.next_btn{
+  width: 52px;
+  margin-left: 20px;
 }
 
+.prev_btn:hover svg circle,
+.next_btn:hover svg circle{
+  stroke: var(--primary);
+  transition: 0.3s;
+}
+.prev_btn:hover svg path,
+.next_btn:hover svg path{
+  fill: var(--primary);
+  stroke: var(--primary);
+}
 
 .side_bar{
   position: fixed;
@@ -631,40 +649,9 @@ body{
   left: 0;
 }
 
-  .swiper-button-prev{
-    left: 0;
-  }
-
-  .swiper-button-next{
-    right: 0;
-  }
-
-  .contents_prev_btn,
-  .contents_next_btn {
-    top: 50%;
-    bottom: 16px;
-    transform: none;
-    width: 40px;
-    height: 40px;
-    background: rgba(0,0,0,0.35); /* 반투명 검정 */
-    color: #fff; /* 아이콘은 흰색 */
-    border-radius: 50%;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 1.5rem;
-    z-index: 2;
-    border: none;
-    opacity: 0.4;
-    transition: opacity 0.3s;
-  }
-  .contents_prev_btn:hover,
-  .contents_next_btn:hover{
-    opacity: 0.8;
-  } 
-  .contents_prev_btn { left: 10px; right: auto; }
-  .contents_next_btn { right: 10px; left: auto; }
+.swiper-button-next{
+  right: 0;
+}
 
   
 }
@@ -674,9 +661,9 @@ body{
 
 @media (max-width: 768px) {
   .main_section  {
-    min-height: 550px;
+    min-height: 500px;
     border-radius: 0 0 35px 35px;
-    max-height: 600px;
+    max-height: 550px;
   }
   .main-title-area {
 
@@ -685,22 +672,10 @@ body{
    
   }
   .main-title{
-    font-size: 1.3rem;
+    font-size: 2rem;
   }
   .main-desc{
     font-size: 1rem;
-  }
-  .best-travel-title {
-    font-size: 1.3rem;
-  }
-  .youtube_shorts{
-    width:100%;
-    padding-left: 24px;
-    padding-right: 0;
-  }
-  .side_bar{
-    bottom: 20px;
-    right: 20px;
   }
  
 }
@@ -769,7 +744,7 @@ body{
 
 @media (max-width: 567px) {
   .main_section  {
-    min-height: 400px;
-    max-height: 450px;
+    min-height: 300px;
+    max-height: 350px;
   }
 }
