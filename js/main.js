@@ -565,6 +565,6 @@ document.querySelectorAll('.youtube-placeholder').forEach(function(el){
       referrerpolicy="strict-origin-when-cross-origin"
       allowfullscreen
       loading="lazy"
-      width="315"></iframe>`;
+      ></iframe>`;
   });
 });
