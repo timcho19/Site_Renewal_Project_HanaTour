@@ -312,6 +312,7 @@ body{
       width: 100%;
       aspect-ratio: 9 / 16;
       overflow: hidden;
+      position: relative; 
 }
 .swiper-slide iframe {
   width: 100%;
@@ -320,6 +321,37 @@ body{
   border-radius: 15px;
   display: block;
   border: none;
+}
+.youtube-placeholder {
+  width: 100%;
+  aspect-ratio: 9 / 16;
+  position: relative;
+  cursor: pointer;
+  overflow: hidden;
+  border-radius: 15px;
+}
+
+.youtube-placeholder img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 15px;
+  display: block;
+}
+
+.youtube-placeholder .play-btn {
+  position: absolute;
+  left: 50%; top: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 48px;
+  background: rgba(0,0,0,0.5);
+  color: #fff;
+  border: none;
+  border-radius: 50%;
+  width: 64px; height: 64px;
+  display: flex; align-items: center; justify-content: center;
+  cursor: pointer;
+  z-index: 2;
 }
 
 .swiper-button-prev,

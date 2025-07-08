@@ -550,3 +550,21 @@ $('.concept-cards .travel-card').hide();
 $('.concept-cards').find(conceptFilter).show();
 });
 
+
+
+
+//테스트 (iframe)
+document.querySelectorAll('.youtube-placeholder').forEach(function(el){
+  el.addEventListener('click', function(){
+    const videoId = el.getAttribute('data-video-id');
+    el.innerHTML = `<iframe
+      src="https://www.youtube.com/embed/${videoId}?autoplay=1"
+      title="YouTube video player"
+      frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+      referrerpolicy="strict-origin-when-cross-origin"
+      allowfullscreen
+      loading="lazy"
+      width="315"></iframe>`;
+  });
+});
