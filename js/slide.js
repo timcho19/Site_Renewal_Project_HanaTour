@@ -13,13 +13,6 @@ const slideshow = function (target) {
   let currentIndex = 0;
   let isAnimating = false;
    
-  $(window).on('resize', function() {
-    if (window.innerWidth <= 960) {
-      
-    }
-  
-    
-  });
 
 
   
@@ -38,6 +31,10 @@ const slideshow = function (target) {
     transform: `translateX(-${cardWH * visibleCards}px)`,
   });
   
+  // $content.css({
+  //   width: cardWH * totalCards +'px',
+  //   left: -cardWH * visibleCards + 'px'
+  // });
   
   function contentSlide(dir) {
     if (isAnimating) return;
@@ -56,6 +53,7 @@ const slideshow = function (target) {
       isAnimating = false;
     });
   }
+
   
   $('.slider-wrapper .contents_prev_btn').click(function(){
     contentSlide(-1);
@@ -66,8 +64,9 @@ const slideshow = function (target) {
     contentSlide(1);
   });
 
-      // 터치 이벤트 등록 (여기서부터 추가)
-  $('.slider-wrapper .travel-cards-container').swipe({
+  
+  // 터치 이벤트 등록 (여기서부터 추가)
+  $('.slider-container').swipe({
     swipeLeft: function() { contentSlide(1); },
     swipeRight: function() { contentSlide(-1); },
     threshold: 50
@@ -82,5 +81,4 @@ const slideshow = function (target) {
   
   
   export default
-    slideshow
- ;
+    slideshow;

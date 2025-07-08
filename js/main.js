@@ -428,7 +428,7 @@ let tabBtns = $('.tab_btns'),
     
 tabBtns.click(function(){
 tabBtns.removeClass('active');
-$(this).addClass('active');stories
+$(this).addClass('active');
 
 
 const conceptFilter = $(this).data('filter');
