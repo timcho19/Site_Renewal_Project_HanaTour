@@ -343,13 +343,6 @@ body{
   position: absolute;
   left: 50%; top: 50%;
   transform: translate(-50%, -50%);
-  font-size: 48px;
-  background: rgba(0,0,0,0.5);
-  color: #fff;
-  border: none;
-  border-radius: 50%;
-  width: 64px; height: 64px;
-  display: flex; align-items: center; justify-content: center;
   cursor: pointer;
   z-index: 2;
 }
@@ -606,20 +599,15 @@ body{
  
 }
 
-.youtube_video .youtube-placeholder .play-btn {
+/* .youtube_video .youtube-placeholder .play-btn {
   position: absolute;
   left: 50%; top: 50%;
   transform: translate(-50%, -50%);
-  font-size: 48px;
-  background: rgba(0,0,0,0.5);
-  color: #fff;
   border: none;
-  border-radius: 50%;
-  width: 64px; height: 64px;
   display: flex; align-items: center; justify-content: center;
   cursor: pointer;
   z-index: 2;
-}
+} */
 
 .story .h5{
   color: var(--sub-text);
