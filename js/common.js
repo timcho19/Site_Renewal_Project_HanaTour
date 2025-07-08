@@ -47,6 +47,17 @@ asidecloseBtn.click(function(){
   aside.removeClass('active')
   $('.side_bar').show();
   $('body').css('overflow', '');
+  
+   // 첫 번째 탭으로 초기화
+   $('.aside_btns a').removeClass('active');
+   $('.aside_btns a').first().addClass('active');
+ 
+   // 모든 탭 내용 숨기고, 첫 번째 탭 내용만 표시
+   $('.aside_tabs > div').hide();
+   $('.aside_tabs > div').first().show();
+ 
+   // 언더라인을 첫 번째 탭으로 이동
+   $('.aside_btns .underline').css('transform', 'translateX(0%)');
 })
 
 
