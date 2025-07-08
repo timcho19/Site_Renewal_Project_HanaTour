@@ -174,7 +174,7 @@ body{
   position: absolute;
   top: 10px;
   right: 20px;
-  background: rgba(0,0,0,0.5);
+  background: rgba(0,0,0,0.3);
   color: white;
   padding: 8px 12px;
   border-radius: 20px;
@@ -298,13 +298,13 @@ body{
   margin: 0 auto;
  
 }
-
 .swiper {
   position: relative;
   padding: 0 12px;
+  background-color: #fff !important;
 }
+
 .swiper-slide{
-  box-sizing: border-box;
   padding: 0; 
   overflow: hidden;
 }
@@ -370,36 +370,12 @@ body{
   right: -6%;
 }
 
-
-.swiper-pagination-bullet {
-  width: 10px;
-  height: 10px;
-  background: #ccc;
-  opacity: 1;
-  margin: 0 5px;
-  border-radius: 50%;
-  transition:  0.3s;
-}
-
-
-.youtube_shorts .swiper-pagination {
-  bottom: 76px !important;
-}
-
-
-
-.swiper-pagination-bullet-active {
-  background: var(--primary); 
-}
-
-
-
-
 .travel-cards-container,.slider-container {
   position: relative;
   overflow: hidden;
   padding: 0 20px; /* 좌우 그림자 공간 확보 (그림자 크기에 맞게 조정) */
 }
+
 .slider-wrapper{
   position: relative;
   margin: 0 -20px;
@@ -407,7 +383,6 @@ body{
 
 
 .slider-container{
-
   padding-bottom: 12px;
 }
 
