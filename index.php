@@ -512,7 +512,7 @@
     </div>
   </section>
 
-  <!-- 진욱 -->
+
   <section class="youtube big-pd-bottom">
       <div class="section_title">
       <h2 class="h1 contents-title">HANATOUR TRAVEL STORY</h2>
