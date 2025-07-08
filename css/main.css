@@ -882,7 +882,13 @@ body{
     min-height: 400px;
     max-height: 450px;
   }
+  .mob_navigation {
+    
+    padding-top: 36px;
+    padding-bottom: 72px;
+  }
   .youtube-placeholder .play-btn {
     width: 70px;
   }
+  
 }
