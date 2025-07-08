@@ -472,13 +472,19 @@ const swiper2 = new Swiper(".youtube_video", {
 
 const productList = $('.concept-cards');
 
+//비동기로 변경 필요
+async function getData() {
+  try {
+    const res = await fetch('json/data.json');
+    const data = await res.json(); // JSON → 객체 변환
+    renderList(data);
+  } catch (error) {
+    console.error('데이터를 불러오는 중 오류 발생:', error);
+  }
+}
 
-fetch('json/data.json')
-.then(res => res.json()) //json형태를 객체 변환!
-.then(data => {
-  //console.log(data);
-  renderList(data);
-});
+getData();
+
 
 function renderList(item){
 
@@ -526,12 +532,6 @@ function renderList(item){
     productList.html(itemHTML);
   };
 
-fetch('json/data.json')
-  .then(res => res.json())
-  .then(data => {
-    renderList(data);           // 카드 생성 먼저
-   // slideshow('.slideshow3'); // 그 후 슬라이드 초기화
-  });
 
 
 /* - - - - - - tab filter - - - - - - -*/

@@ -550,6 +550,20 @@ body{
   border: 0;
 }
 
+.prev_btn,
+.next_btn{
+  fill: #cfcfcf;
+  opacity: 0.4;
+  transform: scale(1);
+}
+
+.prev_btn:hover,
+.next_btn:hover{
+  opacity: 0.8;
+  transition: .3s ease;
+  transform: scale(1.1);
+}
+
 .prev_btn{
   left: 10px;
 }
@@ -617,7 +631,6 @@ body{
     padding-right: 24px;
   }
   .swiper {
-    
     padding: 0 0;
 }
 
