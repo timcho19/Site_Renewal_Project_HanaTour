@@ -408,7 +408,7 @@
 
 
 .best-travel-title {
-  font-size: 40px;
+  /* font-size: 40px; */
   line-height: 40px;
   font-weight: bold;
   text-align: center;
@@ -696,7 +696,20 @@
   transform: translateY(0);
  
 }
-
+.side_bar .likes_ct{
+  content: '';
+  display: none;
+  width:25px;
+  height: 15px;
+  line-height: 15px;
+  border-radius: 10px;
+  position: absolute;
+  right:-10px;
+  bottom: -5px;
+  background: var(--sub-text);
+  color: var(--white);
+  font-size: 12px;
+}
 
 
 
@@ -785,9 +798,7 @@
   .main-desc{
     font-size: 1rem;
   }
-  .best-travel-title {
-    font-size: 1.3rem;
-  }
+  
   .youtube_shorts{
     width:100%;
     padding-left: 24px;

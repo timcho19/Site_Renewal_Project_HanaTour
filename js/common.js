@@ -14,12 +14,11 @@ $('.top_btn').on('click', function() {
 
 //likes 버튼 클릭스 할일
 
-
-$('.likes').click(function(){
+$('.slider-content').on('click', '.likes', function(){
   $(this).find('.line-heart').toggle();
   $(this).find('.fill-heart').toggle();
 
-  likeCount = $('.likes .fill-heart:visible').length;
+  let likeCount = $('.likes .fill-heart:visible').length;
 
   if(likeCount > 0){
     $('.likes_ct').text(likeCount).fadeIn();
