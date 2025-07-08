@@ -42,6 +42,10 @@ body {
   padding-bottom: calc(var(--lh) * 6);
 }
 
+iframe{
+  width: 100%;
+  height: auto;
+}
 /* - - - - - - - - - 진욱 - - - - - - - - - */
 /* typography */
 
@@ -946,6 +950,38 @@ footer .big-container{
     padding: 24px 36px;
   }
 
+  .travel-container .tab{
+   
+    justify-content: start;
+  }
+
+  .travel-container .tab_btns{
+    color: var(--sub-text);
+    border: 1px solid var(--sub-text);
+    /* border-radius:35px;
+    padding: 10px 20px; */
+    border-radius:20px;
+    padding: 5px 10px;
+    line-height: var(--lh);
+    display: inline-block;
+    font-size: 14px;
+    
+  }
+  
+  .travel-container  .tab_btns:hover{
+    color: var(--primary);
+    border: 1px solid var(--primary);
+    transition: .3s ease-in;
+  }
+  
+  .travel-container  .tab_btns.active{
+    color: var(--primary);
+    border: 1px solid  rgba(84,9, 218, .1);
+    background-color: rgba(84,9, 218, .3);
+    box-shadow: var(--small-shadow);
+    font-weight: bold;
+    transition: .3s ease-out;
+  }
 
 }
 
