@@ -609,6 +609,10 @@ body{
   z-index: 2;
 } */
 
+.story .h3{
+  line-height: 30px;
+}
+
 .story .h5{
   color: var(--sub-text);
   font-weight: 600;

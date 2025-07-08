@@ -42,7 +42,7 @@ const signPhone = $('#phone');
 const signupBtn = $('.signup_btn');
 
 console.log('버튼 disabled 상태:', document.querySelector('.login_btn').disabled);
-
+/*
 function loginValidate(){ 
   let userid = loginId.val().trim(); 
   let userpw = loginPw.val().trim(); 
@@ -68,19 +68,19 @@ function signupValidate(){
   }
 }
 
-loginId.on('input', loginValidate);
-loginPw.on('input', loginValidate);
+//loginId.on('input', loginValidate);
+//loginPw.on('input', loginValidate);
 
-signName.on('input', signupValidate);
-signEmail.on('input', signupValidate);
-signPw.on('input', signupValidate);
-signPhone.on('input', signupValidate);
+//signName.on('input', signupValidate);
+//signEmail.on('input', signupValidate);
+//signPw.on('input', signupValidate);
+//signPhone.on('input', signupValidate);
 
 
 
 loginBtn.prop('disabled', true);
 signupBtn.prop('disabled', true);
-
+/*
 
 
 /* - - - - login input validate - - - - */
