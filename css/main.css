@@ -572,6 +572,7 @@ body{
   position: relative;
   overflow: hidden;
   border-radius: 15px;
+  object-fit: cover;
 }
 
 .youtube_video .iframe-wrapper iframe {
@@ -581,6 +582,43 @@ body{
   width: 100%;
   height: 100%;
   border: 0;
+  
+}
+.youtube_video .youtube-placeholder {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  position: relative;
+  overflow: hidden;
+  border-radius: 15px;
+  cursor: pointer;
+
+ 
+}
+
+.youtube_video .youtube-placeholder img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 15px;
+  border: none;
+  outline: none;
+  box-shadow: none;
+ 
+}
+
+.youtube_video .youtube-placeholder .play-btn {
+  position: absolute;
+  left: 50%; top: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 48px;
+  background: rgba(0,0,0,0.5);
+  color: #fff;
+  border: none;
+  border-radius: 50%;
+  width: 64px; height: 64px;
+  display: flex; align-items: center; justify-content: center;
+  cursor: pointer;
+  z-index: 2;
 }
 
 .story .h5{
