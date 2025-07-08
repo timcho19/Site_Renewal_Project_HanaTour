@@ -2,6 +2,10 @@
 @import url('common.css');
 
 
+body{
+  overflow-x: hidden;
+}
+
 /*WS*/
 
 .main_section {
@@ -498,25 +502,6 @@
 
 
 /* 진욱 */
-.youtube {
-  position: relative;
-  z-index: 1;
-}
-
-.youtube::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 80%;
-  background: linear-gradient(
-    rgba(8, 209, 217, 0.3) 0%,
-    rgba(255, 255, 255, 0.8) 100%
-  );
-  z-index: -1;
-  pointer-events: none;
-}
 .section_title{
   text-align: center;
   padding: 58px 0;
@@ -527,67 +512,36 @@
   font-weight: bold;
 }
 
-.youtube_container{
-  max-width: 100%;
-  width: 100%;
-  overflow: hidden; /* optional */
-  margin: 0 auto;
-
-}
-
-.story_wrapper{
+.youtube{
   position: relative;
-  height: 580px;
-  overflow: hidden;
-}
-.stories{
-  position: absolute;
-  width: 100%;
-  left: 0;
-  top: 0;
 }
 
-.story {
-  width:calc(100% / 9);
-  position: absolute;
-  
-}
-.container{
-  max-width: 1320px;
+.youtube_video {
+  padding: 0 60px;
+  overflow: visible;
 }
 
-/*
-.story_wrapper {
-  overflow: hidden;
-  padding: 40px 0;
-}
-
-.stories {
+.youtube_video .swiper-slide {
+  width: 800px;
+  flex-shrink: 0;
   display: flex;
   justify-content: center;
-  gap: 24px;
-  max-width: 1320px;
-  margin: 0 auto;
-  padding: 0 20px;
+  align-items: center;
 }
-
-.story {
-  flex: 0 0 calc((100% - 48px) / 3);
-  max-width: calc((100% - 48px) / 3);
-  min-width: 0;
-}
-
-.story > div {
-  position: relative;
+.youtube_video .story{
   width: 100%;
-  padding-bottom: 56.25%;
-  height: 0;
-  overflow: hidden;
-  background: #000;
-  border-radius: 12px;
+  padding-bottom: var(--lh);
 }
 
-.story iframe {
+.youtube_video .iframe-wrapper {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  position: relative;
+  overflow: hidden;
+  border-radius: 15px;
+}
+
+.youtube_video .iframe-wrapper iframe {
   position: absolute;
   top: 0;
   left: 0;
@@ -596,59 +550,11 @@
   border: 0;
 }
 
-.youtube_title {
-  margin-top: 12px;
-  font-size: 1.1rem;
-  font-weight: bold;
-}
-
-.story .h5 {
-  font-size: 0.9rem;
-  color: #666;
-}
-*/
-.controls{
- 
-  display: flex;
-  justify-content: right;
-}
 .prev_btn{
-  width: 52px;
-  height: 52px;
+  left: 10px;
 }
 .next_btn{
-  width: 52px;
-  margin-left: 20px;
-}
-
-.prev_btn:hover svg circle,
-.next_btn:hover svg circle{
-  stroke: var(--primary);
-  transition: 0.3s;
-}
-.prev_btn:hover svg path,
-.next_btn:hover svg path{
-  fill: var(--primary);
-  stroke: var(--primary);
-}
-
-.story > div{
-  width: 100%;
-  position: relative;
-  padding-bottom: 56.25%;
-}
-
-.story iframe {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  border-radius: 15px;
-}
-
-.story .h5{
-  color:var(--sub-text);
+  right: 10px;
 }
 
 .side_bar{

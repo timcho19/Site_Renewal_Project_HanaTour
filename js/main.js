@@ -1,14 +1,15 @@
-let slideWrapper = $('.story_wrapper'),
-    slides = slideWrapper.find('.stories'),
+/*
+let slideWrapper = $('.youtube_video'),
+    slides = slideWrapper.find('.swiper-wrapper'),
     slide = slides.find('.story'),
     currentIdx = 0,
     slideCount = slide.length,
-    slideWidth = 800,
-    slideMargin = 100,
+    slideWidth = 600,
+    slideMargin = 12,
     moveAmt = slideWidth + slideMargin,
     halfAmt = slideWidth / 1.5;
-    prevBtn = slideWrapper.siblings('.controls').find('.prev_btn'),
-    nextBtn = slideWrapper.siblings('.controls').find('.next_btn');
+    prevBtn = slideWrapper.siblings('.videobtns').find('.prev_btn'),
+    nextBtn = slideWrapper.siblings('.videobtns').find('.next_btn');
 
 
 
@@ -47,7 +48,7 @@ let slideWrapper = $('.story_wrapper'),
   });
 
 
-
+*/
 
 
 
@@ -419,6 +420,51 @@ var swiper = new Swiper(".swiper.shorts", {
     }
   }
 });
+
+/* - - - - - - - youtube swiper - - - - - - - */
+const swiper2 = new Swiper(".youtube_video", {
+  loop: true,
+  loopAdditionalSlides: 1,
+  loopFillGroupWithBlank: false,
+  initialSlide: 0,
+  grabCursor: true,
+  simulateTouch: true,
+  centeredSlides: true,
+  slidesPerView: 'auto',
+  spaceBetween: 30,
+
+  navigation: {
+    nextEl: ".next_btn",
+    prevEl: ".prev_btn",
+  },
+
+  breakpoints: {
+    0: {
+      slidesPerView: 1.2,
+      spaceBetween: 20,
+      centeredSlides: true,
+    },
+    576: {
+      slidesPerView: 1.2,
+      spaceBetween: 48,
+      centeredSlides: true,
+    },
+    768: {
+      slidesPerView: 1.4,
+      spaceBetween: 96,
+      centeredSlides: true,
+    },
+    1140: {
+      slidesPerView: 'auto',
+      spaceBetween: 120,
+      centeredSlides: true,
+    }
+  }
+});
+
+
+
+
 
 
 
