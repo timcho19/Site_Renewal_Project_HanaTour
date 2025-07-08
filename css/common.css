@@ -42,6 +42,14 @@ body {
   padding-bottom: calc(var(--lh) * 6);
 }
 
+.medium-pd-bottom{
+  padding-bottom: calc(var(--lh) * 4);
+}
+
+.small-pd-bottom{
+  padding-bottom: calc(var(--lh) * 2);
+}
+
 iframe{
   width: 100%;
   height: auto;

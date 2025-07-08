@@ -745,16 +745,18 @@ body{
     max-height: 600px;
   }
   .main-title-area {
-
     left:24px;
     bottom:24px;
-   
   }
   .main-title{
     font-size: 1.3rem;
   }
   .main-desc{
     font-size: 1rem;
+  }
+
+  .bannerSlider{
+    margin-bottom: calc(var(--lh) * 2);
   }
   
   .youtube_shorts{
