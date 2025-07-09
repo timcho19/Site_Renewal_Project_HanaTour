@@ -2,7 +2,7 @@
 
 <div class="guestsearch-container">
   <div class="logo">
-    <img src="/image/logo_slogun.png" alt="로고 이미지">
+    <img src="image/logo_slogun.png" alt="로고 이미지">
   </div>
   <div class="mt-4">
     <p class="h5">비회원 조회</p>
@@ -77,4 +77,6 @@
   </div>
 </div>
 
+<script src="js/login.js"></script>
+<script src="js/guest.js"></script>
 <?php include 'footer.php'; ?>

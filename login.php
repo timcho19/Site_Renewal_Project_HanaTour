@@ -2,7 +2,7 @@
 
 <div class="login-container">
     <div class="logo">
-      <img src="/image/logo_slogun.png">
+      <img src="image/logo_slogun.png">
     </div>
 
     <button class="kakao_btn"><img src="image/kakao_logo.png">카카오로 시작하기</button>
@@ -169,5 +169,5 @@
     </div>
 </div>
 
-
+<script src="js/login.js"></script>
 <?php include 'footer.php'; ?>
