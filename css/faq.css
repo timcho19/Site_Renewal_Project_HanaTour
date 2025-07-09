@@ -1,5 +1,8 @@
 /* qna */
 
+
+
+
 /* 히어로 섹션 */
 .hero_section {
     background: url(../image/qnabackground.png) no-repeat center/cover;
@@ -86,6 +89,12 @@
   margin: 108px auto;
   padding:0 24px;
   }
+  .services_section h2 {
+    width: 100%;
+    max-width: 1320px;
+    margin: 0 auto;
+    margin-bottom: 60px;
+  }
   
   .services_container {
     box-sizing: border-box;
@@ -95,13 +104,14 @@
     max-width: 1320px;
     margin: 0 auto;
   }
-  
+
   .services_grid {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     gap: 24px;
     justify-items: center;
     padding: 40px 32px;
+    
   }
   
   .services_grid .item {
