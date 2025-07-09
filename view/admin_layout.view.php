@@ -21,14 +21,14 @@
       <h1><?= $model; ?></h1>
       <nav class="navbar navbar-expand-lg bg-body-tertiary">
         <div class="container-fluid">
-          <a class="navbar-brand" href="index.php">홈</a>
+          <a class="navbar-brand" href="admin.php">홈</a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="index.php">Home</a>
+              <a class="nav-link" href="">로그인</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="write.php">Write</a>
@@ -40,11 +40,22 @@
     </header>
     <hr>
     <main>
-      <?php require("$name.view.php"); ?>
+      <ul> 
+        <li>1</li>
+      </ul>
+      <ul> 
+        <li>2</li>
+      </ul>
+      <ul> 
+        <li>3</li>
+      </ul>
+      <ul> 
+        <li>4</li>
+      </ul>
       <!-- echo $model; -->
     </main>
     <footer>
-      <p>&copy;abc corp. All right reserved.</p>    
+      <p>본 페이지는 관리자용 페이지 입니다.</p>    
     </footer>
   </div>
 

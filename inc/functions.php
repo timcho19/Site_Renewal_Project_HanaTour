@@ -5,6 +5,6 @@
   }
   function view2($name,$model){
 
-    require("view/admin.view.php");
+    require("view/admin_layout.view.php");
   }
 ?>
