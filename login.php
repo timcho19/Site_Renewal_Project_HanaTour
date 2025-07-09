@@ -13,14 +13,21 @@
 
 
   if ($_SERVER['REQUEST_METHOD'] === 'POST') {
-    $userid = $_POST['userid'] ?? '';
-    $username = $_POST['username'] ?? '';
-    $email = $_POST['email'] ?? '';
-    $phone = $_POST['phone'] ?? '';
-    $passwd = $_POST['passwd'] ?? '';
+    /*
+    echo "<pre>";
+    var_dump($_POST);
+    echo "</pre>";
+    die();
+    */
 
-    if ($userid && $username && $email && $phone && $passwd) {
-        $result = registerMember($userid, $username, $email, $phone, $passwd);
+    $userid = $_POST['#email'] ?? '';
+    $username = $_POST['#name'] ?? '';
+    $passwd = $_POST['#passwd'] ?? '';
+    $phone = $_POST['#phone'] ?? '';
+
+
+    if ($userid && $username && $passwd && $phone) {
+        $result = registerMember($userid, $username, $passwd, $phone);
         if ($result) {
             echo "<script>alert('회원가입 성공!'); location.href='/login.view.php';</script>";
         } else {

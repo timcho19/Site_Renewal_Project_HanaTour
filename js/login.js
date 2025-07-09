@@ -54,7 +54,7 @@ const loginBtn = $('.login_btn');
 
 const signName = $('#name');
 const signEmail = $('#email');
-const signPw = $('#userpw');
+const signPw = $('#passwd');
 const signPhone = $('#phone');
 const signupBtn = $('.signup_btn');
 
@@ -129,7 +129,7 @@ $('#email').on('input',function(){
 });
 
 
-$('#userpw').on('input', function () {
+$('#passwd').on('input', function () {
   const val = $(this).val().trim();
   const pwValid = /^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,15}$/;
 
@@ -142,7 +142,7 @@ $('#userpw').on('input', function () {
 
 $('#phone').on('input', function () {
   const val = $(this).val().trim();
-  const phoneValid = /^[0-9]{100}$/;
+  const phoneValid = /^01[0-9]{9}$/;
   
   if (!phoneValid.test(val)) {
     console.log(phoneValid.test(val));

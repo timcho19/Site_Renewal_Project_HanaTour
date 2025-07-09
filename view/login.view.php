@@ -18,28 +18,28 @@
             <p class="h5">회원가입</p>
              <form action="login.php" method="POST">
                <div class="form-floating-custom">
-                 <input type="text" class="form-control" id="name" placeholder=" " minlength="2" required>
+                 <input type="text" class="form-control" id="name" name="name" placeholder=" " required>
                  <label for="name">이름</label>
                  <div class="invalid-feedback">
                   이름을 2자 이상 입력해주세요.
                 </div>
                </div>
                <div class="form-floating-custom">
-                 <input type="email" class="form-control" id="email" placeholder=" " required>
+                 <input type="email" class="form-control" id="email" name="email" placeholder=" " required>
                  <label for="email">이메일</label>
                  <div class="invalid-feedback">
                   올바른 이메일 주소를 입력해주세요.
                 </div>
                </div>
                <div class="form-floating-custom">
-                 <input type="password" class="form-control" id="userpw" placeholder=" " required>
-                 <label for="userpw">비밀번호</label>
+                 <input type="password" class="form-control" id="passwd" name="passwd" placeholder=" " required>
+                 <label for="passwd">비밀번호</label>
                  <div class="invalid-feedback">
                   영문, 숫자 포함 8-15자리를 입력해 주세요.
                 </div>
                </div>
                <div class="form-floating-custom tel-form">
-                  <input type="tel"  class="form-control" id="phone" placeholder=" " required>
+                  <input type="tel"  class="form-control" id="phone" name="phone" placeholder=" " required>
                   <label for="phone">핸드폰 번호</label>
                   <div class="invalid-feedback phone-error">
                     (예 : 01012341234) , ‘-’ 제외 입력
