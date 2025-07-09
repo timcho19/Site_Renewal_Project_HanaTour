@@ -511,7 +511,16 @@
   overflow: hidden;
   position: relative;
   /*background: linear-gradient(to bottom, rgba(6, 208, 218, 0.6), #fff 50%);*/
+}
+.youtube::before{
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  bottom: 50%;
   background: linear-gradient(to bottom, rgba(6, 208, 218, 0.6), #fff);
+  z-index: -1;
 }
 
 .youtube_video {
