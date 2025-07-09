@@ -8,4 +8,8 @@
     require("view/sublayout.view.php");
   }
 
+  function view2($name,$model){
+
+    require("view/admin_layout.view.php");
+  }
 ?>
