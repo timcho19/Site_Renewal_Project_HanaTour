@@ -397,11 +397,11 @@ var swiper = new Swiper(".swiper.shorts", {
       spaceBetween: 12,
     },
     576: {
-      slidesPerView: 1.5,
+      slidesPerView: 2.5,
       spaceBetween: 16,
     },
     768: {
-      slidesPerView: 2,
+      slidesPerView: 3,
       spaceBetween: 20,
     },
     960: {

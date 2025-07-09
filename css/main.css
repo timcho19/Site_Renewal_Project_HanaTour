@@ -839,6 +839,8 @@
 
 
 @media (max-width: 768px) {
+  .contents_prev_btn,
+  .contents_next_btn,
   .swiper-button-prev,
   .swiper-button-next {
     display: none !important;
