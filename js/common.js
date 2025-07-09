@@ -120,3 +120,47 @@ $('.aside_btns a').on('click', function(e){
   // underline 이동
   $underline.css('transform', 'translateX(' + (idx * 100) + '%)');
 });
+
+
+/*  팝업  */
+if (getCookie('HANATOUR') === 'true') {
+  $('.popup').addClass('hide');
+} else {
+  $('.popup').removeClass('hide');
+}
+
+$('.popup-close').on('click', function (e) {
+  e.preventDefault();
+
+  if ($('#popup-dont-show').is(':checked')) {
+    setCookie('HANATOUR', 'true', 1); 
+  } else {
+    deleteCookie('HANATOUR');
+  }
+
+  $('.popup').addClass('hide');
+});
+
+function setCookie(name, value, days) {
+const date = new Date();
+date.setDate(date.getDate() + days);
+document.cookie = `${name}=${value}; path=/; expires=${date.toUTCString()}`;
+}
+
+
+function getCookie(name) {
+const cookies = document.cookie.split(';');
+for (let cookie of cookies) {
+  const [key, val] = cookie.trim().split('=');
+  if (key === name) return val;
+}
+return null;
+}
+
+// 쿠키 삭제 함수
+function deleteCookie(name) {
+const date = new Date();
+date.setDate(date.getDate() - 1);
+document.cookie = `${name}=; path=/; expires=${date.toUTCString()}`;
+}
+
