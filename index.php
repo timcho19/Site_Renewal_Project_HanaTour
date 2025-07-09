@@ -225,10 +225,7 @@
     </div>
 
   </section>
-  <!-- 원석 -->
 
-
-  <!-- 아랑 -->
   <section class="youtube_shorts big-pd-bottom">
     <h2 class="h1 contents-title">
       바로 떠나는 세계여행 <span>✈️</span>
@@ -427,7 +424,6 @@
     </div>
   </section>
 
-  <!-- 진욱 -->
   <section class="youtube big-pd-bottom">
     <div class="section_title">
       <h2 class="h1 contents-title">HANATOUR TRAVEL STORY</h2>
@@ -524,8 +520,5 @@
     </button>
   </section>
  
-
-
-
 
 <?php include 'footer.php'; ?>
