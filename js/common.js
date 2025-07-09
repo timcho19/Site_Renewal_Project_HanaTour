@@ -65,6 +65,7 @@ asidecloseBtn.click(function(){
 $(window).on('resize', function() {
   if ($(window).width() >= 960) {
     aside.removeClass('active'); // 960px 이상이면 무조건 닫힘
+    $('body').css('overflow', '');
     $('.side_bar').show();
   }
   if ($(window).width() >= 576) {
