@@ -42,18 +42,19 @@
             </div>
           </div>
         </div>
-        <ul class="sns">
-          <li><a href="#"><img src="image/sns1.png" alt="페이스북"></a></li>
-          <li><a href="#"><img src="image/sns2.png" alt="인스타그램"></a></li>
-          <li><a href="#"><img src="image/sns3.png" alt="카카오스토리"></a></li>
-          <li><a href="#"><img src="image/sns4.png" alt="유튜브"></a></li>
-          <li><a href="#"><img src="image/sns5.png" alt="네이버블로그"></a></li>
-        </ul>
+        
         <div class="footer_bottom">
           <div class="footer_info">
               <div class="show_info">
                 <span>(주)하나투어 <i class="bi bi-chevron-down chevron-animate"></i></span> 
               </div>
+              <ul class="sns">
+                <li><a href="#"><img src="image/sns1.png" alt="페이스북"></a></li>
+                <li><a href="#"><img src="image/sns2.png" alt="인스타그램"></a></li>
+                <li><a href="#"><img src="image/sns3.png" alt="카카오스토리"></a></li>
+                <li><a href="#"><img src="image/sns4.png" alt="유튜브"></a></li>
+                <li><a href="#"><img src="image/sns5.png" alt="네이버블로그"></a></li>
+              </ul>
               <div class="company_info">
   
                 <p>㈜하나투어 | 대표이사: 송미선 | 주소: (03161) 서울특별시 종로구 인사동 5길 41</p>
@@ -87,9 +88,8 @@
         </div>
     
       </div>
-    </footer>
+</footer>
 
-    
 
     <div class="side_bar">
       <button class="history">
@@ -136,10 +136,8 @@
     <script src="js/common.js"></script>
     <script src="js/main.js"></script>
     <script type="module">
-      import slideshow from '/js/slide.js'; 
-      import bannerslideshow from '/js/banner.js'; 
-      slideshow('.slideshow1');
-      slideshow('.slideshow2');
+      import slideshow from './js/slide.js'; 
+      import bannerslideshow from './js/banner.js'; 
       slideshow('.slideshow3');
       bannerslideshow('.banner_slideshow1');
       bannerslideshow('.banner_slideshow2');

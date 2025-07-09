@@ -2,106 +2,6 @@
 
 
 
-<div class="mslides-container">
-      <div class="mslide mslide1 active" >
-        <div class="main-title-area">
-          <div class="main-title">
-            여행을 더 특별하게<br>
-            제대로 즐기자
-          </div>
-          <p class="main-desc">
-            <a href="">
-              #NO 팁
-            </a>
-            <a href="">
-              #자유여행
-            </a>
-            <a href="">
-              #패키지
-            </a>
-            <a href="">
-             #5성급호텔
-            </a>
-          </p>
-        </div>
-      </div>
-      <div class="mslide mslide2">
-        <div class="main-title-area">
-          <div class="main-title">
-            한눈에 보는 오사카의 모든 것<br>
-            먹고 보고 즐겨라!
-          </div>
-          <p class="main-desc">
-            <a href="">
-            #사계절 매력 가득
-            </a>
-            <a href="">
-            #낮과 밤 언제나
-            </a>
-            <a href="">
-            #근교 소도시 즐기기
-            </a>
-          </p>
-        </div>
-      </div>
-      <div class="mslide mslide3">
-        <div class="main-title-area">
-          <div class="main-title">
-            열심히 일하고 자, 떠나보자!<br>
-            슬기로운 연차생활
-          </div>
-          <p class="main-desc">
-            <a href="">
-              연차일수 별 여행지 추천!
-            </a>
-          </p>
-        </div>
-      </div>
-      <div class="mslide mslide4">
-        <div class="main-title-area">
-          <div class="main-title">
-            섬마다 만나는 나만의 쉼<br>
-            필리핀 자유여행
-          </div>
-          <p class="main-desc">
-            <a href="">
-              #주차별 할인 상품
-            </a>
-            <a href="">
-              #웰컴키트 증정
-            </a>
-            <a href="">
-              #할인쿠폰
-            </a>
-          </p>
-        </div>
-      </div>
-      <div class="mslide mslide5">
-        <div class="main-title-area">
-          <div class="main-title">
-            여름맞이 숙박 세일 페스타<br>
-            제대로 즐기자
-          </div>
-          <p class="main-desc">
-            <a href="">
-              #문화체육관광부
-            </a>
-            <a href="">
-              #한국관광공사
-            </a>
-            <a href="">
-              #지역특별기획전
-            </a>
-          </p>
-        </div>
-      </div>
-    </div>
-    <div class="main_paginations">
-      <ul>
-        
-      </ul>
-    </div>
-  </section>
   <section class="mob_navigation">
     <ul>
       <li>
@@ -192,10 +92,10 @@
       지금 가장 뜨는 여행지 <span class="emoji">🌴</span>
     </p>
     
-    <div class="slider-wrapper slideshow1">
-      <div class="travel-cards-container slider-container">
-        <div class="travel-cards slider-content">
-            <div class="travel-card slider-item">
+    <div class="slider-wrapper hot-wrapper">
+      <div class="travel-cards-container slider-container hot-container">
+        <div class="travel-cards slider-content hot-content">
+            <div class="travel-card slider-item hot-item">
               <div class="product_img">
                 <img src="image/tour1.png" alt="보홀" />
                 <button class="likes">
@@ -225,7 +125,7 @@
                 </div>
               </div>
             </div>
-            <div class="travel-card slider-item">
+            <div class="travel-card slider-item hot-item">
               <div class="product_img">
                 <img src="image/tour2.png" alt="일본 오카야마" />
                 <button class="likes">
@@ -253,7 +153,7 @@
                 </div>
               </div>
             </div>
-            <div class="travel-card slider-item">
+            <div class="travel-card slider-item hot-item">
               <div class="product_img">
                 <img src="image/tour3.png" alt="베트남 푸꾸옥" />
                 <button class="likes">
@@ -281,7 +181,7 @@
                 </div>
               </div>
             </div>
-            <div class="travel-card slider-item">
+            <div class="travel-card slider-item hot-item">
               <div class="product_img">
                 <img src="image/tour4.png" alt="코타키나발루" />
                 <button class="likes">
@@ -343,50 +243,66 @@
         <!-- Slides -->
         <div class="swiper-slide" >
           <div class="iframe-wrapper">
-            <iframe allowfullscreen="" frameborder="0"  src="https://www.youtube.com/embed/90pXHf6fhk8" title="YouTube video player" width="315">
-            </iframe>
+            <div class="youtube-placeholder" data-video-id="90pXHf6fhk8">
+              <img src="https://img.youtube.com/vi/90pXHf6fhk8/maxresdefault.jpg" alt="유튜브 썸네일">
+              <button class="play-btn"><img src="image/youtube_play.png" alt=""> </button>
+            </div>
           </div>
         </div>
         <div class="swiper-slide">
-           <div class="iframe-wrapper">
-             <iframe allowfullscreen="" frameborder="0"  src="https://www.youtube.com/embed/Gdig3Pm40H8" title="YouTube video player" width="315">
-            </iframe>
+          <div class="iframe-wrapper">
+            <div class="youtube-placeholder" data-video-id="Gdig3Pm40H8">
+              <img src="https://img.youtube.com/vi/Gdig3Pm40H8/maxresdefault.jpg" alt="유튜브 썸네일">
+              <button class="play-btn"><img src="image/youtube_play.png" alt=""> </button>
+            </div>
           </div>
         </div>
         <div class="swiper-slide">
-           <div class="iframe-wrapper">
-             <iframe allowfullscreen="" frameborder="0"  src="https://www.youtube.com/embed/-zqO5pNmtiQ" title="YouTube video player" width="315">
-            </iframe>
+          <div class="iframe-wrapper">
+            <div class="youtube-placeholder" data-video-id="-zqO5pNmtiQ">
+              <img src="https://img.youtube.com/vi/-zqO5pNmtiQ/maxresdefault.jpg" alt="유튜브 썸네일">
+              <button class="play-btn"><img src="image/youtube_play.png" alt=""> </button>
+            </div>
           </div>
         </div>
         <div class="swiper-slide">
-           <div class="iframe-wrapper">
-             <iframe allowfullscreen="" frameborder="0"  src="https://www.youtube.com/embed/Irv4ff4foNs" title="YouTube video player" width="315">
-            </iframe>
+          <div class="iframe-wrapper">
+            <div class="youtube-placeholder" data-video-id="Irv4ff4foNs">
+              <img src="https://img.youtube.com/vi/Irv4ff4foNs/maxresdefault.jpg" alt="유튜브 썸네일">
+              <button class="play-btn"><img src="image/youtube_play.png" alt=""> </button>
+            </div>
           </div>
         </div>
         <div class="swiper-slide">
-           <div class="iframe-wrapper">
-             <iframe allowfullscreen="" frameborder="0"  src="https://www.youtube.com/embed/8VdnO5LglU0" title="YouTube video player" width="315">
-            </iframe>
+          <div class="iframe-wrapper">
+            <div class="youtube-placeholder" data-video-id="8VdnO5LglU0">
+              <img src="https://img.youtube.com/vi/8VdnO5LglU0/maxresdefault.jpg" alt="유튜브 썸네일">
+              <button class="play-btn"><img src="image/youtube_play.png" alt=""> </button>
+            </div>
           </div>
         </div>
         <div class="swiper-slide">
-           <div class="iframe-wrapper">
-             <iframe allowfullscreen="" frameborder="0"  src="https://www.youtube.com/embed/jcU2ZlnPxdg" title="YouTube video player" width="315">
-            </iframe>
+          <div class="iframe-wrapper">
+            <div class="youtube-placeholder" data-video-id="jcU2ZlnPxdg">
+              <img src="https://img.youtube.com/vi/jcU2ZlnPxdg/maxresdefault.jpg" alt="유튜브 썸네일">
+              <button class="play-btn"><img src="image/youtube_play.png" alt=""> </button>
+            </div>
           </div>
         </div>
         <div class="swiper-slide">
-           <div class="iframe-wrapper">
-             <iframe allowfullscreen="" frameborder="0"  src="https://www.youtube.com/embed/dKuSK2b6Eiw" title="YouTube video player" width="315">
-            </iframe>
+          <div class="iframe-wrapper">
+            <div class="youtube-placeholder" data-video-id="dKuSK2b6Eiw">
+              <img src="https://img.youtube.com/vi/dKuSK2b6Eiw/maxresdefault.jpg" alt="유튜브 썸네일">
+              <button class="play-btn"><img src="image/youtube_play.png" alt=""> </button>
+            </div>
           </div>
         </div>
         <div class="swiper-slide">
-           <div class="iframe-wrapper">
-             <iframe allowfullscreen="" frameborder="0"  src="https://www.youtube.com/embed/UYF1eyb0G-o" title="YouTube video player" width="315">
-            </iframe>
+          <div class="iframe-wrapper">
+            <div class="youtube-placeholder" data-video-id="UYF1eyb0G-o">
+              <img src="https://img.youtube.com/vi/UYF1eyb0G-o/maxresdefault.jpg" alt="유튜브 썸네일">
+              <button class="play-btn"><img src="image/youtube_play.png" alt=""> </button>
+            </div>
           </div>
         </div>
       </div>
@@ -444,9 +360,9 @@
     </div>
     <div class="slider-wrapper special-travel slideshow3">
       <div class="travel-cards-container  slider-container">
-      <div class="concept-cards slider-content">
-
-      </div>
+        <div class="concept-cards slider-content">
+          <p>로딩중</p>
+        </div>
     </div>
       <button type="button" class="contents_prev_btn">
         <svg xmlns="http://www.w3.org/2000/svg" width="50" height="93" fill="currentColor" class="bi bi-chevron-left" viewBox="0 0 16 16">
@@ -465,7 +381,6 @@
     <h2 class="h1 best-travel-title">
       <span class="emoji">💜</span>
       가장 사랑받는 월간 BEST 여행지
-      <span class="emoji">💜</span>
     </h2>
     <div class="weather-slider">
       <div class="weather-cards">
@@ -512,54 +427,105 @@
     </div>
   </section>
 
-
+  <!-- 진욱 -->
   <section class="youtube big-pd-bottom">
-      <div class="section_title">
+    <div class="section_title">
       <h2 class="h1 contents-title">HANATOUR TRAVEL STORY</h2>
       <h3 class="h5">이 영상 하나면 여행 욕구 폭발 주의 🔥<br>
         실시간 여행 소식과 특가 정보까지! 하나투어 유튜브 구독하고 놓치지 마세요 📺</h3>
-      </div>
-      <div class="story_wrapper">
-        <div class="stories">
-          <div  class="story">
-            <div>
-              <iframe  src="https://www.youtube.com/embed/IwEk8f7cCm8?si=MUQnGjjd12RYFwWF&amp;controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </div>
+    <div class="swiper youtube_video">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <div class="story">
+            <div class="iframe-wrapper">
+              <div class="youtube-placeholder" data-video-id="IwEk8f7cCm8">
+                <img src="https://img.youtube.com/vi/IwEk8f7cCm8/maxresdefault.jpg" alt="유튜브 썸네일">
+                <button class="play-btn"><img src="image/youtube_video_play.png" alt=""> </button>
+              </div>
             </div>
             <p class="h3 youtube_title">무조건 가야 할 일본 호텔 추천</p>
             <p class="h5">#일본 #5성급호텔 #자연 </p>
           </div>
-          <div  class="story">
-            <div>
-              <iframe  src="https://www.youtube.com/embed/bI7_lm288c8?si=9Mx69b6BRm9H5c4V" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-            </div>
-            <p class="h3 youtube_title">조나단이랑 여행 할래 말래 (feat. 파트리샤) | 홋카이도 上</p>
-            <p class="h5">#조나단 #파트리샤 #홋카이도</p>
-          </div>
-          <div  class="story">
-            <div>
-              <iframe  src="https://www.youtube.com/embed/tZQkHqq927g?si=xNxclKwY7T-hW47H" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-            </div>
-            <p class="h3 youtube_title">호주 브리즈번 골드코스트 필수 코스 TOP10</p>
-            <p class="h5">#브리즈번 #골드코스트 #뉴팜공원 #헬리콥터투어 #와이너리 </p>
+        </div>
+        <div class="swiper-slide">
+          <div class="story">
+            <div class="iframe-wrapper">
+              <div class="youtube-placeholder" data-video-id="bI7_lm288c8">
+                <img src="https://img.youtube.com/vi/bI7_lm288c8/maxresdefault.jpg" alt="유튜브 썸네일">
+                <button class="play-btn"><img src="image/youtube_video_play.png" alt=""> </button>
+              </div>
+            </div>  
+            <p class="h3 youtube_title">조나단이랑 여행 할래 말래 (feat. 파트리샤) | 여행이 좋다 | 홋카이도 EP. 1</p>
+            <p class="h5">#조나단 #파트리샤 #하나투어 #밍글링투어</p>
           </div>
         </div>
-        
+        <div class="swiper-slide">
+          <div class="story">
+            <div class="iframe-wrapper">
+              <div class="youtube-placeholder" data-video-id="jcVnx-RQZAQ">
+                <img src="https://img.youtube.com/vi/jcVnx-RQZAQ/maxresdefault.jpg" alt="유튜브 썸네일">
+                <button class="play-btn"><img src="image/youtube_video_play.png" alt=""> </button>
+              </div>
+            </div>
+            <p class="h3 youtube_title">시원한 여름을 만나고 싶을 때 | 일본의 알프스, 알펜루트</p>
+            <p class="h5">#하나투어 #일본 #알펜루트</p>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="story">
+            <div class="iframe-wrapper">
+              <div class="youtube-placeholder" data-video-id="l3JeaL9s_fQ">
+                <img src="https://img.youtube.com/vi/l3JeaL9s_fQ/maxresdefault.jpg" alt="유튜브 썸네일">
+                <button class="play-btn"><img src="image/youtube_video_play.png" alt=""> </button>
+              </div>
+            </div>
+            <p class="h3 youtube_title">그림 같은 도시 시드니에서 | 🇦🇺호주 시드니 관광지 총정리 | 여행 뭐하지</p>
+            <p class="h5">#호주 #시드니 #자연 </p>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="story">
+            <div class="iframe-wrapper">
+              <div class="youtube-placeholder" data-video-id="npX9q5ElJA0">
+                <img src="https://img.youtube.com/vi/npX9q5ElJA0/maxresdefault.jpg" alt="유튜브 썸네일">
+                <button class="play-btn"><img src="image/youtube_video_play.png" alt=""> </button>
+              </div>
+            </div>
+            <p class="h3 youtube_title">3일 동안 GPT 명령대로 여행하면 생기는 일 | 여행이 좋다 | 홍콩 EP. 1</p>
+            <p class="h5">#홍콩 #GPT #AI </p>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="story">
+            <div class="iframe-wrapper">
+              <div class="youtube-placeholder" data-video-id="Dwn3zbHMk1Y">
+                <img src="https://img.youtube.com/vi/Dwn3zbHMk1Y/maxresdefault.jpg" alt="유튜브 썸네일">
+                <button class="play-btn"><img src="image/youtube_video_play.png" alt=""> </button>
+              </div>
+            </div>
+            <p class="h3 youtube_title">다음 생엔 강아지로 태어나야지</p>
+            <p class="h5">#이색체험 #퍼피요가</p>
+          </div>
+        </div>
       </div>
-      <div class="controls container">
-        <button class="prev_btn">
-          <svg xmlns="http://www.w3.org/2000/svg" width="52" height="52" viewBox="0 0 52 52" fill="none">
-           <circle cx="26" cy="26" r="25.5" fill="5409DA" stroke="#BABABA"/>
-          <path d="M18.4994 24.4848C17.8353 25.0463 17.8353 25.9582 18.4994 26.5197L28.6994 35.1447C29.3635 35.7063 30.4419 35.7063 31.106 35.1447C31.77 34.5832 31.77 33.6713 31.106 33.1098L22.1066 25.5L31.1006 17.8902C31.7647 17.3287 31.7647 16.4168 31.1006 15.8553C30.4366 15.2938 29.3581 15.2938 28.6941 15.8553L18.4941 24.4803L18.4994 24.4848Z" fill="#BABABA"/>
-          </svg>
-        </button>
-        <button class="next_btn">
-        <svg xmlns="http://www.w3.org/2000/svg" width="52" height="52" viewBox="0 0 52 52" fill="none">
-          <circle cx="26" cy="26" r="25.5" fill="white" stroke="#BABABA"/>
-          <path d="M33.5006 24.4848C34.1647 25.0463 34.1647 25.9582 33.5006 26.5197L23.3006 35.1447C22.6365 35.7063 21.5581 35.7063 20.894 35.1447C20.23 34.5832 20.23 33.6713 20.894 33.1098L29.8934 25.5L20.8994 17.8902C20.2353 17.3287 20.2353 16.4168 20.8994 15.8553C21.5634 15.2938 22.6419 15.2938 23.3059 15.8553L33.5059 24.4803L33.5006 24.4848Z" fill="#BABABA"/>
-          </svg>
-        </button>
-      </div>
-    </section>
+    </div>
+    <button type="button" class="prev_btn swiper-button-prev">
+      <svg xmlns="http://www.w3.org/2000/svg" width="52" height="52" viewBox="0 0 52 52" fill="white">
+        <circle cx="26" cy="26" r="25.5" fill="5409DA" stroke="#cfcfcf"/>
+        <path d="M18.4994 24.4848C17.8353 25.0463 17.8353 25.9582 18.4994 26.5197L28.6994 35.1447C29.3635 35.7063 30.4419 35.7063 31.106 35.1447C31.77 34.5832 31.77 33.6713 31.106 33.1098L22.1066 25.5L31.1006 17.8902C31.7647 17.3287 31.7647 16.4168 31.1006 15.8553C30.4366 15.2938 29.3581 15.2938 28.6941 15.8553L18.4941 24.4803L18.4994 24.4848Z" fill="rgba(34, 34, 34, 1)"/>
+        </svg>
+    </button>
+    <button type="button" class="next_btn swiper-button-next">
+        <svg xmlns="http://www.w3.org/2000/svg" width="52" height="52" viewBox="0 0 52 52" fill="white">
+          <circle cx="26" cy="26" r="25.5" fill="5409DA" stroke="#cfcfcf"/>
+          <path d="M33.5006 24.4848C34.1647 25.0463 34.1647 25.9582 33.5006 26.5197L23.3006 35.1447C22.6365 35.7063 21.5581 35.7063 20.894 35.1447C20.23 34.5832 20.23 33.6713 20.894 33.1098L29.8934 25.5L20.8994 17.8902C20.2353 17.3287 20.2353 16.4168 20.8994 15.8553C21.5634 15.2938 22.6419 15.2938 23.3059 15.8553L33.5059 24.4803L33.5006 24.4848Z" fill="rgba(34, 34, 34, 1)"/>
+        </svg>
+    </button>
+  </section>
+ 
 
 
-    <?php include 'footer.php'; ?>
+
+
+<?php include 'footer.php'; ?>

@@ -17,7 +17,7 @@
   <link rel="icon" type="image/png" sizes="32x32" href="image/favicon/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="96x96" href="image/favicon/favicon-96x96.png">
   <link rel="icon" type="image/png" sizes="16x16" href="image/favicon/favicon-16x16.png">
-  <link rel="manifest" href="/manifest.json">
+  <link rel="manifest" href="/image/favicon/manifest.json">
   <meta name="msapplication-TileColor" content="#ffffff">
   <meta name="msapplication-TileImage" content="image/favicon/ms-icon-144x144.png">
   <meta name="theme-color" content="#ffffff">
@@ -38,6 +38,7 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.touchswipe/1.6.19/jquery.touchSwipe.min.js"></script>
   
 </head>
+
 <body>
   <section class="main_section">
     <header class="main_header">
@@ -223,3 +224,105 @@
     </aside>
     <!-- 960px 이하 햄버거 사이드메뉴-->
     </header>
+
+
+    <div class="mslides-container">
+      <div class="mslide mslide1 active" >
+        <div class="main-title-area">
+          <div class="main-title">
+            여행을 더 특별하게<br>
+            제대로 즐기자
+          </div>
+          <p class="main-desc">
+            <a href="">
+              #NO 팁
+            </a>
+            <a href="">
+              #자유여행
+            </a>
+            <a href="">
+              #패키지
+            </a>
+            <a href="">
+             #5성급호텔
+            </a>
+          </p>
+        </div>
+      </div>
+      <div class="mslide mslide2">
+        <div class="main-title-area">
+          <div class="main-title">
+            한눈에 보는 오사카의 모든 것<br>
+            먹고 보고 즐겨라!
+          </div>
+          <p class="main-desc">
+            <a href="">
+            #사계절 매력 가득
+            </a>
+            <a href="">
+            #낮과 밤 언제나
+            </a>
+            <a href="">
+            #근교 소도시 즐기기
+            </a>
+          </p>
+        </div>
+      </div>
+      <div class="mslide mslide3">
+        <div class="main-title-area">
+          <div class="main-title">
+            열심히 일하고 자, 떠나보자!<br>
+            슬기로운 연차생활
+          </div>
+          <p class="main-desc">
+            <a href="">
+              연차일수 별 여행지 추천!
+            </a>
+          </p>
+        </div>
+      </div>
+      <div class="mslide mslide4">
+        <div class="main-title-area">
+          <div class="main-title">
+            섬마다 만나는 나만의 쉼<br>
+            필리핀 자유여행
+          </div>
+          <p class="main-desc">
+            <a href="">
+              #주차별 할인 상품
+            </a>
+            <a href="">
+              #웰컴키트 증정
+            </a>
+            <a href="">
+              #할인쿠폰
+            </a>
+          </p>
+        </div>
+      </div>
+      <div class="mslide mslide5">
+        <div class="main-title-area">
+          <div class="main-title">
+            여름맞이 숙박 세일 페스타<br>
+            제대로 즐기자
+          </div>
+          <p class="main-desc">
+            <a href="">
+              #문화체육관광부
+            </a>
+            <a href="">
+              #한국관광공사
+            </a>
+            <a href="">
+              #지역특별기획전
+            </a>
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="main_paginations">
+      <ul>
+        
+      </ul>
+    </div>
+  </section>

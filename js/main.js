@@ -272,7 +272,7 @@ const getWeather = (cityName) => {
       const $weatherInfo = $(`
         <div class="card">
           <div class="card-body">
-            <img src="/image/${result.city}.png" alt="">
+            <img src="image/${result.city}.png" alt="">
             <p class="weather-title">${result.city}의 날씨를 확인해보세요!</p>
             <div class="weather-info">
               <img src="https://openweathermap.org/img/wn/${result.icon}.png" alt="${result.mainWeather}">
