@@ -587,38 +587,6 @@ aside .h6{
   font-weight: bold;
 }
 
-/*메인섹션 관련 미디어*/
-@media (max-width: 960px) {
-
-  .main-menus{
-    display: none;
-  }
-  .side-menus li:not(:last-child) {
-    display: none;
-  }
-  .hamburger-menu{
-    display:block;
-    cursor: pointer;
-  }
-  .all_menu_dropdown{
-    display: none;
-  }
-  header nav{
-
-    padding: 12px 24px;
-  }
-
-}
-@media (max-width: 576px) {
-  aside {
-    max-width: 576px;
-    width: 100%;
-    right: -100%;
-    padding: 24px 36px;
-  }
-
-
-}
 
 
 
@@ -833,6 +801,14 @@ footer .big-container{
   font-size: 12px;
 }
 
+
+@media (max-width: 576px) {
+ 
+
+
+}
+
+
 /*푸터 미디어 반응형*/
 @media (max-width: 1320px) {
   :root{
@@ -877,6 +853,7 @@ footer .big-container{
   }
   .footer_info{
     flex-direction: column;
+    padding: 24px 0;
     
    }
   
@@ -906,7 +883,8 @@ footer .big-container{
   
       padding: 12px 24px;
     }
-  
+
+
 
 
 }
@@ -963,6 +941,7 @@ footer .big-container{
     right: -100%;
     padding: 24px 36px;
   }
+ 
 
   .travel-container .tab{
    
