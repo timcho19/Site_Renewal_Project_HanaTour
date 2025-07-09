@@ -1,5 +1,3 @@
-<?php include 'sub_header.php'; ?>
-
 <div class="login-container">
     <div class="logo">
       <img src="image/logo_slogun.png">
@@ -168,6 +166,3 @@
       </div>
     </div>
 </div>
-
-<script src="js/login.js"></script>
-<?php include 'footer.php'; ?>

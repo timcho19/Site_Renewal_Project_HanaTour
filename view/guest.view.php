@@ -1,5 +1,3 @@
-<?php include 'sub_header.php'; ?>
-
 <div class="guestsearch-container">
   <div class="logo">
     <img src="image/logo_slogun.png" alt="로고 이미지">
@@ -76,7 +74,3 @@
     </form>
   </div>
 </div>
-
-<script src="js/login.js"></script>
-<script src="js/guest.js"></script>
-<?php include 'footer.php'; ?>
