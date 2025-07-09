@@ -750,11 +750,8 @@ footer .big-container{
  
 }
 .show_info {
-  /* text-align: center; */
-  padding-top: var(--lh);
-  padding-bottom: 24px;
-  order: 1;
 
+  order: 0;
 
 }
 .footer_info .show_info{
@@ -801,6 +798,9 @@ footer .big-container{
   text-decoration: underline;
 }
 
+.company_info{
+  order:1;
+}
 
 
 .footer_emblem{
@@ -808,7 +808,7 @@ footer .big-container{
   gap: 24px;
   margin-bottom: 24px;
   justify-content: center;
-  /* flex-wrap: wrap; */
+  
   
 }
 .footer_emblem li {
@@ -847,6 +847,7 @@ footer .big-container{
     padding: 12px 24px;
   }
 }
+
 @media (max-width: 960px) {
   .main_menus{
     display: none;
@@ -878,24 +879,42 @@ footer .big-container{
     flex-direction: column;
     
    }
-   .show_info{
-    order: 2;
-   }
+  
    .sns {
     order: 1;
     justify-content: flex-start;
-    
+    gap:24px;
+    /* padding-top: 0;
+    padding-bottom: 0; */
+  
   }
+
+    .main_menus{
+      display: none;
+    }
+    .side-menus li:not(:last-child) {
+      display: none;
+    }
+    .hamburger-menu{
+      display:block;
+      cursor: pointer;
+    }
+    .all_menu_dropdown{
+      display: none;
+    }
+    header nav{
+  
+      padding: 12px 24px;
+    }
+  
+
 
 }
 
 @media (max-width: 768px) {
   .sns {
     order: 0; 
-    padding-top: 48px;
-    padding-bottom: 48px;
-    justify-content: center;
-    gap:24px;
+   
   }
   .footer_top {
     order: 1;
@@ -921,8 +940,8 @@ footer .big-container{
   .footer_info{
     align-items: center;
     text-align: center;
-    padding: 12px 0;
-    
+    padding: 24px 0;
+  
   }
   .footer_info .show_info{
     display: block;
@@ -931,45 +950,13 @@ footer .big-container{
     display: none;
   }
   .footer_emblem {
+    flex-wrap: wrap;
     gap: 12px; /* 모바일에서 간격 조정 (선택) */
   }
   .footer_emblem li {
     flex: 1 1 calc(100% / 3 -12px ); /* 한 줄에 3개씩 */
    
   }
-
-  
-  
-
-}
-
-
-
-
-
-
-@media (max-width: 960px) {
-
-  .main_menus{
-    display: none;
-  }
-  .side-menus li:not(:last-child) {
-    display: none;
-  }
-  .hamburger-menu{
-    display:block;
-    cursor: pointer;
-  }
-  .all_menu_dropdown{
-    display: none;
-  }
-  header nav{
-
-    padding: 12px 24px;
-  }
-
-}
-@media (max-width: 576px) {
   aside {
     max-width: 576px;
     width: 100%;
@@ -1017,7 +1004,20 @@ footer .big-container{
 
   .big-pd-bottom {
     padding-bottom: calc(var(--lh) * 4);
-}
+  }
+  .sns {
+    order: 0; 
+   
+  }
+  .show_info {
+    order: 1;
+  }
+
+  .company_info{
+    order: 2;
+  }
+  
 
 }
+
 
