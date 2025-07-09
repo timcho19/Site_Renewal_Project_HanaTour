@@ -1,4 +1,5 @@
 <?php
+  require('inc/db.php');
   require('inc/functions.php');
 
   $mainCss = '<link rel="stylesheet" href="css/main.css">';
@@ -9,4 +10,25 @@
 
 
   sub_view('login', '하나투어 로그인', $mainCss, $loginCss, '', $loginScript, $bootstrap, '');
+
+
+  if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+    $userid = $_POST['userid'] ?? '';
+    $username = $_POST['username'] ?? '';
+    $email = $_POST['email'] ?? '';
+    $phone = $_POST['phone'] ?? '';
+    $passwd = $_POST['passwd'] ?? '';
+
+    if ($userid && $username && $email && $phone && $passwd) {
+        $result = registerMember($userid, $username, $email, $phone, $passwd);
+        if ($result) {
+            echo "<script>alert('회원가입 성공!'); location.href='/login.view.php';</script>";
+        } else {
+            echo "<script>alert('회원가입 실패'); history.back();</script>";
+        }
+    } else {
+        echo "<script>alert('모든 항목을 입력해주세요.'); history.back();</script>";
+    }
+}
+
 ?>

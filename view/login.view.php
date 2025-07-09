@@ -16,7 +16,7 @@
         <div id="signupForm" class="accordion-collapse collapse">
           <div class="accordion-body">
             <p class="h5">회원가입</p>
-             <form action="" method="POST">
+             <form action="login.php" method="POST">
                <div class="form-floating-custom">
                  <input type="text" class="form-control" id="name" placeholder=" " minlength="2" required>
                  <label for="name">이름</label>
