@@ -475,14 +475,18 @@ aside form{
   width: 100%;
   appearance: none; 
   background-color: #F7F7F8; 
-  border: none; 
+  border: 1px solid transparent; 
   padding: 8px 12px; 
   border-radius: 15px; 
   font-size: 16px; 
   color: #333;
   outline: none;
-  
 }
+
+form input.aside_input:focus{
+  border: 1px solid var(--primary);
+}
+
 aside .h6{
   margin-bottom: 24px;
 }
