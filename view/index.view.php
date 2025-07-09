@@ -516,29 +516,38 @@
         </svg>
     </button>
   </section>
-  <aside class="popup">
+  <div class="popup" role="dialog" aria-modal="true" aria-labelledby="popupTitle">
     <div class="popup-wrapper">
-      <img src="/image/logo_color.png" alt="페이지로고 ">
-      <h2>하나투어 페이지 리뉴얼</h2>
-      <br>
-      <p>본 사이트는 <em>구직용 포트폴리오 웹사이트</em>이며,실제로 운영되는 사이트가 아닙니다. </p>
+      <img src="image/logo_color.png" alt="페이지 로고">
+      
+      <h2 id="popupTitle">하나투어 페이지 리뉴얼</h2>
+
+      <p>본 사이트는 <em>구직용 포트폴리오 웹사이트</em>이며, <br>실제로 운영되는 사이트가 아닙니다.</p>
+      
       <hr>
+
       <p><em>여행을 떠나보조:</em> 조*랑(팀장), 장*석, 정*욱</p>
       <p><em>제작기간:</em> 2025.5.19 ~ 2025.7.11</p>
-      <p><em>기획서:</em> <a href="">figma</a> <em>버전관리:</em> <a href="">Github</a></p>
-      <p><em>개발환경:</em> HTML5, CSS3, Jquery, PHP</p>
+      <p>
+        <em>기획서:</em> <a href="#" target="_blank" rel="noopener noreferrer">Figma</a> <br>
+        <em>버전관리:</em> <a href="#" target="_blank" rel="noopener noreferrer">GitHub</a>
+      </p>
+      <p><em>개발환경:</em> HTML5, CSS3, jQuery, PHP</p>
+
       <hr>
-      <span><em>업무분장</em></span>
+
+      <h3>업무 분장</h3>
       <p><em>기획:</em> 팀원 전체</p>
       <p><em>디자인:</em> 구현 담당자</p>
-      <p>   &#45; 구현 완료 페이지   &#45; </p>
-      <p><em>조*랑:</em><a href="">구현파트</a></p>
-      <p><em>장*석:</em><a href="">구현파트</a></p>
-      <p><em>정*욱:</em><a href="">구현파트</a></p>
+      <ul>
+        <li><em>조*랑:</em> <a href="#">구현 파트</a></li>
+        <li><em>장*석:</em> <a href="#">구현 파트</a></li>
+        <li><em>정*욱:</em> <a href="#">구현 파트</a></li>
+      </ul>
+      <div class="popup-controls">
+        <input type="checkbox" id="popup-dont-show" name="dont-show">
+        <label for="popup-dont-show">오늘 하루 열지 않음</label>
+        <a href="#" class="popup-close" role="button" aria-label="팝업 닫기">닫기</a>
+      </div>
     </div>
-    <p class="popup-input">
-      <input type="checkbox" id="checkbox" name="checkbox">
-      <label for="checkbox">오늘하루 열지 않음</label> 
-      <a href="#" class="popup-close">close</a>
-    </p>
-  </aside>
+  </div>
