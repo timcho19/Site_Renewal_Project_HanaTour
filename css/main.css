@@ -738,11 +738,12 @@
     opacity: 0.4;
     transition: opacity 0.3s;
   }
-
+  .contents_prev_btn svg,
+  .contents_next_btn svg,
   .swiper-button-prev svg,
   .swiper-button-next svg{
-    width : 28px;
-    height: 28px;
+    width : 26px;
+    height: 26px;
   }
 
   .contents_prev_btn:hover,
