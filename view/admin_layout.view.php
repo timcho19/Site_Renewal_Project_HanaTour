@@ -1,4 +1,5 @@
 <?php
+session_start(); // 세션 시작
 require_once('inc/db.php');
 
 // 게시글 전체 조회
@@ -18,7 +19,7 @@ $conn1->close();
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>이벤트 게시판</title>
+  <title>관리자 게시판</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
   <link rel="stylesheet" href="css/main.css">
@@ -26,31 +27,33 @@ $conn1->close();
 <body>
   <div class="container">
     <header class="mb-4">
-      <h1 class="my-4">이벤트 게시판</h1>
-        <nav class="navbar navbar-expand-lg navbar-light bg-light rounded mb-4">
-      <div class="container-fluid">
-      <a class="navbar-brand" href="admin.php">홈</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <!-- 네비게이션 메뉴 -->
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav ms-auto">
-          <li class="nav-item me-2">
-            <a class="btn btn-outline-primary" href="write.php">
-              <i class="bi bi-pencil-square"></i> 글 등록
-            </a>
-          </li>
-          <li class="nav-item">
-            <a class="btn btn-outline-secondary" href="login.php">
-              <i class="bi bi-person"></i> 로그인
-            </a>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </nav>
-
+        <nav class="navbar navbar-expand-lg navbar-light bg-light  mb-4">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="admin.php">하나투어 이벤트/혜택 관리페이지</a>
+            <div class=" " id="navbarNav">
+              <ul class="">
+                <?php if (isset($_SESSION['admin_logged_in']) && $_SESSION['admin_logged_in'] === true): ?>
+                  <li class="nav-item me-2">
+                    <a class="btn btn-outline-primary" href="write.php">
+                      <i class="bi bi-pencil-square"></i> 글 등록
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="btn btn-outline-danger" href="admin_logout.php">
+                      <i class="bi bi-box-arrow-right"></i> 로그아웃
+                    </a>
+                  </li>
+                <?php else: ?>
+                  <li class="nav-item">
+                    <a class="btn btn-outline-secondary" href="admin_login.php">
+                      <i class="bi bi-person"></i> 로그인
+                    </a>
+                  </li>
+                <?php endif; ?>
+              </ul>
+            </div>
+          </div>
+        </nav>
     </header>
     <main>
       <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
@@ -62,9 +65,9 @@ $conn1->close();
                   <img src="<?= htmlspecialchars($row['img_url']) ?>" class="card-img-top" alt="이벤트 이미지" style="object-fit:cover; height:220px;">
                 <?php endif; ?>
                 <div class="card-body">
-                  <h5 class="card-title"><?= htmlspecialchars($row['title']) ?></h5>
+                  <h5 class="card-title h2">제목: <?= htmlspecialchars($row['title']) ?></h5>
                   <div class="mb-2 text-secondary small">
-                    <i class="bi bi-calendar-event"></i>
+                  진행기간:
                     <?= htmlspecialchars($row['period_start']) ?> ~ <?= htmlspecialchars($row['period_end']) ?>
                   </div>
                   <div class="card-text" style="min-height:60px;">
@@ -73,9 +76,21 @@ $conn1->close();
                 </div>
                 <div class="card-footer bg-white border-0 text-end">
                   <small class="text-muted">
-                    <i class="bi bi-clock"></i>
+                    등록일:
                     <?= htmlspecialchars($row['created_time']) ?>
                   </small>
+                  <?php if (isset($_SESSION['admin_logged_in']) && $_SESSION['admin_logged_in'] === true): ?>
+                    <div class="mt-2">
+                      <a href="modify.php?idx=<?= $row['idx'] ?>" class="btn btn-sm btn-outline-primary me-1">
+                        <i class="bi bi-pencil"></i> 수정
+                      </a>
+                      <a href="delete.php?idx=<?= $row['idx'] ?>"
+                        class="btn btn-sm btn-outline-danger"
+                        onclick="return confirm('정말 삭제하시겠습니까?');">
+                        <i class="bi bi-trash"></i> 삭제
+                      </a>
+                    </div>
+                  <?php endif; ?>
                 </div>
               </div>
             </div>
