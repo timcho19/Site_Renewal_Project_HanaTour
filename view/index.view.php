@@ -1,7 +1,3 @@
-<?php include 'header.php'; ?>
-
-
-
   <section class="mob_navigation">
     <ul>
       <li>
@@ -520,6 +516,3 @@
         </svg>
     </button>
   </section>
- 
-
-<?php include 'footer.php'; ?>
