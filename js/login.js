@@ -142,9 +142,11 @@ $('#userpw').on('input', function () {
 
 $('#phone').on('input', function () {
   const val = $(this).val().trim();
-  const phoneValid = /^01[0-9]{8}$/;
-
+  const phoneValid = /^[0-9]{100}$/;
+  
   if (!phoneValid.test(val)) {
+    console.log(phoneValid.test(val));
+    
     $(this).addClass('is-invalid');
     $('.tel-form').css({
       paddingBottom : '4px'
