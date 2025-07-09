@@ -709,15 +709,17 @@
 }
 
   .swiper-button-prev{
-    left: 0;
+    left: 10px; right: auto; 
   }
 
   .swiper-button-next{
-    right: 0;
+    right: 10px; left: auto; 
   }
 
   .contents_prev_btn,
-  .contents_next_btn {
+  .contents_next_btn,
+  .swiper-button-prev,
+  .swiper-button-next {
     top: 50%;
     bottom: 16px;
     transform: none;
@@ -737,7 +739,9 @@
     transition: opacity 0.3s;
   }
   .contents_prev_btn:hover,
-  .contents_next_btn:hover{
+  .contents_next_btn:hover,
+  .swiper-button-prev:hover,
+  .swiper-button-next:hover{
     opacity: 0.8;
   } 
   .contents_prev_btn { left: 10px; right: auto; }
