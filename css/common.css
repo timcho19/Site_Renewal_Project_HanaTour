@@ -426,7 +426,8 @@ header.sub_header .side-menus svg {
 .dropdown_lists{
   display: flex;
   justify-content: space-between;
-  gap:99px;
+  gap:48px;
+  
 }
 .dropdown_lists > li {
   flex: 1;
@@ -830,9 +831,11 @@ footer .big-container{
 
 /*푸터 미디어 반응형*/
 @media (max-width: 1320px) {
-  
-  footer .big-container{
-    width:100%;
+  :root{
+    --bigContainer:100%;
+  }
+
+  .big-container{
     padding: 0 24px;
   }
 
