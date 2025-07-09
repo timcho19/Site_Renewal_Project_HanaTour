@@ -50,27 +50,16 @@ const searchBtn = $('.gusest_search_btn');
 
 
 
-function searchValidate(){ 
-  let guestName = searchName.val().trim();
-  let guestNum = searchNum.val().trim();
+function searchValidate() {
+  const htCheck = $('#flight-hotel').is(':checked');
+  const guestName = $('#guest_name').val().trim();
+  const guestNum = $('#guest_number').val().trim();
 
-  if(hfCheck){
-    if(guestName !== '' && guestNum !== '')
-    searchBtn.prop('disabled', false);
-  }else{
-    searchBtn.prop('disabled', true);
+  const infoVal = guestName !== '' && guestNum !== '';
+
+  if (htCheck && infoVal) {
+    $('.gusest_search_btn').prop('disabled', false);
+  } else {
+    $('.gusest_search_btn').prop('disabled', true);
   }
 }
-
-
-  function loginValidate(){ 
-    let userid = loginId.val().trim(); 
-    let userpw = loginPw.val().trim(); 
-    
-    
-    if(userid !== '' && userpw !== ''){
-      loginBtn.prop('disabled', false);
-    }else{
-      loginBtn.prop('disabled', true);
-    }
-  }
