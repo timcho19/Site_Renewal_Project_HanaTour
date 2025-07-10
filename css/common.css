@@ -147,6 +147,7 @@ button{
   transition: .3s ease-out;
 }
 
+.userpage_btn,
 .sign_btn{
   color: var(--main-text);
   background: var(--white);
@@ -162,6 +163,8 @@ button{
   border: 1px solid var(--primary);
   box-shadow: var(--small-shadow);
 }
+
+.userpage_btn:hover,
 .sign_btn:hover{
   color: var(--white);
   background: var(--primary);

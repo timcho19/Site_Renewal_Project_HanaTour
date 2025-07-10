@@ -63,8 +63,13 @@
                 <img src="image/search_white.png">
               </a>
             </li>
-            <li><a href="login.php">로그인</a></li>
-            <li><a class="sign_btn" href="signup.php">회원가입</a></li>
+            <?php if (isset($_SESSION['user_id'])): ?>
+              <li><a href="logout.php">로그아웃</a></li>
+              <li><a href="" class="userpage_btn">마이페이지</a></li>
+            <?php else: ?>
+              <li><a href="login.php">로그인</a></li>
+              <li><a class="sign_btn" href="signup.php">회원가입</a></li>
+            <?php endif; ?>
             <li class="hamburger-menu">
               <svg xmlns="http://www.w3.org/2000/svg" width="38" height="38" fill="white" class="bi bi-list" viewBox="0 0 16 16">
                 <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"/>
@@ -164,69 +169,77 @@
           </div>
         </div> <!--드롭다운 -->
         <aside>
-          <div class="aside_top">
-            <a href=""> <img src="image/aside_login.png" alt="로그인"> 로그인</a>
-            <button class="aside_close"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-x-lg" viewBox="0 0 16 16">
-              <path d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8z"/>
-            </svg></button>
-          </div>
-          <form>
-            <input type="search" class="aside_input" placeholder="검색어를 입력해주세요">
-          </form>
-          <p class="h6">베스트 여행지</p>
-          <ul class="aside_best">
-            <li>
-              <a href=""><img src="image/ham_tokyo.png" alt="도쿄">도쿄</a>
-            </li>
-            <li>
-              <a href=""><img src="image/ham_cota.png" alt="홍콩">홍콩</a>
-            </li>
-            <li> 
-              <a href=""><img src="image/ham_jeju.png" alt="제주">제주</a>
-          </li>
-            <li>
-              <a href=""><img src="image/ham_newyork_.png" alt="뉴욕">뉴욕</a>
-            </li>
-            <li>
-            <a href=""><img src="image/ham_danang.png" alt="다낭">다낭</a>
-            </li>
-            <li>
-              <a href=""><img src="image/ham_danang.png" alt="다낭">다낭</a>
-            </li>
-            <li>
-              <a href=""><img src="image/ham_danang.png" alt="다낭">다낭</a>
-            </li>
-          </ul>
-          <div class="aside_btns">
-            <a href="#tab_1" class="active">하나투어</a>
-            <a href="#tab_2">고객센터</a>
-            <div class="underline"></div>
-          </div>
-          <div class="aside_tabs">
-            <div class="aside_tab active" id="tab_1">
-              <ul>
-                <li><a href="#">해외여행</a></li>
-                <li><a href="#">국내여행</a></li>
-                <li><a href="#">항공권</a></li>
-                <li><a href="#">호텔</a></li>
-                <li><a href="#">렌트</a></li>
-                <li><a href="#">제우스</a></li>
-                <li><a href="#">티켓/투어</a></li>
-                <li><a href="#">이벤트/혜택</a></li>
-              </ul>
+        <div class="aside_top">
+              <?php if (isset($_SESSION['user_id'])): ?>
+                <a href="logout.php"> 
+                  <img src="image/aside_login.png" alt="로그아웃"> 로그아웃
+                </a>
+              <?php else: ?>
+                <a href="login.php"> 
+                  <img src="image/aside_login.png" alt="로그인"> 로그인
+                </a>
+              <?php endif; ?>
+              <button class="aside_close"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-x-lg" viewBox="0 0 16 16">
+                <path d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8z"/>
+              </svg></button>
             </div>
-            <div class="aside_tab" id="tab_2">
-              <ul>
-                <li><a href="#">FAQ(자주찾는질문)</a></li>
-                <li><a href="#">챗봇 상담</a></li>
-                <li><a href="#">1대1 문의</a></li>
-                <li><a href="#">공지사항</a></li>
-              </ul>
+            <form>
+              <input type="search" class="aside_input" placeholder="검색어를 입력해주세요">
+            </form>
+            <p class="h6">베스트 여행지</p>
+            <ul class="aside_best">
+              <li>
+                <a href=""><img src="image/ham_tokyo.png" alt="도쿄">도쿄</a>
+              </li>
+              <li>
+                <a href=""><img src="image/ham_cota.png" alt="홍콩">홍콩</a>
+              </li>
+              <li> 
+                <a href=""><img src="image/ham_jeju.png" alt="제주">제주</a>
+            </li>
+              <li>
+                <a href=""><img src="image/ham_newyork_.png" alt="뉴욕">뉴욕</a>
+              </li>
+              <li>
+              <a href=""><img src="image/ham_danang.png" alt="다낭">다낭</a>
+              </li>
+              <li>
+                <a href=""><img src="image/ham_danang.png" alt="다낭">다낭</a>
+              </li>
+              <li>
+                <a href=""><img src="image/ham_danang.png" alt="다낭">다낭</a>
+              </li>
+            </ul>
+            <div class="aside_btns">
+              <a href="#tab_1" class="active">하나투어</a>
+              <a href="#tab_2">고객센터</a>
+              <div class="underline"></div>
             </div>
-          </div>
-        
+            <div class="aside_tabs">
+              <div class="aside_tab active" id="tab_1">
+                <ul>
+                  <li><a href="#">해외여행</a></li>
+                  <li><a href="#">국내여행</a></li>
+                  <li><a href="#">항공권</a></li>
+                  <li><a href="#">호텔</a></li>
+                  <li><a href="#">렌트</a></li>
+                  <li><a href="#">제우스</a></li>
+                  <li><a href="#">티켓/투어</a></li>
+                  <li><a href="#">이벤트/혜택</a></li>
+                </ul>
+              </div>
+              <div class="aside_tab" id="tab_2">
+                <ul>
+                  <li><a href="#">FAQ(자주찾는질문)</a></li>
+                  <li><a href="#">챗봇 상담</a></li>
+                  <li><a href="#">1대1 문의</a></li>
+                  <li><a href="#">공지사항</a></li>
+                </ul>
+              </div>
+            </div>
           
-      </aside>
+            
+        </aside>
       <!-- 960px 이하 햄버거 사이드메뉴-->
       </header>
 

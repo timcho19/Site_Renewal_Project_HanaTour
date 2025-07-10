@@ -1,4 +1,5 @@
 <?php
+  session_start();
   require('inc/functions.php');
 
   $mainCss = '<link rel="stylesheet" href="css/main.css">';

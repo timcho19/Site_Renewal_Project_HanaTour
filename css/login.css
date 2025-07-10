@@ -270,31 +270,31 @@
 .form-check-input:focus{
   box-shadow: none;
 }
-/*
-dialog{
-  position: fixed;
-  left: 0;
-  top: 50%;
-  transform: translateY(-50%);
-  font-size: 14px;
-  border: none;
-  border-radius: 15px;
-  box-shadow: var(--small-shadow);
-  max-width: 600px;
-  padding: 12px 24px;
-  background: white;
-  overflow: hidden;
-}
-*/
-.modal_header{
+
+.modal-dialog {
+  width: 600px;      
+  height: 400px;
+  max-width: 90vw;
+  max-height: 90vh;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-  border-bottom: 1px solid #cfcfcf;
+  flex-direction: column;
 }
 
+
+.modal-header{
+  border-bottom: none;
+}
+.modal-title{
+ font-weight: bold;
+}
+
+.h7{
+  font-size: 16px;
+  font-weight: 500;
+}
 
 .haedsup{
+  font-size: 13px;
   color: var(--sub-text);
 }
 
