@@ -204,16 +204,12 @@
 
 
 
-
-
-
 .travel-cards,
 .concept-cards {
   display: flex;
   gap:24px;
   position: relative;
   padding: 10px 0;
-  
 }
 
 .travel-card {
@@ -225,6 +221,21 @@
   display: flex;
   flex-direction: column;
   transition: 0.2s;
+  position: relative;
+}
+
+.review,
+.coupon
+{
+  left: 6px;
+  top: 6px;
+}
+
+.ftrip,
+.tsale,
+.bsale{
+  left: 80px;
+  top: 6px;
 }
 
 .product_img{
@@ -247,8 +258,6 @@
   width: 100%;
   object-fit: cover;
 }
-
-
 
 .card-content {
   padding: 16px 10px;

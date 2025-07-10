@@ -218,7 +218,10 @@ button{
   line-height: var(--lh);
   font-size: 13px;
   border-radius: 15px;
-  padding: 0 10px;
+  padding: 2px 10px;
+  position: absolute;
+  display: inline-block;
+  z-index: 1;
 }
 
 .bsale{
@@ -228,7 +231,10 @@ button{
   line-height: var(--lh);
   font-size: 13px;
   border-radius: 15px;
-  padding: 0 10px;
+  padding: 2px 10px;
+  position: absolute;
+  display: inline-block;
+  z-index: 1;
 }
 .coupon{
   color: var(--error);
@@ -237,17 +243,22 @@ button{
   line-height: var(--lh);
   font-size: 13px;
   border-radius: 15px;
-  padding: 0 10px;
+  padding: 2px 10px;
+  position: absolute;
+  display: inline-block;
+  z-index: 1;
 }
 
 .tsale{
   color: var(--white);
   background: rgba(132, 78, 226, 1);
-
   line-height: var(--lh);
   font-size: 13px;
   border-radius: 15px;
-  padding: 0 10px;
+  padding: 2px 10px;
+  position: absolute;
+  display: inline-block;
+  z-index: 1;
 
 }
 .ftrip{
@@ -257,8 +268,10 @@ button{
   line-height: var(--lh);
   font-size: 13px;
   border-radius: 15px;
-  padding: 0 10px;
-
+  padding: 2px 10px;
+  position: absolute;
+  display: inline-block;
+  z-index: 1;
 }
 
 

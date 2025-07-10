@@ -96,6 +96,8 @@
       <div class="travel-cards-container slider-container hot-container">
         <div class="travel-cards slider-content hot-content">
             <div class="travel-card slider-item hot-item" data-id="1">
+              <span class="review">후기 1등</span>
+              <span class="tsale">타임세일</span>
               <div class="product_img">
                 <img src="image/tour1.png" alt="보홀" />
                 <button class="likes">
@@ -126,6 +128,8 @@
               </div>
             </div>
             <div class="travel-card slider-item hot-item" data-id="2">
+              <span class="coupon">쿠폰할인</span>
+              <span class="bsale">특가</span>
               <div class="product_img">
                 <img src="image/tour2.png" alt="일본 오카야마" />
                 <button class="likes">
@@ -155,6 +159,8 @@
             </div>
             <div class="travel-card slider-item hot-item" data-id="3">
               <div class="product_img">
+                <span class="coupon">쿠폰할인</span>
+                <span class="tsale">타임세일</span>
                 <img src="image/tour3.png" alt="베트남 푸꾸옥" />
                 <button class="likes">
                   <svg class="line-heart" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
@@ -183,6 +189,8 @@
             </div>
             <div class="travel-card slider-item hot-item" data-id="4">
               <div class="product_img">
+                <span class="review">후기 1등</span>
+                <span class="ftrip">자유여행</span>
                 <img src="image/tour4.png" alt="코타키나발루" />
                 <button class="likes">
                   <svg class="line-heart" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
@@ -194,6 +202,7 @@
                 </button>
               </div>
               <div class="card-content">
+                
                 <a href="">
                   <p class="h5">코타키나발루 4박 5일</p>
                   <ul>
