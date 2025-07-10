@@ -540,10 +540,9 @@
     <p><em>기획:</em> 팀원 전체</p>
     <p><em>디자인:</em> 구현 담당자</p>
     <ul>
-      <li><em>공통:</em> <a href="#"></a></li>
-      <li><em>조*랑:</em> <a href="#">구현 파트</a></li>
-      <li><em>장*석:</em> <a href="#">구현 파트</a></li>
-      <li><em>정*욱:</em> <a href="#">구현 파트</a></li>
+      <li><em>조*랑:</em> weather API&#44;section slide&#44;<a href="http://localhost/Site_Renewal_Project_HanaTour/login.php">loginpage</a></li>
+      <li><em>장*석:</em> main section&#44;responsive&#44;<a href="http://localhost/Site_Renewal_Project_HanaTour/event.php">eventpage</a></li>
+      <li><em>정*욱:</em>footer&#44;section slide&#44; <a href="http://localhost/Site_Renewal_Project_HanaTour/faq.php">faqpage</a></li>
     </ul>
     <div class="popup-controls">
       <input type="checkbox" id="popup-dont-show" name="dont-show">
