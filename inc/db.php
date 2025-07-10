@@ -1,4 +1,5 @@
 <?php
+
  // 데이터베이스 접속 정보
  $host = 'localhost';      // DB 서버 주소
  $user = 'hanatour';        // DB 사용자명
