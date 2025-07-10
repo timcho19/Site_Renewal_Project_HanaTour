@@ -270,7 +270,12 @@
 .form-check-input:focus{
   box-shadow: none;
 }
-dialog {
+/*
+dialog{
+  position: fixed;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
   font-size: 14px;
   border: none;
   border-radius: 15px;
@@ -280,7 +285,7 @@ dialog {
   background: white;
   overflow: hidden;
 }
-
+*/
 .modal_header{
   display: flex;
   justify-content: space-between;

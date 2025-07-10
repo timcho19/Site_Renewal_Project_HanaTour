@@ -32,17 +32,18 @@ $('.right').click(function(e){
 
 
 
-/* - - - - 이용약관 모달 - - - - */
-
-$('.detail_more').click(function(){
-  $('#privacyModal').attr('open', 'open');
+/* - - - - 이용약관 세부 모달 - - - - - */
+$('.detail_more').on('click', function () {
+  document.getElementById('privacyModal').showModal();
 });
 
-$('.close_button').click(function(e){
-  e.preventDefault();
-  $('#privacyModal').removeAttr('open', 'open');
+$('.close_button').on('click', function () {
+  document.getElementById('privacyModal').close();
 });
 
+$('#privacyModal').on('click', function (e) {
+  if (e.target === this) this.close();
+});
 
 
 

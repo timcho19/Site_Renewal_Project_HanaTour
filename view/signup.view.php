@@ -13,7 +13,7 @@
             이메일로 가입하기
           </button>
         </h2>
-        <div id="signupForm" class="accordion-collapse collapse">
+        <div id="signupForm" class="accordion-collapse collapse show">
           <div class="accordion-body">
             <p class="h5">회원가입</p>
              <form action="signup.php" method="POST">
@@ -69,9 +69,9 @@
                     </div>
                     <span class="detail_more">더보기</span>
                   </div>
-                  <div id="privacyModal" data-bs-toggle="modal" data-bs-target="#popup">
+                  <dialog id="privacyModal">
                       <div class="modal_header">
-                          <p class="h5 modal_title">마케팅 활용 및 광고성 정보</p>
+                          <p class="h5 modal_title">마케팅 활용 및 광고성 정보 수신동의</p>
                           <button class="close_button">
                             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-x-lg" viewBox="0 0 16 16">
                               <path d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8z"/>
@@ -92,16 +92,13 @@
                           <div class="info-content">
                               <p class="h6">개인정보 수집항목 | 수집 및 이용목적 | 보유 및 이용기간</p>
                               <p class="haedsup">
-                                  <strong>▪ 수집항목:</strong><br> 
-                                  성명, 휴대전화번호, 이메일<br>
-                                  <strong>▪ 수집 및 이용목적:</strong><br>
-                                  하나투어/하나투어클럽/자회사/제휴사의 상품 및 혜택, 각종 이벤트 및 행사 관련 정보 안내<br>
-                                  <strong>▪ 보유 및 이용기간:</strong><br>
-                                  회원탈퇴 시 또는 동의철회 시까지
+                                  <strong>수집항목:</strong> 성명, 휴대전화번호, 이메일<br><br>
+                                  <strong>수집 및 이용목적:</strong> 하나투어/하나투어클럽/자회사/제휴사의 상품 및 혜택, 각종 이벤트 및 행사 관련 정보 안내<br><br>
+                                  <strong>보유 및 이용기간:</strong> 회원탈퇴 시 또는 동의철회 시까지
                               </p>
                           </div>
                       </div>
-                  </div>
+                  </dialog>
                   <div class="marketing-terms">
                     <div>
                       <input type="checkbox" id="checkChoice" class="form-check-input">
@@ -144,28 +141,6 @@
              </form>
           </div>
         </div>
-      </div>
-    </div>
-
-    <div class="login mt-4">
-      <p class="h5">로그인</p>
-      <form action="login.ok.php" method="POST">
-        <div class="form-floating-custom">
-          <input type="text" id="login_id" name="login_id" placeholder=" " required>
-          <label for="login_id">이메일</label>
-        </div>
-        <div class="form-floating-custom">
-          <input type="password" id="login_pw" name="login_pw" placeholder=" " required>
-          <label for="login_pw">비밀번호</label>
-        </div>
-        <button class="login_btn">로그인</button>
-      </form>
-      <div class="findInfo">
-        <a href="">아이디 찾기</a>
-        <span>/</span>
-        <a href="">비밀번호 찾기</a>
-        <span>/</span>
-        <a href="guest.php">비회원 조회</a>
       </div>
     </div>
 </div>
