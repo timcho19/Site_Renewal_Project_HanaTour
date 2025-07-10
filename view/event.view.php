@@ -22,7 +22,11 @@
 
 
 <section class="event_mainbanner">
-  <img src="image/event_mainbanner.png" alt="">
+  <picture>
+    <source srcset="image/event_mainbanner_mob.png" media="(max-width: 568px)">
+    <img src="image/event_mainbanner.png" alt="">
+  </picture>
+  
 </section>
 
 
