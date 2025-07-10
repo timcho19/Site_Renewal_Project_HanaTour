@@ -60,6 +60,7 @@
           <div class="travel-banner">
             <a href="event.html">
               <picture>
+                <source srcset="image/small_mtop_bnr_img1.png" media="(max-width: 576px)">
                 <source srcset="image/mobile_bnr_img1.png" media="(max-width: 768px)">
                 <img src="image/mtop_bnr_img1.png" alt="배너">
               </picture>
@@ -67,12 +68,14 @@
           </div>
           <div class="travel-banner">
             <a href="event.html"><picture>
+            <source srcset="image/small_mtop_bnr_img2.png" media="(max-width: 576px)">
               <source srcset="image/mobile_bnr_img2.png" media="(max-width: 768px)">
               <img src="image/mtop_bnr_img2.png" alt="배너">
             </picture></a>
           </div>
           <div class="travel-banner">
             <a href="event.html"><picture>
+              <source srcset="image/small_mtop_bnr_img3.png" media="(max-width: 576px)">
               <source srcset="image/mobile_bnr_img3.png" media="(max-width: 768px)">
               <img src="image/mtop_bnr_img3.png" alt="배너">
             </picture></a>
@@ -314,24 +317,28 @@
       <div class="bannerslider-wrapper" id="sliderWrapper">
         <div class="travel-banner">
           <a href="event.html"><picture>
+            <source srcset="image/small_mtop_bnr_img4.png" media="(max-width: 576px)">
             <source srcset="image/mobile_bnr_img4.png" media="(max-width: 768px)">
             <img src="image/mtop_bnr_img4.png" alt="배너">
           </picture></a>
         </div>
         <div class="travel-banner">
           <a href="event.html"><picture>
+          <source srcset="image/small_mtop_bnr_img5.png" media="(max-width: 576px)">
             <source srcset="image/mobile_bnr_img5.png" media="(max-width: 768px)">
             <img src="image/mtop_bnr_img5.png" alt="배너">
           </picture></a>
         </div>
         <div class="travel-banner">
           <a href="event.html"><picture>
+            <source srcset="image/small_mtop_bnr_img6.png" media="(max-width: 576px)">
             <source srcset="image/mobile_bnr_img6.png" media="(max-width: 768px)">
             <img src="image/mtop_bnr_img6.png" alt="배너">
           </picture></a>
         </div>
         <div class="travel-banner">
           <a href="event.html"><picture>
+            <source srcset="image/small_mtop_bnr_img7.png" media="(max-width: 576px)">
             <source srcset="image/mobile_bnr_img7.png" media="(max-width: 768px)">
             <img src="image/mtop_bnr_img7.png" alt="배너">
           </picture></a>
@@ -373,8 +380,7 @@
 
   <section class="monthly-travel big-pd-bottom">
     <h2 class="h1 best-travel-title">
-      <span class="emoji">💜</span>
-      가장 사랑받는 월간 BEST 여행지
+      가장 사랑받는 월간 BEST 여행지<span class="emoji">💜</span>
     </h2>
     <div class="weather-slider">
       <div class="weather-cards">

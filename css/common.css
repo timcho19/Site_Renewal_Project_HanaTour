@@ -336,6 +336,7 @@ header nav ul{
   align-items: center;
   gap: var(--lh);
 }
+
 header nav .side-menus{
   gap:24px;
 }
@@ -382,7 +383,13 @@ header nav h1 a{
 header nav a {
   color: #fff;
   text-decoration: none;
+  transition: color .2s ease-in-out;
 }
+
+header nav a:hover{
+  color: var(--primary);
+}
+
 header.sub_header nav a{
   color: var(--main-text);
 }
