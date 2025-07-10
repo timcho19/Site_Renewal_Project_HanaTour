@@ -38,21 +38,34 @@ function createPagination() {
   $pagination.html(html);
 }
 
-// 페이지네이션 클릭 이벤트
-$pagination.on('click', '.page-item:not(.disabled)', function(e){
-  e.preventDefault();
-  var $li = $(this);
-  var current = $pagination.find('.page-item.active').index();
-  var idx = $li.index();
-  if($li.hasClass('prev')) {
-    if(current > 1) showPage(current);
-  } else if($li.hasClass('next')) {
-    if(current < totalPages) showPage(current+2);
-  } else {
-    showPage(idx);
-  }
+function loadEvents(filter, page) {
+  $.ajax({
+    url: 'event_list_ajax.php',
+    type: 'GET',
+    data: {filter: filter, page: page},
+    success: function(res){
+      $('.event_lists').html(res.list_html);   // 리스트
+      $('.pagination').html(res.pagination_html); // 페이지네이션
+    }
+  });
+}
+
+// 필터 버튼 클릭
+$('.tab_btns').on('click', function(){
+  $('.tab_btns').removeClass('active');
+  $(this).addClass('active');
+  var filter = $(this).data('filter');
+  loadEvents(filter, 1); // 1페이지부터
 });
 
-// 초기화
-createPagination();
-showPage(1);
+// 페이지네이션 클릭 (동적 생성이므로 이벤트 위임)
+$('.pagination').on('click', 'a', function(e){
+  e.preventDefault();
+  var page = $(this).data('page');
+  var filter = $('.tab_btns.active').data('filter');
+  loadEvents(filter, page);
+});
+
+// 첫 로딩
+loadEvents('all', 1);
+

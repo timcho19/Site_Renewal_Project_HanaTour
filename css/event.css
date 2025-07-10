@@ -31,6 +31,7 @@
   display: grid;
   grid-template-columns: repeat(3, 1fr); 
   gap: 24px;
+  
 }
 
 .event_list {
@@ -42,12 +43,19 @@
   border-radius: 15px;
   margin-bottom: 0; 
   overflow: hidden;
+ 
 }
 .event_lists .event_list .event_desc{
   padding: 16px 10px;
 }
-.event_lists .event_list img{
+ .event_list img{
   width: 100%;
+  aspect-ratio: 1 / 1;      /* 정방형 비율 */
+  height: auto;             /* 자동 높이 (aspect-ratio가 있으니 자동 적용) */
+  object-fit: cover;        /* 비율이 다르면 잘라서 꽉 채움 */
+  border-radius: 12px;
+  display: block;
+  
   
 }
 
