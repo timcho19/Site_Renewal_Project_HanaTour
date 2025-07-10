@@ -4,6 +4,14 @@
   require('inc/functions.php');
 
 
+  $mainCss = '<link rel="stylesheet" href="css/main.css">';
+  $loginCss = '<link rel="stylesheet" href="css/login.css">';
+  $loginScript = '<script src="js/login.js"></script>';
+  $bootstrap = '<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>';
+  
+  sub_view('signup', '하나투어 회원가입', $mainCss, $loginCss, '', $loginScript, $bootstrap, '');
+  
+
   if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     /*
     echo "<pre>";
