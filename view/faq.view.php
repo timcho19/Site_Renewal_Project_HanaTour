@@ -74,11 +74,11 @@
 
           <div class="accordion-item">
             <h2 class="accordion-header">
-              <button class="accordion-button" data-bs-toggle="collapse" data-bs-target="#faq5">
+            <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#faq5">
                 출국 예약 건은 취소 보상이 가능한가요?
               </button>
             </h2>
-            <div id="faq5" class="accordion-collapse collapse show" data-bs-parent="#faqAccordion">
+            <div id="faq5" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
               <div class="accordion-body">
                 출국 후 예약은 환불이 제한되며, 천재지변 등 불가피한 사유는 별도 협의가 가능합니다.
               </div>
