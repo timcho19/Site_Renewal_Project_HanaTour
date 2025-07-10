@@ -23,7 +23,7 @@ if (isset($_FILES['img_file']) && $_FILES['img_file']['error'] == UPLOAD_ERR_OK)
 }
 
 // DB 저장
-$stmt = $conn1->prepare("INSERT INTO event_board (title, img_url, period_start, period_end, content, created_time) VALUES (?, ?, ?, ?, ?, NOW())");
+$stmt = $conn1->prepare("INSERT INTO event_board1 (title, img_url, period_start, period_end, content, created_time) VALUES (?, ?, ?, ?, ?, NOW())");
 $stmt->bind_param("sssss", $title, $img_url, $period_start, $period_end, $content);
 
 if ($stmt->execute()) {

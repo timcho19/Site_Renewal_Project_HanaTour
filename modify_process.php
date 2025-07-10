@@ -22,7 +22,7 @@ if (isset($_FILES['img_file']) && $_FILES['img_file']['error'] == UPLOAD_ERR_OK)
     }
 } else {
     // 이미지 변경 없으면 기존 이미지 유지
-    $stmt = $conn1->prepare("SELECT img_url FROM event_board WHERE idx=?");
+    $stmt = $conn1->prepare("SELECT img_url FROM event_board1 WHERE idx=?");
     $stmt->bind_param("i", $idx);
     $stmt->execute();
     $stmt->bind_result($img_url);
@@ -30,7 +30,7 @@ if (isset($_FILES['img_file']) && $_FILES['img_file']['error'] == UPLOAD_ERR_OK)
     $stmt->close();
 }
 
-$stmt = $conn1->prepare("UPDATE event_board SET title=?, img_url=?, period_start=?, period_end=?, content=? WHERE idx=?");
+$stmt = $conn1->prepare("UPDATE event_board1 SET title=?, img_url=?, period_start=?, period_end=?, content=? WHERE idx=?");
 $stmt->bind_param("sssssi", $title, $img_url, $period_start, $period_end, $content, $idx);
 $stmt->execute();
 $stmt->close();

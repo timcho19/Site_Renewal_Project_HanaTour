@@ -14,13 +14,13 @@ if ($filter === 'ongoing') {
 }
 
 // 전체 개수
-$count_sql = "SELECT COUNT(*) FROM event_board " . ($where ? $where : '');
+$count_sql = "SELECT COUNT(*) FROM event_board1 " . ($where ? $where : '');
 $count_result = $conn1->query($count_sql);
 $total_count = $count_result ? $count_result->fetch_row()[0] : 0;
 $total_pages = ceil($total_count / $per_page);
 
 // 리스트
-$sql = "SELECT * FROM event_board " . ($where ? $where : '') . " ORDER BY idx DESC LIMIT $per_page OFFSET $offset";
+$sql = "SELECT * FROM event_board1 " . ($where ? $where : '') . " ORDER BY idx DESC LIMIT $per_page OFFSET $offset";
 $result = $conn1->query($sql);
 
 $list_html = '';
@@ -35,7 +35,7 @@ if ($result && $result->num_rows > 0) {
     $list_html .= '</div></li>';
   }
 } else {
-  $list_html = '<li class="event_list text-center py-4 w-100">진행 중인 이벤트가 없습니다.</li>';
+  $list_html = '해당하는 이벤트가 없습니다.';
 }
 
 // 페이지네이션 HTML

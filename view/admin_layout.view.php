@@ -3,7 +3,7 @@ session_start(); // 세션 시작
 require_once('inc/db.php');
 
 // 게시글 전체 조회
-$sql = "SELECT * FROM event_board ORDER BY idx DESC";
+$sql = "SELECT * FROM event_board1 ORDER BY idx DESC";
 $result = $conn1->query($sql);
 
 $posts = [];
@@ -33,13 +33,13 @@ $per_page = 6;
 $offset = ($page - 1) * $per_page;
 
 // 전체 게시글 수
-$count_sql = "SELECT COUNT(*) FROM event_board " . ($where ? $where : '');
+$count_sql = "SELECT COUNT(*) FROM event_board1 " . ($where ? $where : '');
 $count_result = $conn1->query($count_sql);
 $total_count = $count_result ? $count_result->fetch_row()[0] : 0;
 $total_pages = ceil($total_count / $per_page);
 
 // 게시글 조회
-$sql = "SELECT * FROM event_board " . ($where ? $where : '') . " ORDER BY idx $order_sql LIMIT $per_page OFFSET $offset";
+$sql = "SELECT * FROM event_board1 " . ($where ? $where : '') . " ORDER BY idx $order_sql LIMIT $per_page OFFSET $offset";
 $result = $conn1->query($sql);
 
 $posts = [];

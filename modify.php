@@ -4,7 +4,7 @@ require_once('inc/db.php');
 $idx = $_GET['idx'] ?? '';
 if (!$idx) { echo "잘못된 접근입니다."; exit; }
 
-$stmt = $conn1->prepare("SELECT * FROM event_board WHERE idx=?");
+$stmt = $conn1->prepare("SELECT * FROM event_board1 WHERE idx=?");
 $stmt->bind_param("i", $idx);
 $stmt->execute();
 $result = $stmt->get_result();

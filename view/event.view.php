@@ -8,7 +8,7 @@
   } else if ($filter === 'ended') {
       $where = "WHERE period_end < '$today'";
   }
-  $sql = "SELECT * FROM event_board " . ($where ? $where : '') . " ORDER BY idx DESC";
+  $sql = "SELECT * FROM event_board1 " . ($where ? $where : '') . " ORDER BY idx DESC";
   $result = $conn1->query($sql);
 
   $events = [];
