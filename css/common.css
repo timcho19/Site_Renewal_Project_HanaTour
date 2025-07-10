@@ -623,9 +623,11 @@ aside .h6{
   max-width: 380px; 
   width: 100%;
   padding: 28px 24px; 
-  background: var(--white);
+  background: rgba(255, 255, 255, 0.8); 
+  backdrop-filter: blur(10px);         
+  -webkit-backdrop-filter: blur(10px); 
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
   border-radius: 16px;
-  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15);
   text-align: left;
   font-family: 'Pretendard', sans-serif;
   color: var(--main-text);
@@ -723,6 +725,9 @@ aside .h6{
 }
 .popup-close:hover {
   color: #003366;
+}
+.hide {
+  display: none !important;
 }
 
 
