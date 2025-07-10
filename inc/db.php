@@ -9,9 +9,9 @@
  //$conn1 = new mysqli($host, $user, $pass, $dbname);
 
 // // 연결 오류 체크
-// if ($conn1->connect_error) {
-//     die("DB 연결 실패: " . $conn->connect_error);
-// }
+ //if ($conn1->connect_error) {
+ //    die("DB 연결 실패: " . $conn->connect_error);
+ //}
 
  // 한글 깨짐 방지 (UTF-8 설정)
  //$conn1->set_charset("utf8mb4");
