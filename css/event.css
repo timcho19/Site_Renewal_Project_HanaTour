@@ -43,7 +43,13 @@
   border-radius: 15px;
   margin-bottom: 0; 
   overflow: hidden;
- 
+  cursor: pointer;
+  transition: box-shadow 0.3s;
+  
+}
+
+.event_list:hover{
+  box-shadow: var(--large-shadow);
 }
 .event_lists .event_list .event_desc{
   padding: 16px 10px;
@@ -72,7 +78,11 @@
 .pagination .page-item .page-link {
   color:var(--primary) ;
 }
-
+.event_duration{
+  margin-top: 12px;
+  color: var(--sub-text);
+  font-size: 14px;
+}
 
 @media (max-width: 1320px) {
   .event-container{
@@ -95,4 +105,19 @@
   .event_lists {
     grid-template-columns: 1fr; /* 1단 */
   }
+  .tab{
+    
+    justify-content: center;
+  
+    
+  }
+  .event .tab_btns{
+    padding: 10px 15px;
+    font-size: 14px;
+    line-height: 14px;
+    border: none;
+    border-radius: 20px;
+  }
+  
 }
+

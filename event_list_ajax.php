@@ -30,8 +30,8 @@ if ($result && $result->num_rows > 0) {
     $list_html .= '<img src="'.htmlspecialchars($event['img_url']).'" alt="'.htmlspecialchars($event['title']).'">';
     $list_html .= '<div class="event_desc">';
     $list_html .= '<p class="h5 event_title">'.htmlspecialchars($event['title']).'</p>';
+    $list_html .= '<p class="event_message">'.mb_strimwidth($event['content'], 0, 40, '...', 'UTF-8').'</p>';
     $list_html .= '<p class="event_duration">기간: '.htmlspecialchars($event['period_start']).' ~ '.htmlspecialchars($event['period_end']).'</p>';
-    $list_html .= '<p class="event_message">내용: '.mb_strimwidth($event['content'], 0, 40, '...', 'UTF-8').'</p>';
     $list_html .= '</div></li>';
   }
 } else {
@@ -40,11 +40,33 @@ if ($result && $result->num_rows > 0) {
 
 // 페이지네이션 HTML
 $pagination_html = '';
-for ($i=1; $i <= $total_pages; $i++) {
-  $active = ($i == $page) ? 'active' : '';
-  $pagination_html .= '<li class="page-item '.$active.'"><a class="page-link" href="#" data-page="'.$i.'">'.$i.'</a></li>';
+
+// 한 번에 보여줄 페이지 수
+$visible_pages = 5;
+
+// 시작/끝 페이지 계산
+$start_page = max(1, $page - floor($visible_pages / 2));
+$end_page = $start_page + $visible_pages - 1;
+if ($end_page > $total_pages) {
+    $end_page = $total_pages;
+    $start_page = max(1, $end_page - $visible_pages + 1);
 }
 
+// 이전 버튼
+if ($start_page > 1) {
+    $pagination_html .= '<li class="page-item"><a class="page-link" href="#" data-page="'.($start_page - 1).'">&laquo;</a></li>';
+}
+
+// 페이지 번호
+for ($i = $start_page; $i <= $end_page; $i++) {
+    $active = ($i == $page) ? 'active' : '';
+    $pagination_html .= '<li class="page-item '.$active.'"><a class="page-link" href="#" data-page="'.$i.'">'.$i.'</a></li>';
+}
+
+// 다음 버튼
+if ($end_page < $total_pages) {
+    $pagination_html .= '<li class="page-item"><a class="page-link" href="#" data-page="'.($end_page + 1).'">&raquo;</a></li>';
+}
 // JSON으로 반환
 header('Content-Type: application/json');
 echo json_encode([
