@@ -6,36 +6,8 @@
   $loginCss = '<link rel="stylesheet" href="css/login.css">';
   $loginScript = '<script src="js/login.js"></script>';
   $bootstrap = '<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>';
-
-
-
+  
   sub_view('login', '하나투어 로그인', $mainCss, $loginCss, '', $loginScript, $bootstrap, '');
-
-
-  if ($_SERVER['REQUEST_METHOD'] === 'POST') {
-    /*
-    echo "<pre>";
-    var_dump($_POST);
-    echo "</pre>";
-    die();
-    */
-
-    $userid = $_POST['#email'] ?? '';
-    $username = $_POST['#name'] ?? '';
-    $passwd = $_POST['#passwd'] ?? '';
-    $phone = $_POST['#phone'] ?? '';
-
-
-    if ($userid && $username && $passwd && $phone) {
-        $result = registerMember($userid, $username, $passwd, $phone);
-        if ($result) {
-            echo "<script>alert('회원가입 성공!'); location.href='/login.view.php';</script>";
-        } else {
-            echo "<script>alert('회원가입 실패'); history.back();</script>";
-        }
-    } else {
-        echo "<script>alert('모든 항목을 입력해주세요.'); history.back();</script>";
-    }
-}
+  
 
 ?>

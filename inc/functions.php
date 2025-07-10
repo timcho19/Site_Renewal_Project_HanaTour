@@ -14,18 +14,24 @@
     require("view/admin_layout.view.php");
   }
 
-  
-  //회원가입
-  function registerMember($userid, $username, $phone, $passwd) {
+
+  function registerMember($userid, $username, $passwd, $phone) {
     global $conn1;
 
-    $sql = "INSERT INTO members (userid, username, phone, passwd, regdate)
-            VALUES (?, ?, ?, ?, ?, NOW())";
+    $sql = "INSERT INTO members (userid, username, passwd, phone, regdate)
+            VALUES (?, ?, ?, ?, NOW())";
 
     $stmt = $conn1->prepare($sql);
+    if (!$stmt) {
+        // prepare 실패 시 에러 출력
+        die('Prepare failed: ' . $conn1->error);
+    }
     $hashed = password_hash($passwd, PASSWORD_DEFAULT);
-    $stmt->bind_param("sssss", $userid, $username, $phone, $hashed);
+    $stmt->bind_param("ssss", $userid, $username, $hashed, $phone);
 
     return $stmt->execute();
 }
+
+
+
 ?>

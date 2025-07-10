@@ -16,7 +16,7 @@
         <div id="signupForm" class="accordion-collapse collapse">
           <div class="accordion-body">
             <p class="h5">회원가입</p>
-             <form action="login.php" method="POST">
+             <form action="signup.php" method="POST">
                <div class="form-floating-custom">
                  <input type="text" class="form-control" id="name" name="name" placeholder=" " required>
                  <label for="name">이름</label>
@@ -146,7 +146,7 @@
 
     <div class="login mt-4">
       <p class="h5">로그인</p>
-      <form action="" method="POST">
+      <form action="login.ok.php" method="POST">
         <div class="form-floating-custom">
           <input type="text" id="login_id" name="login_id" placeholder=" " required>
           <label for="login_id">이메일</label>
