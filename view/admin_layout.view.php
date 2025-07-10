@@ -12,6 +12,43 @@ if ($result && $result->num_rows > 0) {
     $posts[] = $row;
   }
 }
+
+// GET 파라미터로 필터와 정렬값 받기
+$filter = $_GET['filter'] ?? 'all'; // all, ongoing
+$order = $_GET['order'] ?? 'desc'; // desc, asc
+
+// 오늘 날짜
+$today = date('Y-m-d');
+$where = '';
+if ($filter === 'ongoing') {
+    $where = "WHERE period_start <= '$today' AND period_end >= '$today'";
+} else if ($filter === 'ended') {
+    $where = "WHERE period_end < '$today'";
+}
+$order_sql = ($order === 'asc') ? 'ASC' : 'DESC';
+
+// 페이지네이션
+$page = max(1, intval($_GET['page'] ?? 1));
+$per_page = 6;
+$offset = ($page - 1) * $per_page;
+
+// 전체 게시글 수
+$count_sql = "SELECT COUNT(*) FROM event_board " . ($where ? $where : '');
+$count_result = $conn1->query($count_sql);
+$total_count = $count_result ? $count_result->fetch_row()[0] : 0;
+$total_pages = ceil($total_count / $per_page);
+
+// 게시글 조회
+$sql = "SELECT * FROM event_board " . ($where ? $where : '') . " ORDER BY idx $order_sql LIMIT $per_page OFFSET $offset";
+$result = $conn1->query($sql);
+
+$posts = [];
+if ($result && $result->num_rows > 0) {
+  while($row = $result->fetch_assoc()) {
+    $posts[] = $row;
+  }
+}
+
 $conn1->close();
 ?>
 <!DOCTYPE html>
@@ -56,6 +93,11 @@ $conn1->close();
         </nav>
     </header>
     <main>
+    <div class="mb-3 d-flex gap-2">
+      <a href="?filter=all&order=desc" class="btn btn-outline-primary <?= ($filter==='all' && $order==='desc') ? 'active' : '' ?>">전체보기</a>
+      <a href="?filter=ended&order=desc" class="btn btn-outline-secondary <?= ($filter==='ended') ? 'active' : '' ?>">종료</a>
+      <a href="?filter=ongoing&order=desc" class="btn btn-outline-success <?= ($filter==='ongoing') ? 'active' : '' ?>">진행중</a>
+      </div>
       <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
         <?php if (count($posts) > 0): ?>
           <?php foreach($posts as $row): ?>
@@ -101,6 +143,18 @@ $conn1->close();
           </div>
         <?php endif; ?>
       </div>
+      <nav aria-label="이벤트 페이지네이션" class="mt-4 d-flex justify-content-center">
+        <ul class="pagination">
+          <?php for ($i = 1; $i <= $total_pages; $i++): ?>
+            <li class="page-item <?= ($i == $page) ? 'active' : '' ?>">
+              <a class="page-link"
+                href="?filter=<?= $filter ?>&order=<?= $order ?>&page=<?= $i ?>">
+                <?= $i ?>
+              </a>
+            </li>
+          <?php endfor; ?>
+        </ul>
+      </nav>
     </main>
     <footer class="mt-5 text-center text-secondary small">
       <hr>
