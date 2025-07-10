@@ -69,39 +69,36 @@
                     </div>
                     <span class="detail_more">더보기</span>
                   </div>
-                  <div id="privacyModal" data-bs-toggle="modal" data-bs-target="#popup">
-                      <div class="modal_header">
-                          <p class="h5 modal_title">마케팅 활용 및 광고성 정보</p>
-                          <button class="close_button">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-x-lg" viewBox="0 0 16 16">
-                              <path d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8z"/>
-                            </svg>                          
-                          </button>
+                  <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                    <div id="privacyModal" data-bs-toggle="modal" data-bs-target="#popup">
+                        <div class="modal_header">
+                            <p class="h5 modal_title">마케팅 활용 및 광고성 정보</p>
                         </div>
-                      
-                      <div class="modal-content">
-                          <div class="marketing">
-                              <p class="h6">마케팅 활용 및 광고성 정보 수신동의</p>
-                              <p class="haedsup">
-                                  고객님은 아래 개인정보 수집·이용에 관한 동의를 거부하실 수 있습니다. <br>
-                                  다만, 동의하지 않으실 경우 여행 맞춤 서비스 및 정보제공이 일부 제한될 수 있으며 여행서비스 이용에는 영향이 없습니다. <br>
-                                  동의하시는 경우 상품이나 서비스 홍보 및 판매권유 등의 목적으로 개인정보를 이용하여 연락을 드릴 수 있습니다.
-                              </p>
-                          </div>
-                          
-                          <div class="info-content">
-                              <p class="h6">개인정보 수집항목 | 수집 및 이용목적 | 보유 및 이용기간</p>
-                              <p class="haedsup">
-                                  <strong>▪ 수집항목:</strong><br> 
-                                  성명, 휴대전화번호, 이메일<br>
-                                  <strong>▪ 수집 및 이용목적:</strong><br>
-                                  하나투어/하나투어클럽/자회사/제휴사의 상품 및 혜택, 각종 이벤트 및 행사 관련 정보 안내<br>
-                                  <strong>▪ 보유 및 이용기간:</strong><br>
-                                  회원탈퇴 시 또는 동의철회 시까지
-                              </p>
-                          </div>
-                      </div>
+                        <div class="modal-content">
+                            <div class="marketing">
+                                <p class="h6">마케팅 활용 및 광고성 정보 수신동의</p>
+                                <p class="haedsup">
+                                    고객님은 아래 개인정보 수집·이용에 관한 동의를 거부하실 수 있습니다. <br>
+                                    다만, 동의하지 않으실 경우 여행 맞춤 서비스 및 정보제공이 일부 제한될 수 있으며 여행서비스 이용에는 영향이 없습니다. <br>
+                                    동의하시는 경우 상품이나 서비스 홍보 및 판매권유 등의 목적으로 개인정보를 이용하여 연락을 드릴 수 있습니다.
+                                </p>
+                            </div>
+                            
+                            <div class="info-content">
+                                <p class="h6">개인정보 수집항목 | 수집 및 이용목적 | 보유 및 이용기간</p>
+                                <p class="haedsup">
+                                    <strong>▪ 수집항목:</strong><br> 
+                                    성명, 휴대전화번호, 이메일<br>
+                                    <strong>▪ 수집 및 이용목적:</strong><br>
+                                    하나투어/하나투어클럽/자회사/제휴사의 상품 및 혜택, 각종 이벤트 및 행사 관련 정보 안내<br>
+                                    <strong>▪ 보유 및 이용기간:</strong><br>
+                                    회원탈퇴 시 또는 동의철회 시까지
+                                </p>
+                            </div>
+                        </div>
+                    </div>
                   </div>
+
                   <div class="marketing-terms">
                     <div>
                       <input type="checkbox" id="checkChoice" class="form-check-input">
