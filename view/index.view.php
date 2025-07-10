@@ -528,11 +528,10 @@
 
     <p><em>여행을 떠나보조:</em> 조*랑(팀장), 장*석, 정*욱</p>
     <p><em>제작기간:</em> 2025.5.19 ~ 2025.7.11</p>
-    <p>
-      <em>기획서:</em> <a href="https://www.figma.com/slides/HtA3UUvRiurlZiIL4hyUQ3/2%EC%B0%A8-%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8?node-id=53-34&t=jE7VElmii60b8qej-1" target="_blank" rel="noopener noreferrer">Figma</a> <br>
-      <em>버전관리:</em> <a href="https://github.com/likerang/Site_Renewal_Project_HanaTour" target="_blank" rel="noopener noreferrer">GitHub</a>
-    </p>
+    <p><em>기획서:</em> <a href="https://www.figma.com/slides/HtA3UUvRiurlZiIL4hyUQ3/2%EC%B0%A8-%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8?node-id=53-34&t=jE7VElmii60b8qej-1" target="_blank" rel="noopener noreferrer">Figma</a></p>
+    <p><em>버전관리:</em> <a href="https://github.com/likerang/Site_Renewal_Project_HanaTour" target="_blank" rel="noopener noreferrer">GitHub</a></p>
     <p><em>개발환경:</em> HTML5, CSS3, JavaScript, jQuery, PHP</p>
+    <p><em><a href="http://localhost/Site_Renewal_Project_HanaTour/admin_login.php">관리자페이지:</a><br></em>아이디:admin <br> 비밀번호:1111</p>
 
     <hr>
 
@@ -545,9 +544,11 @@
       <li><em>정*욱:</em>footer&#44;section slide&#44; <a href="http://localhost/Site_Renewal_Project_HanaTour/faq.php">faqpage</a></li>
     </ul>
     <div class="popup-controls">
-      <input type="checkbox" id="popup-dont-show" name="dont-show">
-      <label for="popup-dont-show">오늘 하루 열지 않음</label>
-      <a href="#" class="popup-close" role="button" aria-label="팝업 닫기">닫기</a>
+      <div class="popup-left">
+        <input type="checkbox" id="popup-dont-show" />
+        <label for="popup-dont-show">오늘 하루 열지 않음</label>
+      </div>
+      <button class="popup-close" aria-label="닫기">닫기</button>
     </div>
   </div>
 </aside>
