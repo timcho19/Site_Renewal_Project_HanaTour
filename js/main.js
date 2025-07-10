@@ -455,6 +455,7 @@ const swiper2 = new Swiper(".youtube_video", {
     }
   }
 });
+
 /* - - - - - - - 지금가장뜨는 여행지  슬라이드 - - - - - - - */ 
 
 const $hotwrapper = $('.hot-wrapper');

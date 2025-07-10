@@ -92,7 +92,7 @@
     <div class="slider-wrapper hot-wrapper">
       <div class="travel-cards-container slider-container hot-container">
         <div class="travel-cards slider-content hot-content">
-            <div class="travel-card slider-item hot-item">
+            <div class="travel-card slider-item hot-item" data-id="1">
               <div class="product_img">
                 <img src="image/tour1.png" alt="보홀" />
                 <button class="likes">
@@ -122,7 +122,7 @@
                 </div>
               </div>
             </div>
-            <div class="travel-card slider-item hot-item">
+            <div class="travel-card slider-item hot-item" data-id="2">
               <div class="product_img">
                 <img src="image/tour2.png" alt="일본 오카야마" />
                 <button class="likes">
@@ -150,7 +150,7 @@
                 </div>
               </div>
             </div>
-            <div class="travel-card slider-item hot-item">
+            <div class="travel-card slider-item hot-item" data-id="3">
               <div class="product_img">
                 <img src="image/tour3.png" alt="베트남 푸꾸옥" />
                 <button class="likes">
@@ -178,7 +178,7 @@
                 </div>
               </div>
             </div>
-            <div class="travel-card slider-item hot-item">
+            <div class="travel-card slider-item hot-item" data-id="4">
               <div class="product_img">
                 <img src="image/tour4.png" alt="코타키나발루" />
                 <button class="likes">
@@ -532,7 +532,7 @@
       <em>기획서:</em> <a href="https://www.figma.com/slides/HtA3UUvRiurlZiIL4hyUQ3/2%EC%B0%A8-%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8?node-id=53-34&t=jE7VElmii60b8qej-1" target="_blank" rel="noopener noreferrer">Figma</a> <br>
       <em>버전관리:</em> <a href="https://github.com/likerang/Site_Renewal_Project_HanaTour" target="_blank" rel="noopener noreferrer">GitHub</a>
     </p>
-    <p><em>개발환경:</em> HTML5, CSS3, jQuery, PHP</p>
+    <p><em>개발환경:</em> HTML5, CSS3, JavaScript, jQuery, PHP</p>
 
     <hr>
 
@@ -540,6 +540,7 @@
     <p><em>기획:</em> 팀원 전체</p>
     <p><em>디자인:</em> 구현 담당자</p>
     <ul>
+      <li><em>공통:</em> <a href="#"></a></li>
       <li><em>조*랑:</em> <a href="#">구현 파트</a></li>
       <li><em>장*석:</em> <a href="#">구현 파트</a></li>
       <li><em>정*욱:</em> <a href="#">구현 파트</a></li>
