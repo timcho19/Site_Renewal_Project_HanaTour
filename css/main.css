@@ -707,6 +707,10 @@
     padding: 0 0;
 }
 
+.slider-wrapper {
+  padding-right: 24px;
+}
+
 
 .contents_prev_btn {
   left: 0; /* 또는 원하는 만큼 양수로 조정 */
@@ -794,7 +798,7 @@
   .youtube_shorts{
     width:100%;
     padding-left: 24px;
-    padding-right: 0;
+    padding-right: 24px;
   }
   .side_bar{
     bottom: 20px;
