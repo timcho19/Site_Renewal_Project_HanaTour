@@ -162,6 +162,7 @@
 .cta a:hover{
   color: var(--white);
   background-color: var(--primary);
+  box-shadow: var(--regular-shadow);
 }
 
 footer{
