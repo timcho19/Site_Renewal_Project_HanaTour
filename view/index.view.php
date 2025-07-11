@@ -158,9 +158,9 @@
               </div>
             </div>
             <div class="travel-card slider-item hot-item" data-id="3">
+              <span class="coupon">쿠폰할인</span>
+              <span class="tsale">타임세일</span>
               <div class="product_img">
-                <span class="coupon">쿠폰할인</span>
-                <span class="tsale">타임세일</span>
                 <img src="image/tour3.png" alt="베트남 푸꾸옥" />
                 <button class="likes">
                   <svg class="line-heart" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
@@ -189,6 +189,7 @@
             </div>
             <div class="travel-card slider-item hot-item" data-id="4">
               <div class="product_img">
+                
                 <span class="review">후기 1등</span>
                 <span class="ftrip">자유여행</span>
                 <img src="image/tour4.png" alt="코타키나발루" />
@@ -546,7 +547,7 @@
     <p><em>기획서:</em> <a href="https://www.figma.com/slides/HtA3UUvRiurlZiIL4hyUQ3/2%EC%B0%A8-%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8?node-id=53-34&t=jE7VElmii60b8qej-1" target="_blank" rel="noopener noreferrer">Figma</a></p>
     <p><em>버전관리:</em> <a href="https://github.com/likerang/Site_Renewal_Project_HanaTour" target="_blank" rel="noopener noreferrer">GitHub</a></p>
     <p><em>개발환경:</em> HTML5, CSS3, JavaScript, jQuery, PHP</p>
-    <p><em><a href="http://localhost/Site_Renewal_Project_HanaTour/admin_login.php">관리자페이지:</a></em> 아이디:admin / 비밀번호:1111</p>
+    <p><em><a href="http://localhost/Site_Renewal_Project_HanaTour/admin_login.php">관리자페이지:</a></em> 아이디:admin / 비밀번호:1234</p>
 
     <hr>
 
