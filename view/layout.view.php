@@ -204,10 +204,10 @@
               <a href=""><img src="image/ham_danang.png" alt="다낭">다낭</a>
               </li>
               <li>
-                <a href=""><img src="image/ham_danang.png" alt="다낭">다낭</a>
+                <a href=""><img src="image/ham_saipan.png" alt="사이판">사이판</a>
               </li>
               <li>
-                <a href=""><img src="image/ham_danang.png" alt="다낭">다낭</a>
+                <a href=""><img src="image/ham_paris.png" alt="파리">파리</a>
               </li>
             </ul>
             <div class="aside_btns">
