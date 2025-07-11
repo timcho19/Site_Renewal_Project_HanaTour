@@ -100,7 +100,7 @@
               <span class="tsale">타임세일</span>
               <div class="product_img">
                 <img src="image/tour1.png" alt="보홀" />
-                <button type="button" aria-label="관심있는상품" class="likes">
+                <button type="button" aria-label="관심있는상품" class="likes" alt="관심있는상품">
                   <svg aria-hidden="true" class="line-heart" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                     <path d="M225.8 468.2l-2.5-2.3L48.1 303.2C17.4 274.7 0 234.7 0 192.8l0-3.3c0-70.4 50-130.8 119.2-144C158.6 37.9 198.9 47 231 69.6c9 6.4 17.4 13.8 25 22.3c4.2-4.8 8.7-9.2 13.5-13.3c3.7-3.2 7.5-6.2 11.5-9c0 0 0 0 0 0C313.1 47 353.4 37.9 392.8 45.4C462 58.6 512 119.1 512 189.5l0 3.3c0 41.9-17.4 81.9-48.1 110.4L288.7 465.9l-2.5 2.3c-8.2 7.6-19 11.9-30.2 11.9s-22-4.2-30.2-11.9zM239.1 145c-.4-.3-.7-.7-1-1.1l-17.8-20-.1-.1s0 0 0 0c-23.1-25.9-58-37.7-92-31.2C81.6 101.5 48 142.1 48 189.5l0 3.3c0 28.5 11.9 55.8 32.8 75.2L256 430.7 431.2 268c20.9-19.4 32.8-46.7 32.8-75.2l0-3.3c0-47.3-33.6-88-80.1-96.9c-34-6.5-69 5.4-92 31.2c0 0 0 0-.1 .1s0 0-.1 .1l-17.8 20c-.3 .4-.7 .7-1 1.1c-4.5 4.5-10.6 7-16.9 7s-12.4-2.5-16.9-7z"/>
                   </svg>
@@ -132,7 +132,7 @@
               <span class="bsale">특가</span>
               <div class="product_img">
                 <img src="image/tour2.png" alt="일본 오카야마" />
-                <button type="button" aria-label="관심있는상품" class="likes">
+                <button type="button" aria-label="관심있는상품" class="likes" alt="관심있는상품">
                   <svg aria-hidden="true" class="line-heart" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                     <path d="M225.8 468.2l-2.5-2.3L48.1 303.2C17.4 274.7 0 234.7 0 192.8l0-3.3c0-70.4 50-130.8 119.2-144C158.6 37.9 198.9 47 231 69.6c9 6.4 17.4 13.8 25 22.3c4.2-4.8 8.7-9.2 13.5-13.3c3.7-3.2 7.5-6.2 11.5-9c0 0 0 0 0 0C313.1 47 353.4 37.9 392.8 45.4C462 58.6 512 119.1 512 189.5l0 3.3c0 41.9-17.4 81.9-48.1 110.4L288.7 465.9l-2.5 2.3c-8.2 7.6-19 11.9-30.2 11.9s-22-4.2-30.2-11.9zM239.1 145c-.4-.3-.7-.7-1-1.1l-17.8-20-.1-.1s0 0 0 0c-23.1-25.9-58-37.7-92-31.2C81.6 101.5 48 142.1 48 189.5l0 3.3c0 28.5 11.9 55.8 32.8 75.2L256 430.7 431.2 268c20.9-19.4 32.8-46.7 32.8-75.2l0-3.3c0-47.3-33.6-88-80.1-96.9c-34-6.5-69 5.4-92 31.2c0 0 0 0-.1 .1s0 0-.1 .1l-17.8 20c-.3 .4-.7 .7-1 1.1c-4.5 4.5-10.6 7-16.9 7s-12.4-2.5-16.9-7z"/>
                   </svg>
@@ -162,7 +162,7 @@
                 <span class="coupon">쿠폰할인</span>
                 <span class="tsale">타임세일</span>
                 <img src="image/tour3.png" alt="베트남 푸꾸옥" />
-                <button type="button" aria-label="관심있는상품" class="likes">
+                <button type="button" aria-label="관심있는상품" class="likes" alt="관심있는상품">
                   <svg aria-hidden="true" class="line-heart" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                     <path d="M225.8 468.2l-2.5-2.3L48.1 303.2C17.4 274.7 0 234.7 0 192.8l0-3.3c0-70.4 50-130.8 119.2-144C158.6 37.9 198.9 47 231 69.6c9 6.4 17.4 13.8 25 22.3c4.2-4.8 8.7-9.2 13.5-13.3c3.7-3.2 7.5-6.2 11.5-9c0 0 0 0 0 0C313.1 47 353.4 37.9 392.8 45.4C462 58.6 512 119.1 512 189.5l0 3.3c0 41.9-17.4 81.9-48.1 110.4L288.7 465.9l-2.5 2.3c-8.2 7.6-19 11.9-30.2 11.9s-22-4.2-30.2-11.9zM239.1 145c-.4-.3-.7-.7-1-1.1l-17.8-20-.1-.1s0 0 0 0c-23.1-25.9-58-37.7-92-31.2C81.6 101.5 48 142.1 48 189.5l0 3.3c0 28.5 11.9 55.8 32.8 75.2L256 430.7 431.2 268c20.9-19.4 32.8-46.7 32.8-75.2l0-3.3c0-47.3-33.6-88-80.1-96.9c-34-6.5-69 5.4-92 31.2c0 0 0 0-.1 .1s0 0-.1 .1l-17.8 20c-.3 .4-.7 .7-1 1.1c-4.5 4.5-10.6 7-16.9 7s-12.4-2.5-16.9-7z"/>
                   </svg>
@@ -192,7 +192,7 @@
                 <span class="review">후기 1등</span>
                 <span class="ftrip">자유여행</span>
                 <img src="image/tour4.png" alt="코타키나발루" />
-                <button type="button" aria-label="관심있는상품" class="likes">
+                <button type="button" aria-label="관심있는상품" class="likes" alt="관심있는상품">
                   <svg aria-hidden="true" class="line-heart" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                     <path d="M225.8 468.2l-2.5-2.3L48.1 303.2C17.4 274.7 0 234.7 0 192.8l0-3.3c0-70.4 50-130.8 119.2-144C158.6 37.9 198.9 47 231 69.6c9 6.4 17.4 13.8 25 22.3c4.2-4.8 8.7-9.2 13.5-13.3c3.7-3.2 7.5-6.2 11.5-9c0 0 0 0 0 0C313.1 47 353.4 37.9 392.8 45.4C462 58.6 512 119.1 512 189.5l0 3.3c0 41.9-17.4 81.9-48.1 110.4L288.7 465.9l-2.5 2.3c-8.2 7.6-19 11.9-30.2 11.9s-22-4.2-30.2-11.9zM239.1 145c-.4-.3-.7-.7-1-1.1l-17.8-20-.1-.1s0 0 0 0c-23.1-25.9-58-37.7-92-31.2C81.6 101.5 48 142.1 48 189.5l0 3.3c0 28.5 11.9 55.8 32.8 75.2L256 430.7 431.2 268c20.9-19.4 32.8-46.7 32.8-75.2l0-3.3c0-47.3-33.6-88-80.1-96.9c-34-6.5-69 5.4-92 31.2c0 0 0 0-.1 .1s0 0-.1 .1l-17.8 20c-.3 .4-.7 .7-1 1.1c-4.5 4.5-10.6 7-16.9 7s-12.4-2.5-16.9-7z"/>
                   </svg>
@@ -251,7 +251,7 @@
           <div class="iframe-wrapper">
             <div class="youtube-placeholder" data-video-id="90pXHf6fhk8">
               <img src="https://img.youtube.com/vi/90pXHf6fhk8/maxresdefault.jpg" alt="유튜브 썸네일">
-              <button aria-label="쇼츠플레이버튼"  class="play-btn"><img src="image/youtube_play.png" alt=""> </button>
+              <button aria-label="쇼츠플레이버튼" alt="쇼츠플레이버튼"  class="play-btn"><img src="image/youtube_play.png" alt="쇼츠플레이버튼이미지"> </button>
             </div>
           </div>
         </div>
@@ -259,7 +259,7 @@
           <div class="iframe-wrapper">
             <div class="youtube-placeholder" data-video-id="Gdig3Pm40H8">
               <img src="https://img.youtube.com/vi/Gdig3Pm40H8/maxresdefault.jpg" alt="유튜브 썸네일">
-              <button aria-label="쇼츠플레이버튼"  class="play-btn"><img src="image/youtube_play.png" alt=""> </button>
+              <button aria-label="쇼츠플레이버튼"  alt="쇼츠플레이버튼"  class="play-btn"><img src="image/youtube_play.png" alt="쇼츠플레이버튼이미지"> </button>
             </div>
           </div>
         </div>
@@ -267,7 +267,7 @@
           <div class="iframe-wrapper">
             <div class="youtube-placeholder" data-video-id="-zqO5pNmtiQ">
               <img src="https://img.youtube.com/vi/-zqO5pNmtiQ/maxresdefault.jpg" alt="유튜브 썸네일">
-              <button class="play-btn"><img src="image/youtube_play.png" alt=""> </button>
+              <button class="play-btn"  alt="쇼츠플레이버튼"><img src="image/youtube_play.png"alt="쇼츠플레이버튼이미지"> </button>
             </div>
           </div>
         </div>
@@ -275,7 +275,7 @@
           <div class="iframe-wrapper">
             <div class="youtube-placeholder" data-video-id="Irv4ff4foNs">
               <img src="https://img.youtube.com/vi/Irv4ff4foNs/maxresdefault.jpg" alt="유튜브 썸네일">
-              <button aria-label="쇼츠플레이버튼" class="play-btn"><img src="image/youtube_play.png" alt=""> </button>
+              <button aria-label="쇼츠플레이버튼"  alt="쇼츠플레이버튼" class="play-btn"><img src="image/youtube_play.png"alt="쇼츠플레이버튼이미지"> </button>
             </div>
           </div>
         </div>
@@ -283,7 +283,7 @@
           <div class="iframe-wrapper">
             <div class="youtube-placeholder" data-video-id="8VdnO5LglU0">
               <img src="https://img.youtube.com/vi/8VdnO5LglU0/maxresdefault.jpg" alt="유튜브 썸네일">
-              <button class="play-btn"><img src="image/youtube_play.png" alt=""> </button>
+              <button class="play-btn"  alt="쇼츠플레이버튼"><img src="image/youtube_play.png" alt="쇼츠플레이버튼이미지"> </button>
             </div>
           </div>
         </div>
@@ -291,7 +291,7 @@
           <div class="iframe-wrapper">
             <div class="youtube-placeholder" data-video-id="jcU2ZlnPxdg">
               <img src="https://img.youtube.com/vi/jcU2ZlnPxdg/maxresdefault.jpg" alt="유튜브 썸네일">
-              <button aria-label="쇼츠플레이버튼"  class="play-btn"><img src="image/youtube_play.png" alt=""> </button>
+              <button aria-label="쇼츠플레이버튼"  class="play-btn"><img src="image/youtube_play.png" alt="쇼츠플레이버튼이미지"> </button>
             </div>
           </div>
         </div>
@@ -299,7 +299,7 @@
           <div class="iframe-wrapper">
             <div class="youtube-placeholder" data-video-id="dKuSK2b6Eiw">
               <img src="https://img.youtube.com/vi/dKuSK2b6Eiw/maxresdefault.jpg" alt="유튜브 썸네일">
-              <button class="play-btn"><img src="image/youtube_play.png" alt=""> </button>
+              <button class="play-btn"  alt="쇼츠플레이버튼"><img src="image/youtube_play.png"  alt="쇼츠플레이버튼이미지"> </button>
             </div>
           </div>
         </div>
@@ -307,7 +307,7 @@
           <div class="iframe-wrapper">
             <div class="youtube-placeholder" data-video-id="UYF1eyb0G-o">
               <img src="https://img.youtube.com/vi/UYF1eyb0G-o/maxresdefault.jpg" alt="유튜브 썸네일">
-              <button aria-label="쇼츠플레이버튼"  class="play-btn"><img src="image/youtube_play.png" alt=""> </button>
+              <button aria-label="쇼츠플레이버튼"   alt="쇼츠플레이버튼" class="play-btn"><img src="image/youtube_play.png" alt="쇼츠플레이버튼이미지"> </button>
             </div>
           </div>
         </div>
