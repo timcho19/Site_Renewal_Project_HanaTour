@@ -211,12 +211,12 @@
               <li><a href="#">렌트</a></li>
               <li><a href="#">제우스</a></li>
               <li><a href="#">티켓/투어</a></li>
-              <li><a href="#">이벤트/혜택</a></li>
+              <li><a href="event.php">이벤트/혜택</a></li>
             </ul>
           </div>
           <div class="aside_tab" id="tab_2">
             <ul>
-              <li><a href="#">FAQ(자주찾는질문)</a></li>
+              <li><a href="faq.php">FAQ(자주찾는질문)</a></li>
               <li><a href="#">챗봇 상담</a></li>
               <li><a href="#">1대1 문의</a></li>
               <li><a href="#">공지사항</a></li>

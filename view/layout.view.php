@@ -225,7 +225,7 @@
                   <li><a href="#">렌트</a></li>
                   <li><a href="#">제우스</a></li>
                   <li><a href="#">티켓/투어</a></li>
-                  <li><a href="#">이벤트/혜택</a></li>
+                  <li><a href="event.php">이벤트/혜택</a></li>
                 </ul>
               </div>
               <div class="aside_tab" id="tab_2">
