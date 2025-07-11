@@ -36,11 +36,11 @@
   z-index: 1;
 }
 
-.mslide1 { background-image: url('../image/main_slide1.png'); }
-.mslide2 { background-image: url('../image/main_slide2.png'); }
-.mslide3 { background-image: url('../image/main_slide3.png'); }
-.mslide4 { background-image: url('../image/main_slide4.png'); }
-.mslide5 { background-image: url('../image/main_slide5.png'); }
+.mslide1 { background-image: url('../image/main_slide1.jpg'); }
+.mslide2 { background-image: url('../image/main_slide2.jpg'); }
+.mslide3 { background-image: url('../image/main_slide3.jpg'); }
+.mslide4 { background-image: url('../image/main_slide4.jpg'); }
+.mslide5 { background-image: url('../image/main_slide5.jpg'); }
 
 .mslide.active {
   opacity: 1;
