@@ -17,7 +17,8 @@
 
         if (password_verify($password, $user['passwd'])) {
             $_SESSION['user_id'] = $user['userid'];
-            echo "<script>alert('로그인 성공!'); location.href='index.php';</script>";
+            $userName = $user['username'];
+            echo "<script>alert('{$userName}님! 반갑습니다 ^o^!'); location.href='index.php';</script>";
         } else {
             echo "<script>alert('비밀번호가 일치하지 않습니다.'); history.back();</script>";
         }

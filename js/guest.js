@@ -31,13 +31,7 @@ $('input[name="guest"]').change(function(){
 
 
 /* 조회 버튼 비활성화 */
-/*
-const packageCheck = $('input[id="package"]').is(':checked');
-const hfCheck = $('input[id="flight-hotel"]').is(':checked');
 
-let guestPhone = searchPhone.val().trim(); 
-let guestEmail = searchEmail.val().trim(); 
-*/
 const packageCheck = $('input[id="package"]:checked');
 const hfCheck = $('input[id="flight-hotel"]:checked');
 

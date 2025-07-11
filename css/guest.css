@@ -73,10 +73,14 @@
   display: block;
 }
 
+.mt-4{
+  padding-bottom: calc(var(--lh) * 2);
+}
 .mt-4 p{
   margin-top: var(--lh);
   margin-bottom: 12px;
 }
+
 
 .radio_btn{
   display: flex;
@@ -84,6 +88,7 @@
   margin-top: var(--lh);
   margin-bottom: 12px;
 }
+
 
 .input_desc{
   width: 100%;
@@ -124,11 +129,42 @@
 }
 
 
-footer{
-  margin-top: calc(var(--lh) * 5);
-}
-
 .form-check-input:checked{
     background-color: var(--primary);
     border-color: var(--primary);
 }
+
+.cta{
+  display: flex;
+  flex-direction: column; 
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.cta p{
+  font-size: 14px;
+  color: var(--black);
+  padding-bottom: 12px;
+}
+
+.cta p span{
+  font-weight: bold;
+}
+
+.cta a{
+  color: var(--primary);
+  padding: 12px 24px;
+  border: 1px solid var(--primary);
+  border-radius: 35px;
+  transition: .3s ease;
+}
+
+.cta a:hover{
+  color: var(--white);
+  background-color: var(--primary);
+}
+
+footer{
+  margin-top: calc(var(--lh) * 5);
+}
+
