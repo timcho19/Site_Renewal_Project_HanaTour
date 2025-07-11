@@ -60,7 +60,7 @@
           <ul class="side-menus">
             <li>
               <a href="">
-                <img src="image/search_white.png">
+                <img src="image/search_white.png" alt="검색아이콘">
               </a>
             </li>
             <?php if (isset($_SESSION['user_id'])): ?>
@@ -82,19 +82,19 @@
             <ul class="dropdown_icons">
               <li>
                 <a href="">
-                  <img src="image/ic_trip.png" alt="해외여행">
+                  <img src="image/ic_trip.png" alt="">
                   <p>해외여행</p>
                 </a>
               </li>
               <li>
                 <a href="">
-                  <img src="image/ic_koreatrip.png" alt="국내여행">
+                  <img src="image/ic_koreatrip.png" alt="">
                   <p>국내여행</p>
                 </a>
               </li>
               <li>
                 <a href="">
-                  <img src="image/ic_airplane.png" alt="항공권">
+                  <img src="image/ic_airplane.png" alt="">
                   <p>항공권</p>
                 </a>
               </li>
@@ -106,25 +106,25 @@
               </li>
               <li>
                 <a href="">
-                  <img src="image/ic_rent.png" alt="렌트">
+                  <img src="image/ic_rent.png" alt="">
                   <p>렌트</p>
                 </a>
               </li>
               <li>
                 <a href="">
-                  <img src="image/ic_zeus.png" alt="제우스">
+                  <img src="image/ic_zeus.png" alt="">
                   <p>제우스</p>
                 </a>
               </li>
               <li>
                 <a href="">
-                  <img src="image/ic_ticket.png" alt="티켓투어">
+                  <img src="image/ic_ticket.png" alt="">
                   <p>티켓/투어</p>
                 </a>
               </li>
               <li>
                 <a href="">
-                  <img src="image/ic_event.png" alt="이벤트 혜택">
+                  <img src="image/ic_event.png" alt="">
                   <p>이벤트/혜택</p>
                 </a>
               </li>
@@ -158,7 +158,7 @@
               <li><span class="dropdown_title">이벤트/혜택</span> </li>
               <li><span class="dropdown_title">고객센터</span> 
                 <ul>
-                  <li><a href="">FAQ (자주찾는질문)</a></li>
+                  <li><a href="faq.php">FAQ (자주찾는질문)</a></li>
                   <li><a href="">챗봇상담</a></li>
                   <li><a href="">1:1 문의하기</a></li>
                   <li><a href="">공지사항</a></li>
@@ -172,11 +172,11 @@
         <div class="aside_top">
               <?php if (isset($_SESSION['user_id'])): ?>
                 <a href="logout.php"> 
-                  <img src="image/aside_login.png" alt="로그아웃"> 로그아웃
+                  <img src="image/aside_login.png" alt=""> 로그아웃
                 </a>
               <?php else: ?>
                 <a href="login.php"> 
-                  <img src="image/aside_login.png" alt="로그인"> 로그인
+                  <img src="image/aside_login.png" alt=""> 로그인
                 </a>
               <?php endif; ?>
               <button  aria-label="햄버거메뉴닫기버튼"   class="aside_close"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-x-lg" viewBox="0 0 16 16">
@@ -189,25 +189,25 @@
             <p class="h6">베스트 여행지</p>
             <ul class="aside_best">
               <li>
-                <a href=""><img src="image/ham_tokyo.png" alt="도쿄">도쿄</a>
+                <a href=""><img src="image/ham_tokyo.png" alt="">도쿄</a>
               </li>
               <li>
-                <a href=""><img src="image/ham_cota.png" alt="홍콩">홍콩</a>
+                <a href=""><img src="image/ham_cota.png" alt="">홍콩</a>
               </li>
               <li> 
-                <a href=""><img src="image/ham_jeju.png" alt="제주">제주</a>
+                <a href=""><img src="image/ham_jeju.png" alt="">제주</a>
             </li>
               <li>
-                <a href=""><img src="image/ham_newyork_.png" alt="뉴욕">뉴욕</a>
+                <a href=""><img src="image/ham_newyork_.png" alt="">뉴욕</a>
               </li>
               <li>
-              <a href=""><img src="image/ham_danang.png" alt="다낭">다낭</a>
+              <a href=""><img src="image/ham_danang.png" alt="">다낭</a>
               </li>
               <li>
-                <a href=""><img src="image/ham_saipan.png" alt="사이판">사이판</a>
+                <a href=""><img src="image/ham_saipan.png" alt="">사이판</a>
               </li>
               <li>
-                <a href=""><img src="image/ham_paris.png" alt="파리">파리</a>
+                <a href=""><img src="image/ham_paris.png" alt="">파리</a>
               </li>
             </ul>
             <div class="aside_btns">
@@ -230,7 +230,7 @@
               </div>
               <div class="aside_tab" id="tab_2">
                 <ul>
-                  <li><a href="#">FAQ(자주찾는질문)</a></li>
+                  <li><a href="faq.php">FAQ(자주찾는질문)</a></li>
                   <li><a href="#">챗봇 상담</a></li>
                   <li><a href="#">1대1 문의</a></li>
                   <li><a href="#">공지사항</a></li>

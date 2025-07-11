@@ -638,7 +638,7 @@ aside .h6{
   align-items: center;
   padding: 24px;
   background: transparent;
-  left: 5%; top: -8%;
+  left: -70%; top: -8%;
 }
 
 .popup-wrapper {
@@ -930,7 +930,9 @@ footer .big-container{
 .company_info{
   order:1;
 }
-
+.company_info .a{
+  text-decoration: underline;
+}
 
 .footer_emblem{
   display: flex;

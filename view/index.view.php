@@ -531,7 +531,7 @@
         </svg>
     </button>
   </section>
-<aside class="popup" role="dialog" aria-modal="true" aria-labelledby="popupTitle">
+<div class="popup" role="dialog" aria-modal="true" aria-labelledby="popupTitle">
   <div class="popup-wrapper">
     <img src="image/logo_color.png" alt="페이지 로고">
     
@@ -546,7 +546,7 @@
     <p><em>기획서:</em> <a href="https://www.figma.com/slides/HtA3UUvRiurlZiIL4hyUQ3/2%EC%B0%A8-%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8?node-id=53-34&t=jE7VElmii60b8qej-1" target="_blank" rel="noopener noreferrer">Figma</a></p>
     <p><em>버전관리:</em> <a href="https://github.com/likerang/Site_Renewal_Project_HanaTour" target="_blank" rel="noopener noreferrer">GitHub</a></p>
     <p><em>개발환경:</em> HTML5, CSS3, JavaScript, jQuery, PHP</p>
-    <p><em><a href="http://localhost/Site_Renewal_Project_HanaTour/admin_login.php">관리자페이지:</a></em> 아이디:admin / 비밀번호:1111</p>
+    <p><em><a href="http://localhost/Site_Renewal_Project_HanaTour/admin_login.php">관리자페이지</a>:</em> 아이디:admin / 비밀번호:1111</p>
 
     <hr>
 
@@ -563,7 +563,7 @@
         <input type="checkbox" id="popup-dont-show" />
         <label for="popup-dont-show">오늘 하루 열지 않음</label>
       </div>
-      <button aria-label="팝업 닫기 버튼"class="popup-close" aria-label="닫기">닫기</button>
+      <button class="popup-close" aria-label="닫기">닫기</button>
     </div>
   </div>
-</aside>
+</div>
