@@ -107,6 +107,12 @@
 }
 
 .gusest_search_btn {
+  color: var(--white);
+  background-color: #cfcfcf;
+  border-color: #cfcfcf;
+}
+/*
+.gusest_search_btn {
   font-weight: bold;
   color: black;
   border: 1px solid #ccc;
@@ -127,7 +133,7 @@
   background-color: #cfcfcf;
   border-color: #cfcfcf;
 }
-
+*/
 
 .form-check-input:checked{
     background-color: var(--primary);

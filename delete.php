@@ -14,7 +14,7 @@ $idx = $_GET['idx'] ?? '';
 if ($idx) {
     // 이미지 파일도 함께 삭제하려면 아래 주석 해제
    
-    $stmt = $conn1->prepare("SELECT img_url FROM event_board WHERE idx=?");
+    $stmt = $conn1->prepare("SELECT img_url FROM event_board1 WHERE idx=?");
     $stmt->bind_param("i", $idx);
     $stmt->execute();
     $stmt->bind_result($img_url);
@@ -25,7 +25,7 @@ if ($idx) {
     
 
     // DB에서 게시글 삭제
-    $stmt = $conn1->prepare("DELETE FROM event_board WHERE idx=?");
+    $stmt = $conn1->prepare("DELETE FROM event_board1 WHERE idx=?");
     $stmt->bind_param("i", $idx);
     $stmt->execute();
     $stmt->close();
