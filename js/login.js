@@ -104,8 +104,6 @@ signupBtn.prop('disabled', true);
 /* - - - - signup input validate - - - - */
 
 
-
-
 $('#name').on('input',function(){
   const val = $(this).val().trim();
   const nameText = /^[가-힣a-zA-Z]{2,}$/;;

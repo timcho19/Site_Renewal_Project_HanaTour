@@ -18,7 +18,7 @@
         </label>
       </div>
     </div>
-    <form action="" method="POST">
+    <form action="" method="POST" class="form_serach">
       <div class="form-floating-custom">
         <input type="text" class="form-control" id="guest_name" placeholder=" " minlength="2" required>
         <label for="guest_name">이름</label>
@@ -69,8 +69,12 @@
               </div>
           </div>
         </form> 
-        <button class="gusest_search_btn">조회</button>
       </div>
+      <button class="gusest_search_btn">조회</button>
     </form>
+  </div>
+  <div class="cta">
+    <p><span>회원가입</span>하고 <span>회원 전용 혜택</span>을 받아보세요! 😊</p>
+    <a href="signup.php">회원가입 하러 가기</a>
   </div>
 </div>
