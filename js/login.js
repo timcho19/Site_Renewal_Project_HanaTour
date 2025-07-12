@@ -46,6 +46,29 @@ $('#privacyModal').on('click', function (e) {
 });
 
 
+/* 이용약관 체크박스 */
+  const $all   = $('#checkDefault');   // 전체 동의
+  const $required  = $('#checkDetail');    // 필수
+  const $choice   = $('#checkChoice');    // 선택
+  
+  $all.on('change', function () {
+    const checked = this.checked;
+    $required.prop('checked', checked);
+    $choice .prop('checked', checked);
+
+    setTimeout(signupValidate, 0);
+  });
+
+  $required.add($choice).on('change', function () {
+    const allChecked = $required.prop('checked') && $choice.prop('checked');
+    $all.prop('checked', allChecked);
+
+    signupValidate();
+  });
+
+
+
+
 
 
 /* - - - - 로그인/회원가입 비활성화 - - - - */
@@ -76,9 +99,10 @@ function signupValidate(){
   let email = signEmail.val().trim(); 
   let pw = signPw.val().trim(); 
   let phone = signPhone.val().trim(); 
-  
-  
-  if(name !== '' && email !== '' && pw !== '' && phone !== ''){
+  let detailChecked = $('#checkDetail').prop('checked');
+  let choiceChecked = $('#checkChoice').prop('checked');
+
+  if(name !== '' && email !== '' && pw !== '' && phone !== '' && detailChecked){
     signupBtn.prop('disabled', false);
   }else{
     signupBtn.prop('disabled', true);
@@ -93,7 +117,7 @@ signName.on('input', signupValidate);
 signEmail.on('input', signupValidate);
 signPw.on('input', signupValidate);
 signPhone.on('input', signupValidate);
-
+$('#checkDetail, #checkChoice').on('change', signupValidate);
 
 
 loginBtn.prop('disabled', true);
@@ -115,7 +139,6 @@ $('#name').on('input',function(){
   }
 });
 
-
 $('#email').on('input',function(){
   const val = $(this).val().trim();
   const emailValid = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
@@ -126,7 +149,6 @@ $('#email').on('input',function(){
     $(this).removeClass('is-invalid');
   }
 });
-
 
 $('#passwd').on('input', function () {
   const val = $(this).val().trim();

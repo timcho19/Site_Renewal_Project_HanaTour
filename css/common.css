@@ -361,6 +361,7 @@ header nav .side-menus{
 .side-menus img{
   width: 16px;
   height: 16px;
+  color: var(--black);
 }
 
 header nav h1 a{
