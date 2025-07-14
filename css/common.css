@@ -635,11 +635,10 @@ aside .h6{
   inset: 0;
   z-index: 9999;
   display: flex;
-  justify-content: center;
   align-items: center;
   padding: 24px;
   background: transparent;
-  left: -70%; top: -8%;
+  left: 5%;
 }
 
 .popup-wrapper {

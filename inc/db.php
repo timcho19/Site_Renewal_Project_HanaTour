@@ -2,9 +2,9 @@
 
  // 데이터베이스 접속 정보
  $host = 'localhost';      // DB 서버 주소
- $user = 'dkfkd';        // DB 사용자명
- $pass = 'Ar93134895!!';    // DB 비밀번호
- $dbname = 'dkfkd'; // 사용할 데이터베이스명
+ $user = 'hanatour';        // DB 사용자명
+ $pass = 'hanatour1234!';    // DB 비밀번호
+ $dbname = 'hanatour'; // 사용할 데이터베이스명
 
  // MySQLi 객체 생성 및 연결
  $conn1 = new mysqli($host, $user, $pass, $dbname);
