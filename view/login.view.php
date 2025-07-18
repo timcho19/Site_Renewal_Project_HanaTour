@@ -3,7 +3,9 @@
       <img src="image/logo_slogun.png">
     </div>
 
-    <button class="kakao_btn"><img src="image/kakao_logo.png">카카오로 시작하기</button>
+    <a class="kakao_btn" href="https://kauth.kakao.com/oauth/authorize?client_id=dfd287f183543cd5d362fe9aa0705072&redirect_uri=http://localhost/Site_Renewal_Project_HanaTour/login.php&response_type=code">
+      <img src="image/kakao_login_medium_wide.png" alt="">
+    </a>
     <button class="naver_btn"><img src="image/naver_logo.png">네이버로 시작하기</button>
 
     <div class="accordion" id="signupAccordion">
