@@ -1,4 +1,8 @@
-# 하나투어 사이트 리뉴얼 - PHP 기반
+# 과정명 : 프로젝트 기반 프론트엔드 개발자 양성
+- 기간:2025/03/04 ~ 2025/09/24
+- 2차프로젝트 :2025/04/07 ~ 2025/05/07
+
+# 하나투어 사이트 리뉴얼 - PHP 기반(2차프로젝트)
 
 ## 🔗 빠른 링크
 - 📑 기획서(피그마 슬라이드): [https://www.figma.com/file/hanatour-renewal-plan](https://www.figma.com/file/hanatour-renewal-plan)
