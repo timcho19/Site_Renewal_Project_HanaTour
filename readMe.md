@@ -1,4 +1,4 @@
-# 과정명 : 프로젝트 기반 프론트엔드 개발자 양성
+# 과정명 : 프로젝트 기반 프론트엔드 개발자 양성 (수정중)
 - 기간:2025/03/04 ~ 2025/09/24
 - 2차프로젝트 :2025/04/07 ~ 2025/05/07
 
@@ -6,7 +6,9 @@
 
 ## 🔗 빠른 링크
 - 📑 기획서(피그마 슬라이드): [2차프로젝트 ppt](https://www.figma.com/slides/HtA3UUvRiurlZiIL4hyUQ3/2%EC%B0%A8-%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8?node-id=53-34&t=i6jgyabhooAPbh1l-1)
-- 🎨 디자인 시안(피그마): [https://www.figma.com/file/hanatour-renewal-design](https://www.figma.com/file/hanatour-renewal-design)
+- 🎨 디자인 시안(피그마): [디자인시안 figma](https://www.figma.com/file/hanatour-renewal-design)
+- 배포링크: [닷홈 링크](http://timcho4589.dothome.co.kr/hanatour_renewal/)
+
 
 ---
 
