@@ -5,8 +5,8 @@
 # 하나투어 사이트 리뉴얼 - PHP 기반(2차프로젝트)
 
 ## 🔗 빠른 링크
-- 📑 기획서(피그마 슬라이드): [https://www.figma.com/file/hanatour-renewal-plan](https://www.figma.com/file/hanatour-renewal-plan)
-- 🎨 디자인 시안(피그마): [https://www.figma.com/file/hanatour-renewal-design](https://www.figma.com/file/hanatour-renewal-design)
+- 📑 기획서(피그마 슬라이드): [https://www.figma.com/file/hanatour-renewal-plan](https://www.figma.com/slides/HtA3UUvRiurlZiIL4hyUQ3/2%EC%B0%A8-%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8?node-id=53-34&t=i6jgyabhooAPbh1l-1){:target="_blank"}
+- 🎨 디자인 시안(피그마): [https://www.figma.com/file/hanatour-renewal-design](https://www.figma.com/file/hanatour-renewal-design){:target="_blank"}
 
 ---
 
