@@ -5,7 +5,7 @@
 # 하나투어 사이트 리뉴얼 - PHP 기반(2차프로젝트)
 
 ## 🔗 빠른 링크
-- 📑 기획서(피그마 슬라이드): [2차프로젝트 ppt](https://www.figma.com/slides/HtA3UUvRiurlZiIL4hyUQ3/2%EC%B0%A8-%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8?node-id=53-34&t=i6jgyabhooAPbh1l-1) <a href="">https://www.figma.com/slides/HtA3UUvRiurlZiIL4hyUQ3/2%EC%B0%A8-%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8?node-id=53-34&t=i6jgyabhooAPbh1l-1</a>
+- 📑 기획서(피그마 슬라이드): [2차프로젝트 ppt](https://www.figma.com/slides/HtA3UUvRiurlZiIL4hyUQ3/2%EC%B0%A8-%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8?node-id=53-34&t=i6jgyabhooAPbh1l-1)
 - 🎨 디자인 시안(피그마): [https://www.figma.com/file/hanatour-renewal-design](https://www.figma.com/file/hanatour-renewal-design)
 
 ---
@@ -31,26 +31,34 @@
 
 ## 2. 마일스톤
 
-#### 1주차 — 기획/설계
-- [x] 요구사항·화면흐름 정의(Figma)
-- [x] DB 구조 설계(MySQL ERD)
-- [x] 페이지 라우팅 구성
+#### 간트차트
+```mermaid
+gantt
+    title 하나투어 리뉴얼 간트차트
+    dateFormat  YYYY-MM-DD
+    excludes    weekends
 
-#### 2주차 — 핵심 기능 구현
-- [x] 메인·서브 페이지 퍼블리싱
-- [x] 상품 리스트/상세 페이지
-- [x] 회원가입·로그인·로그아웃 기능
 
-#### 3주차 — 관리자 기능
-- [x] 관리자 로그인
-- [x] 상품/게시글 CRUD
-- [x] 파일 업로드(이미지)
+    section 기획/설계
+    자료조사·방향설정           :a1, 2025-05-12, 4d
+    스케치/스토리보드           :a2, after a1, 4d
+    기획발표                   :a3, after a2, 1d
+    스타일 가이드              :a4, after a3, 3d
+    Figma 와이어프레임·디자인        :a5, after a4, 14d
 
-#### 4주차 — 품질/배포
-- [x] 반응형·브라우저 호환성 테스트
-- [x] 실서버 배포(Apache + PHP)
-- [x] README·시연 자료 작성
 
+    section 구현(핵심)
+    컨벤션 구축 / 파트 분배     :b1, 2025-06-17, 2d
+    파트별 코딩           :b2, after b1, 16d
+
+
+    section 품질
+    SEO/OG·성능·접근성         :c1, 2025-07-11, 2d
+    테스트(E2E)·에러관측       :c2, 2025-07-11, 2d
+
+    section 릴리스
+    문서화·시연자료 :d1, 2025-07-14, 1d
+```
 ---
 
 ## 3. 주요 기능
